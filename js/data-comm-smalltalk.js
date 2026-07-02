@@ -82,7 +82,11 @@
       ,
       { id: 'smt-19', type: 'multiple-choice', prompt: 'Historia: Wo war Herr Meyer am Wochenende?', options: ['am See', 'zu Hause', 'in den Bergen', 'bei der Arbeit'], answer: 'am See', explanation: '„Sehr schön, danke. Wir waren am See."' },
       { id: 'smt-20', type: 'multiple-choice', prompt: 'Historia: Was macht Frau López gern in ihrer Freizeit?', options: ['wandern', 'kochen', 'schwimmen', 'lesen'], answer: 'wandern', explanation: '„Ich wandere gern. Und Sie?"' },
-      { id: 'smt-21', type: 'multiple-choice', prompt: 'Historia: Was hat Herr Meyer am Samstag gekocht?', options: ['Paella', 'Pizza', 'Schnitzel', 'Fisch'], answer: 'Paella', explanation: '„Am Samstag habe ich Paella gemacht!" — y a Frau López eso hay que hablarlo.' }
+      { id: 'smt-21', type: 'multiple-choice', prompt: 'Historia: Was hat Herr Meyer am Samstag gekocht?', options: ['Paella', 'Pizza', 'Schnitzel', 'Fisch'], answer: 'Paella', explanation: '„Am Samstag habe ich Paella gemacht!" — y a Frau López eso hay que hablarlo.' },
+      { id: 'smt-22', type: 'find-error', prompt: '¿Dónde está el error? (quiero decir: "tengo frío")', words: ['Ich', 'bin', 'kalt.'], wrong: 1, fix: 'Mir ist', explanation: '„Ich bin kalt" = soy frío (de carácter). La sensación se dice con Dativ: Mir ist kalt.' },
+      { id: 'smt-23', type: 'translate', prompt: 'Traduce: Tengo calor.', answer: 'Mir ist warm.', acceptable: ['Mir ist heiß.'], explanation: 'Igual que el frío: sensación → Mir ist warm/heiß (nunca „Ich bin heiß", que significa otra cosa…).' },
+      { id: 'smt-24', type: 'multiple-choice', prompt: '„Wie läuft’s?" significa aproximadamente:', options: ['¿Cómo va todo?', '¿A dónde corres?', '¿Qué haces?', '¿Cómo te llamas?'], answer: '¿Cómo va todo?', explanation: 'laufen = correr/marchar → „Wie läuft’s?" = ¿qué tal va la cosa? (coloquial).' },
+      { id: 'smt-25', type: 'fill-blank', prompt: 'Es ___ heute. (nevar)', answer: 'schneit', explanation: 'schneien → es schneit. Con „es": es regnet, es schneit, es ist kalt.' }
     ],
     story: {
       intro: 'Lunes por la mañana, dos vecinos coinciden en el ascensor: el pequeño ritual del small talk alemán en su hábitat natural — tiempo, finde y hobbies.',

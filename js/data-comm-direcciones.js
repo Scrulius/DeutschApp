@@ -73,7 +73,11 @@
       ,
       { id: 'dir-19', type: 'multiple-choice', prompt: 'Historia: Wo müssen die Touristen links gehen?', options: ['an der Ampel', 'an der Ecke', 'an der Brücke', 'am Museum'], answer: 'an der Ampel', explanation: '„An der Ampel links, und dann die zweite Straße rechts."' },
       { id: 'dir-20', type: 'multiple-choice', prompt: 'Historia: Wie lange dauert der Weg zu Fuß?', options: ['zehn Minuten', 'zwanzig Minuten', 'fünf Minuten', 'eine halbe Stunde'], answer: 'zehn Minuten', explanation: '„Nein, zu Fuß nur zehn Minuten."' },
-      { id: 'dir-21', type: 'multiple-choice', prompt: 'Historia: ¿Dónde estaba el museo al final?', options: ['justo detrás de ellos', 'al lado del semáforo', 'a diez minutos más', 'cerrado'], answer: 'justo detrás de ellos', explanation: '„Da! Direkt hinter Ihnen." — el clásico final de todo turista.' }
+      { id: 'dir-21', type: 'multiple-choice', prompt: 'Historia: ¿Dónde estaba el museo al final?', options: ['justo detrás de ellos', 'al lado del semáforo', 'a diez minutos más', 'cerrado'], answer: 'justo detrás de ellos', explanation: '„Da! Direkt hinter Ihnen." — el clásico final de todo turista.' },
+      { id: 'dir-22', type: 'match', prompt: 'Empareja los lugares de la ciudad:', pairs: [['die Brücke', 'el puente'], ['die Kreuzung', 'el cruce'], ['der Platz', 'la plaza'], ['der Weg', 'el camino']], explanation: 'Los puntos de referencia que salen en cualquier indicación.' },
+      { id: 'dir-23', type: 'fill-blank', prompt: 'Gehen Sie über ___ Brücke. (cruzar el puente: movimiento)', answer: 'die', explanation: '„über" con movimiento → Akkusativ; die Brücke (femenino) no cambia de forma.' },
+      { id: 'dir-24', type: 'translate', prompt: 'Traduce: La primera calle a la derecha.', answer: 'Die erste Straße rechts.', explanation: 'Ordinal + Straße + dirección: die erste/zweite Straße rechts/links.' },
+      { id: 'dir-25', type: 'multiple-choice', prompt: '„Sie können es nicht verfehlen" significa:', options: ['No tiene pérdida', 'Está prohibido pasar', 'No lo encontrará', 'Debe dar la vuelta'], answer: 'No tiene pérdida', explanation: 'verfehlen = no dar con algo → la coletilla optimista de toda indicación.' }
     ],
     story: {
       intro: 'Dos turistas con plano buscan el museo de la ciudad: preguntan el camino, siguen las indicaciones (geradeaus, links, rechts)… y el final es el de siempre.',

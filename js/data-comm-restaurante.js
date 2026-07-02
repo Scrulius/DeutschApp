@@ -80,7 +80,11 @@
       ,
       { id: 'res-18', type: 'multiple-choice', prompt: 'Historia: Für wie viele Personen ist der Tisch reserviert?', options: ['für fünf', 'für vier', 'für sechs', 'für zwei'], answer: 'für fünf', explanation: '„Ein Tisch für fünf Personen, auf den Namen Ruiz."' },
       { id: 'res-19', type: 'multiple-choice', prompt: 'Historia: Was bestellt die Oma?', options: ['das Hähnchen mit Kartoffeln', 'das Schnitzel', 'nur den Kuchen', 'eine Suppe'], answer: 'das Hähnchen mit Kartoffeln', explanation: '„Ich hätte gern das Hähnchen mit Kartoffeln."' },
-      { id: 'res-20', type: 'multiple-choice', prompt: 'Historia: „Der Kuchen geht aufs Haus" significa:', options: ['La tarta la invita la casa (gratis)', 'La tarta se ha acabado', 'La tarta se paga aparte', 'La tarta es para llevar'], answer: 'La tarta la invita la casa (gratis)', explanation: '„aufs Haus gehen" = correr a cuenta de la casa. Frase que alegra cualquier cena.' }
+      { id: 'res-20', type: 'multiple-choice', prompt: 'Historia: „Der Kuchen geht aufs Haus" significa:', options: ['La tarta la invita la casa (gratis)', 'La tarta se ha acabado', 'La tarta se paga aparte', 'La tarta es para llevar'], answer: 'La tarta la invita la casa (gratis)', explanation: '„aufs Haus gehen" = correr a cuenta de la casa. Frase que alegra cualquier cena.' },
+      { id: 'res-21', type: 'multiple-choice', prompt: 'Ich bin allergisch ___ Nüsse.', options: ['gegen', 'auf', 'für', 'mit'], answer: 'gegen', explanation: 'allergisch GEGEN + Akkusativ. Frase vital si tienes alergias.' },
+      { id: 'res-22', type: 'translate', prompt: 'Traduce: ¿Qué me recomienda? (formal)', answer: 'Was empfehlen Sie mir?', explanation: 'empfehlen + Dativ (mir): la pregunta que todo camarero espera.' },
+      { id: 'res-23', type: 'multiple-choice', prompt: 'Al pagar dices „Stimmt so!" — significa:', options: ['Quédese con el cambio', 'La cuenta está mal', 'Cóbreme aparte', 'Todo correcto, deme el cambio'], answer: 'Quédese con el cambio', explanation: 'La fórmula estándar para dejar propina redondeando.' },
+      { id: 'res-24', type: 'fill-blank', prompt: '___ es Ihnen? (pregunta del camarero: ¿le gusta / sabe bien?)', answer: 'Schmeckt', explanation: '„Schmeckt es Ihnen?" — schmecken + Dativ, el clásico a mitad de comida.' }
     ],
     story: {
       intro: 'La familia Ruiz celebra el cumpleaños de la abuela en un restaurante: reservar, pedir con „Ich hätte gern", el postre recomendado y una sorpresa con la cuenta.',

@@ -79,7 +79,11 @@
       ,
       { id: 'med-19', type: 'multiple-choice', prompt: 'Historia: Was hat Herr Ortega?', options: ['Halsschmerzen und Husten', 'Bauchschmerzen', 'Kopfschmerzen und Fieber', 'Zahnschmerzen'], answer: 'Halsschmerzen und Husten', explanation: '„Ich habe seit Montag Halsschmerzen und Husten."' },
       { id: 'med-20', type: 'multiple-choice', prompt: 'Historia: Wie oft muss er die Tabletten nehmen?', options: ['dreimal am Tag', 'einmal am Tag', 'zweimal am Tag', 'jede Stunde'], answer: 'dreimal am Tag', explanation: '„Nehmen Sie sie dreimal am Tag."' },
-      { id: 'med-21', type: 'fill-blank', prompt: 'Historia: Gute ___, Herr Ortega! (que se mejore)', answer: 'Besserung', explanation: '„Gute Besserung!" — la despedida fija del médico.' }
+      { id: 'med-21', type: 'fill-blank', prompt: 'Historia: Gute ___, Herr Ortega! (que se mejore)', answer: 'Besserung', explanation: '„Gute Besserung!" — la despedida fija del médico.' },
+      { id: 'med-22', type: 'match', prompt: 'Empareja las partes del cuerpo:', pairs: [['das Auge', 'el ojo'], ['das Ohr', 'el oído / la oreja'], ['die Hand', 'la mano'], ['der Fuß', 'el pie']], explanation: 'Para poder decir dónde te duele.' },
+      { id: 'med-23', type: 'dictation', say: 'Ich habe Kopfschmerzen.', prompt: 'Dictado: escribe lo que oyes.', answer: 'Ich habe Kopfschmerzen.', explanation: 'La frase de síntoma más frecuente.' },
+      { id: 'med-24', type: 'multiple-choice', prompt: '„Ich bin gegen Pollen allergisch." — ¿qué le pasa?', options: ['Tiene alergia al polen', 'Le duele el polen', 'Tiene miedo al polen', 'Tiene fiebre por el polen'], answer: 'Tiene alergia al polen', explanation: 'allergisch gegen + Akkusativ.' },
+      { id: 'med-25', type: 'fill-blank', prompt: 'Der Arzt verschreibt mir ein ___. (medicamento)', answer: 'Medikament', explanation: 'das Medikament = el medicamento; das Rezept sería la receta.' }
     ],
     story: {
       intro: 'El Sr. Ortega lleva días encontrándose mal y por fin tiene cita. La visita entera: síntomas, diagnóstico, receta e instrucciones — tal cual pasa en la consulta.',

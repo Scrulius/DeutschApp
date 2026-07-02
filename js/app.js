@@ -95,11 +95,11 @@
     var html = '';
     html += '<div class="masthead-hero">' +
       '<p class="kicker">Alemán para hispanohablantes · gramática y comunicación · A1 → B2</p>' +
-      '<h1 class="hero-title">Deja de dudar en el <span class="u">dativo</span>.</h1>' +
-      '<p class="hero-lede">' + modCount + ' módulos <strong>ordenados por nivel</strong>, de A1 a B2: gramática ' +
-      'y también lo práctico (saludar, small talk, pedir en un bar, dar tu opinión). Empieza por arriba y baja ' +
-      'peldaño a peldaño. Cada uno explica el <em>porqué</em> y trae ejercicios corregidos al instante. ' +
-      'Ya has resuelto <strong>' + totals.solved + ' de ' + totals.total + '</strong>.</p></div>';
+      '<h1 class="hero-title">El alemán, por fin con <span class="u">sentido</span>.</h1>' +
+      '<p class="hero-lede">' + modCount + ' módulos de A1 a B2, en el orden en que conviene aprenderlos: ' +
+      'la gramática que sostiene el idioma y el alemán que se usa en la calle. Cada tema explica su <em>porqué</em> ' +
+      'pensando en quien viene del español, se entrena con ' + totals.total + ' ejercicios de once tipos y tiene ' +
+      'su propia historia para leer y escuchar. Llevas <strong>' + totals.solved + '</strong> resueltos.</p></div>';
 
     CATEGORY_ORDER.forEach(function (cat) {
       var mods = orderedModules().filter(function (o) { return o.cat.id === cat.id; });
