@@ -1,0 +1,15 @@
+# Config local de herramientas
+.claude/
+
+# Basura del SO
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Node (por si en el futuro se añade tooling)
+node_modules/

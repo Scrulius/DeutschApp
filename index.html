@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch für Dich — Alemán para hispanohablantes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="wordmark" data-nav="home" role="button" tabindex="0">
+        <span class="flagmark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="wordmark-text">Deutsch <em>für Dich</em></span>
+      </a>
+      <nav class="mainnav">
+        <button class="navlink" data-nav="home">Índice</button>
+        <button class="navlink" data-nav="mixed">Repaso mixto</button>
+        <button class="navlink" data-nav="reference">Tablas</button>
+      </nav>
+      <div class="meter" title="Progreso total">
+        <span class="meter-num" id="global-progress-text">0%</span>
+        <span class="meter-track"><span id="global-progress-bar" class="meter-fill"></span></span>
+      </div>
+      <button id="mute-btn" class="icon-btn" title="Sonido" aria-label="Activar o silenciar el sonido">🔊</button>
+    </div>
+  </header>
+
+  <main id="main-content" class="canvas">
+    <!-- rendered by js/app.js -->
+  </main>
+
+  <footer class="colophon">
+    <span>Un banco de práctica para dejar de dudar en el dativo. Tu progreso vive solo en este navegador.</span>
+    <button id="reset-progress-btn" class="link-btn">Borrar progreso</button>
+  </footer>
+</div>
+
+<template id="tpl-toast"><div class="toast"></div></template>
+
+<script src="js/storage.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/data-shared.js"></script>
+<!-- Orden = progresión por nivel (A1 → B2). La numeración del temario sigue este orden de carga. -->
+<!-- Nivel 1 · A1 -->
+<script src="js/data-comm-saludos.js"></script>
+<script src="js/data-comm-numeros.js"></script>
+<script src="js/data-casos-nominativ.js"></script>
+<script src="js/data-orden-hauptsatz.js"></script>
+<script src="js/data-orden-preguntas.js"></script>
+<script src="js/data-casos-akkusativ.js"></script>
+<!-- Nivel 2 · A2 -->
+<script src="js/data-verbos-separables.js"></script>
+<script src="js/data-verbos-perfekt.js"></script>
+<script src="js/data-casos-dativ.js"></script>
+<script src="js/data-casos-wechsel.js"></script>
+<script src="js/data-verbos-reflexive.js"></script>
+<script src="js/data-comm-smalltalk.js"></script>
+<script src="js/data-comm-restaurante.js"></script>
+<script src="js/data-comm-direcciones.js"></script>
+<!-- Nivel 3 · B1 -->
+<script src="js/data-orden-nebensaetze.js"></script>
+<script src="js/data-orden-indirectas.js"></script>
+<script src="js/data-verbos-praepositionen.js"></script>
+<script src="js/data-comm-opinion.js"></script>
+<script src="js/data-comm-medico.js"></script>
+<!-- Nivel 4 · B1–B2 -->
+<script src="js/data-extra.js"></script>
+<script src="js/data-casos-genitiv.js"></script>
+<script src="js/data-comm-conectores.js"></script>
+<!-- Historias · comprensión lectora (al final, una por nivel) -->
+<script src="js/data-story-cafe.js"></script>
+<script src="js/data-story-schluessel.js"></script>
+<script src="js/data-story-gespraech.js"></script>
+<script src="js/data-story-nachbarin.js"></script>
+<script src="js/exercises.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
