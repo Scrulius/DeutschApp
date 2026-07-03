@@ -189,9 +189,11 @@
       var btnsEl = document.getElementById('anki-buttons');
       var flipped = false;
 
-      // TTS al mostrar
-      if (root.Speech && root.Speech.available()) {
-        setTimeout(function () { root.Speech.say(card.de); }, 200);
+      // TTS al mostrar (respeta el mute global)
+      if (root.Speech && root.Speech.available() && !(root.Sound && root.Sound.isMuted())) {
+        setTimeout(function () {
+          if (!(root.Sound && root.Sound.isMuted())) root.Speech.say(card.de);
+        }, 200);
       }
 
       cardEl.addEventListener('click', function () {
@@ -200,7 +202,7 @@
         innerEl.classList.add('flipped');
         hintEl.textContent = '¿La sabías?';
         btnsEl.style.display = '';
-        if (root.Speech && root.Speech.available()) {
+        if (root.Speech && root.Speech.available() && !(root.Sound && root.Sound.isMuted())) {
           root.Speech.say(card.de);
         }
       });
