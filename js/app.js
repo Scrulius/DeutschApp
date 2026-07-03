@@ -130,8 +130,23 @@
   }
 
   function moduleCardHtml(m, num, color) {
-    var stats = Storage.statsFor(moduleExercises(m).map(function (e) { return e.id; }));
-    var done = stats.pct === 100;
+    var isFlashcard = !!m.flashcards;
+    var footHtml;
+    if (isFlashcard && window.Flashcards) {
+      var fStats = window.Flashcards.deckStats(m.flashcards);
+      var masteredPct = fStats.total ? Math.round((fStats.counts[3] + fStats.counts[4]) / fStats.total * 100) : 0;
+      footHtml = '<div class="mod-foot">' +
+        '<span class="mod-bar"><span class="mod-bar-fill" style="width:' + masteredPct + '%"></span></span>' +
+        '<span class="mod-count">🃏 ' + fStats.due + ' pendientes</span>' +
+        '</div>';
+    } else {
+      var stats = Storage.statsFor(moduleExercises(m).map(function (e) { return e.id; }));
+      footHtml = '<div class="mod-foot">' +
+        '<span class="mod-bar"><span class="mod-bar-fill" style="width:' + stats.pct + '%"></span></span>' +
+        '<span class="mod-count">' + stats.solved + '/' + stats.total + '</span>' +
+        '</div>';
+    }
+    var done = isFlashcard ? false : (Storage.statsFor(moduleExercises(m).map(function (e) { return e.id; })).pct === 100);
     return '' +
       '<article class="mod-card' + (done ? ' done' : '') + '" data-id="' + m.id + '" style="--cat:' + color + '">' +
       '<span class="mod-tick">✓ hecho</span>' +
@@ -140,10 +155,7 @@
         '<span class="mod-track ' + (m.track ? 'comm' : 'gram') + '">' + (m.track || 'Gramática') + '</span>' +
         '<h3 class="mod-title">' + m.title + '</h3>' +
         '<p class="mod-desc">' + m.desc + '</p>' +
-        '<div class="mod-foot">' +
-          '<span class="mod-bar"><span class="mod-bar-fill" style="width:' + stats.pct + '%"></span></span>' +
-          '<span class="mod-count">' + stats.solved + '/' + stats.total + '</span>' +
-        '</div>' +
+        footHtml +
       '</div></article>';
   }
 
@@ -153,7 +165,8 @@
     if (!meta) return go('home');
     var m = meta.mod;
     var color = meta.cat.color;
-    var stats = Storage.statsFor(moduleExercises(m).map(function (e) { return e.id; }));
+    var isFlashcard = !!m.flashcards;
+    var stats = isFlashcard ? { solved: 0, total: 0 } : Storage.statsFor(moduleExercises(m).map(function (e) { return e.id; }));
 
     var html = '';
     html += '<div class="mod-header" style="--cat:' + color + '">' +
@@ -162,16 +175,26 @@
         '<span class="mod-header-num">' + pad2(meta.num) + '</span>' +
         '<h1>' + m.title + '</h1>' +
       '</div></div>';
-    // Dos sabores: módulos temáticos con lecciones (que ADEMÁS pueden traer su historia,
-    // en pestaña propia) y módulos que SON una historia (categoría Historias).
-    var storyOnly = !!m.story && !m.lessons;
-    var hasStoryTab = !!m.story && !!m.lessons;
-    html += '<div class="tabs">' +
-      tabBtn('leccion', storyOnly ? 'Historia' : 'Lección') +
-      (hasStoryTab ? tabBtn('historia', 'Historia') : '') +
-      tabBtn('chuleta', storyOnly ? 'Vocabulario' : 'Chuleta') +
-      tabBtn('ejercicios', (storyOnly ? 'Preguntas' : 'Ejercicios') + ' · ' + stats.solved + '/' + stats.total) +
-      '</div>';
+
+    if (isFlashcard) {
+      // Módulos de vocabulario: Palabras (lista) + Mazo (Anki)
+      var ankiStats = window.Flashcards ? window.Flashcards.deckStats(m.flashcards) : { due: 0 };
+      html += '<div class="tabs">' +
+        tabBtn('leccion', 'Palabras') +
+        tabBtn('ejercicios', '🃏 Mazo · ' + ankiStats.due + ' pendientes') +
+        '</div>';
+    } else {
+      // Módulos normales (gramática, historias, etc.)
+      var storyOnly = !!m.story && !m.lessons;
+      var hasStoryTab = !!m.story && !!m.lessons;
+      html += '<div class="tabs">' +
+        tabBtn('leccion', storyOnly ? 'Historia' : 'Lección') +
+        (hasStoryTab ? tabBtn('historia', 'Historia') : '') +
+        tabBtn('chuleta', storyOnly ? 'Vocabulario' : 'Chuleta') +
+        tabBtn('ejercicios', (storyOnly ? 'Preguntas' : 'Ejercicios') + ' · ' + stats.solved + '/' + stats.total) +
+        '</div>';
+    }
+
     html += '<div id="tab-content"></div>';
     main.innerHTML = html;
 
@@ -181,14 +204,48 @@
     });
 
     var content = document.getElementById('tab-content');
-    if (state.tab === 'chuleta') content.innerHTML = '<div class="lesson">' + (m.cheatsheet || '<p>Sin chuleta.</p>') + '</div>';
-    else if (state.tab === 'ejercicios') startExerciseSession([m], content);
-    else if (state.tab === 'historia' && m.story) renderStoryView(m, content);
-    else if (storyOnly) renderStoryView(m, content);
-    else {
-      content.innerHTML = renderLessonHtml(m);
-      attachSpeakButtons(content);
+
+    if (isFlashcard) {
+      // Módulos de tarjetas
+      if (state.tab === 'ejercicios') {
+        window.Flashcards.renderAnkiSession(m.flashcards, content);
+      } else {
+        // Tab "Palabras": mostrar la lista completa de tarjetas como tabla
+        content.innerHTML = renderFlashcardList(m);
+      }
+    } else {
+      // Módulos normales
+      var storyOnly2 = !!m.story && !m.lessons;
+      if (state.tab === 'chuleta') content.innerHTML = '<div class="lesson">' + (m.cheatsheet || '<p>Sin chuleta.</p>') + '</div>';
+      else if (state.tab === 'ejercicios') startExerciseSession([m], content);
+      else if (state.tab === 'historia' && m.story) renderStoryView(m, content);
+      else if (storyOnly2) renderStoryView(m, content);
+      else {
+        content.innerHTML = renderLessonHtml(m);
+        attachSpeakButtons(content);
+      }
     }
+  }
+
+  function renderFlashcardList(m) {
+    var cards = m.flashcards;
+    var html = '<div class="lesson">';
+    html += '<p>' + cards.length + ' palabras en este mazo. Ve a la pestaña <strong>🃏 Mazo</strong> para estudiarlas con tarjetas y repetición espaciada.</p>';
+    html += '<div class="ref-table-wrap"><table class="ref-table">';
+    html += '<caption>' + m.title + '</caption>';
+    html += '<tr><th>#</th><th>Alemán</th><th>Español</th><th>Ejemplo</th></tr>';
+    cards.forEach(function (c, i) {
+      var state = window.Flashcards ? window.Flashcards.getCard(c.id) : { box: 0 };
+      var boxColor = window.Flashcards ? window.Flashcards.BOX_COLORS[state.box] : 'var(--ink-45)';
+      var boxLabel = window.Flashcards ? window.Flashcards.BOX_LABELS[state.box] : '';
+      html += '<tr>' +
+        '<td><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + boxColor + ';margin-right:6px" title="' + boxLabel + '"></span>' + (i+1) + '</td>' +
+        '<td><strong>' + c.de + '</strong></td>' +
+        '<td>' + c.es + '</td>' +
+        '<td style="font-size:13px;color:var(--ink-70)">' + (c.example || '') + '</td></tr>';
+    });
+    html += '</table></div></div>';
+    return html;
   }
 
   // Añade un botón 🔉 a cada texto alemán (si el navegador tiene voz).

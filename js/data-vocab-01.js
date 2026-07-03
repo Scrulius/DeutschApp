@@ -1,207 +1,120 @@
-(function (root) {
-  var module = {
+// Vocabulario · Módulo 1: Las 100 palabras más frecuentes del alemán.
+// Fuente: Wiktionary Frequency Lists (subtítulos, ~25M palabras, 2009).
+// Cada tarjeta: id, de (alemán), es (español), example (frase ejemplo), exampleEs (traducción).
+(function () {
+  var cards = [
+    { id:'w1-001', de:'ich', es:'yo', example:'Ich bin hier.', exampleEs:'Yo estoy aquí.' },
+    { id:'w1-002', de:'sein', es:'ser / estar', example:'Das ist gut.', exampleEs:'Eso es bueno.' },
+    { id:'w1-003', de:'nicht', es:'no (negación)', example:'Das ist nicht richtig.', exampleEs:'Eso no es correcto.' },
+    { id:'w1-004', de:'sie', es:'ella / ellos / usted(es)', example:'Sie kommt aus Berlin.', exampleEs:'Ella viene de Berlín.' },
+    { id:'w1-005', de:'du', es:'tú', example:'Wie heißt du?', exampleEs:'¿Cómo te llamas?' },
+    { id:'w1-006', de:'das', es:'el/lo (artículo neutro) / eso', example:'Das weiß ich nicht.', exampleEs:'Eso no lo sé.' },
+    { id:'w1-007', de:'die', es:'la / las (artículo fem. / plural)', example:'Die Frau liest.', exampleEs:'La mujer lee.' },
+    { id:'w1-008', de:'der', es:'el (artículo masculino)', example:'Der Mann arbeitet.', exampleEs:'El hombre trabaja.' },
+    { id:'w1-009', de:'es', es:'ello / lo (pronombre neutro)', example:'Es regnet.', exampleEs:'Llueve.' },
+    { id:'w1-010', de:'und', es:'y', example:'Brot und Butter.', exampleEs:'Pan y mantequilla.' },
+    { id:'w1-011', de:'zu', es:'a / hacia / demasiado', example:'Ich gehe zu dir.', exampleEs:'Voy hacia ti.' },
+    { id:'w1-012', de:'ein', es:'un / uno', example:'Ein Mann steht da.', exampleEs:'Un hombre está ahí.' },
+    { id:'w1-013', de:'eine', es:'una', example:'Eine Frau wartet.', exampleEs:'Una mujer espera.' },
+    { id:'w1-014', de:'in', es:'en / dentro de', example:'Ich bin in der Schule.', exampleEs:'Estoy en la escuela.' },
+    { id:'w1-015', de:'wir', es:'nosotros', example:'Wir gehen zusammen.', exampleEs:'Vamos juntos.' },
+    { id:'w1-016', de:'mir', es:'a mí (dativo)', example:'Gib es mir.', exampleEs:'Dámelo.' },
+    { id:'w1-017', de:'mich', es:'me (acusativo)', example:'Er sieht mich.', exampleEs:'Él me ve.' },
+    { id:'w1-018', de:'mit', es:'con', example:'Komm mit mir.', exampleEs:'Ven conmigo.' },
+    { id:'w1-019', de:'was', es:'qué', example:'Was machst du?', exampleEs:'¿Qué haces?' },
+    { id:'w1-020', de:'auf', es:'en / sobre / encima de', example:'Das Buch liegt auf dem Tisch.', exampleEs:'El libro está sobre la mesa.' },
+    { id:'w1-021', de:'dass', es:'que (conjunción)', example:'Ich weiß, dass er kommt.', exampleEs:'Sé que él viene.' },
+    { id:'w1-022', de:'er', es:'él', example:'Er ist mein Bruder.', exampleEs:'Él es mi hermano.' },
+    { id:'w1-023', de:'haben', es:'tener / haber', example:'Ich habe Zeit.', exampleEs:'Tengo tiempo.' },
+    { id:'w1-024', de:'so', es:'así / tan', example:'So ist das Leben.', exampleEs:'Así es la vida.' },
+    { id:'w1-025', de:'von', es:'de / desde', example:'Ein Brief von dir.', exampleEs:'Una carta de ti.' },
+    { id:'w1-026', de:'dir', es:'a ti (dativo)', example:'Ich helfe dir.', exampleEs:'Te ayudo.' },
+    { id:'w1-027', de:'dich', es:'te (acusativo)', example:'Ich liebe dich.', exampleEs:'Te quiero.' },
+    { id:'w1-028', de:'für', es:'para', example:'Das ist für dich.', exampleEs:'Esto es para ti.' },
+    { id:'w1-029', de:'ja', es:'sí', example:'Ja, das stimmt.', exampleEs:'Sí, es cierto.' },
+    { id:'w1-030', de:'hier', es:'aquí', example:'Komm hier her!', exampleEs:'¡Ven aquí!' },
+    { id:'w1-031', de:'an', es:'en / junto a', example:'Er steht an der Tür.', exampleEs:'Él está junto a la puerta.' },
+    { id:'w1-032', de:'wie', es:'como / cómo', example:'Wie geht es dir?', exampleEs:'¿Cómo estás?' },
+    { id:'w1-033', de:'noch', es:'todavía / aún', example:'Ich bin noch hier.', exampleEs:'Todavía estoy aquí.' },
+    { id:'w1-034', de:'uns', es:'nos / a nosotros', example:'Er hilft uns.', exampleEs:'Él nos ayuda.' },
+    { id:'w1-035', de:'sich', es:'se (reflexivo)', example:'Er freut sich.', exampleEs:'Él se alegra.' },
+    { id:'w1-036', de:'nur', es:'solo / solamente', example:'Ich habe nur einen Euro.', exampleEs:'Solo tengo un euro.' },
+    { id:'w1-037', de:'nein', es:'no', example:'Nein, danke.', exampleEs:'No, gracias.' },
+    { id:'w1-038', de:'ihn', es:'lo / a él (acusativo)', example:'Ich sehe ihn.', exampleEs:'Lo veo (a él).' },
+    { id:'w1-039', de:'ihm', es:'le / a él (dativo)', example:'Ich gebe ihm das Buch.', exampleEs:'Le doy el libro (a él).' },
+    { id:'w1-040', de:'auch', es:'también', example:'Ich komme auch.', exampleEs:'Yo también vengo.' },
+    { id:'w1-041', de:'ihr', es:'vosotros / su (de ella)', example:'Ihr seid nett.', exampleEs:'Vosotros sois amables.' },
+    { id:'w1-042', de:'da', es:'ahí / allí / ya que', example:'Da ist er!', exampleEs:'¡Ahí está!' },
+    { id:'w1-043', de:'aus', es:'de / desde (origen)', example:'Ich komme aus Spanien.', exampleEs:'Vengo de España.' },
+    { id:'w1-044', de:'können', es:'poder', example:'Ich kann schwimmen.', exampleEs:'Puedo nadar.' },
+    { id:'w1-045', de:'aber', es:'pero', example:'Klein, aber fein.', exampleEs:'Pequeño, pero fino.' },
+    { id:'w1-046', de:'schon', es:'ya', example:'Er ist schon da.', exampleEs:'Él ya está ahí.' },
+    { id:'w1-047', de:'wenn', es:'si (condicional) / cuando', example:'Wenn du willst.', exampleEs:'Si tú quieres.' },
+    { id:'w1-048', de:'werden', es:'llegar a ser / (futuro/pasiva)', example:'Es wird regnen.', exampleEs:'Va a llover.' },
+    { id:'w1-049', de:'um', es:'alrededor de / a las (hora)', example:'Um acht Uhr.', exampleEs:'A las ocho.' },
+    { id:'w1-050', de:'als', es:'como / cuando (pasado)', example:'Als ich klein war…', exampleEs:'Cuando yo era pequeño…' },
+    { id:'w1-051', de:'mal', es:'vez / una vez', example:'Komm mal her.', exampleEs:'Ven aquí un momento.' },
+    { id:'w1-052', de:'doch', es:'sin embargo / sí que', example:'Doch, das stimmt!', exampleEs:'¡Sí que es verdad!' },
+    { id:'w1-053', de:'gut', es:'bien / bueno', example:'Das ist gut.', exampleEs:'Eso es bueno.' },
+    { id:'w1-054', de:'mein', es:'mi', example:'Mein Name ist Max.', exampleEs:'Mi nombre es Max.' },
+    { id:'w1-055', de:'jetzt', es:'ahora', example:'Jetzt oder nie.', exampleEs:'Ahora o nunca.' },
+    { id:'w1-056', de:'wissen', es:'saber', example:'Ich weiß es nicht.', exampleEs:'No lo sé.' },
+    { id:'w1-057', de:'nach', es:'después de / hacia', example:'Nach der Schule.', exampleEs:'Después de la escuela.' },
+    { id:'w1-058', de:'oder', es:'o', example:'Tee oder Kaffee?', exampleEs:'¿Té o café?' },
+    { id:'w1-059', de:'dann', es:'entonces / luego', example:'Dann gehen wir.', exampleEs:'Entonces nos vamos.' },
+    { id:'w1-060', de:'wollen', es:'querer', example:'Ich will das.', exampleEs:'Yo quiero eso.' },
+    { id:'w1-061', de:'mehr', es:'más', example:'Ich will mehr.', exampleEs:'Quiero más.' },
+    { id:'w1-062', de:'kein', es:'ningún / ninguno', example:'Ich habe kein Geld.', exampleEs:'No tengo dinero.' },
+    { id:'w1-063', de:'etwas', es:'algo', example:'Ich brauche etwas.', exampleEs:'Necesito algo.' },
+    { id:'w1-064', de:'alles', es:'todo', example:'Alles klar.', exampleEs:'Todo claro.' },
+    { id:'w1-065', de:'müssen', es:'tener que / deber', example:'Ich muss gehen.', exampleEs:'Tengo que irme.' },
+    { id:'w1-066', de:'immer', es:'siempre', example:'Er kommt immer spät.', exampleEs:'Él siempre llega tarde.' },
+    { id:'w1-067', de:'nichts', es:'nada', example:'Ich weiß nichts.', exampleEs:'No sé nada.' },
+    { id:'w1-068', de:'man', es:'se / uno (impersonal)', example:'Man sagt das nicht.', exampleEs:'Eso no se dice.' },
+    { id:'w1-069', de:'wieder', es:'otra vez / de nuevo', example:'Komm wieder!', exampleEs:'¡Vuelve!' },
+    { id:'w1-070', de:'bei', es:'en / junto a / en casa de', example:'Ich bin bei dir.', exampleEs:'Estoy contigo.' },
+    { id:'w1-071', de:'machen', es:'hacer', example:'Was machst du?', exampleEs:'¿Qué haces?' },
+    { id:'w1-072', de:'vor', es:'delante de / antes de', example:'Vor dem Haus.', exampleEs:'Delante de la casa.' },
+    { id:'w1-073', de:'der Mann', es:'el hombre', example:'Der Mann liest die Zeitung.', exampleEs:'El hombre lee el periódico.' },
+    { id:'w1-074', de:'tun', es:'hacer', example:'Was soll ich tun?', exampleEs:'¿Qué debo hacer?' },
+    { id:'w1-075', de:'sagen', es:'decir', example:'Was willst du sagen?', exampleEs:'¿Qué quieres decir?' },
+    { id:'w1-076', de:'denn', es:'pues / porque', example:'Was ist denn los?', exampleEs:'¿Pues qué pasa?' },
+    { id:'w1-077', de:'warum', es:'por qué', example:'Warum nicht?', exampleEs:'¿Por qué no?' },
+    { id:'w1-078', de:'gehen', es:'ir', example:'Wir gehen nach Hause.', exampleEs:'Nos vamos a casa.' },
+    { id:'w1-079', de:'sehen', es:'ver', example:'Ich sehe dich.', exampleEs:'Te veo.' },
+    { id:'w1-080', de:'sehr', es:'muy', example:'Sehr gut!', exampleEs:'¡Muy bien!' },
+    { id:'w1-081', de:'alle', es:'todos', example:'Alle sind hier.', exampleEs:'Todos están aquí.' },
+    { id:'w1-082', de:'über', es:'sobre / acerca de', example:'Über die Brücke.', exampleEs:'Sobre el puente.' },
+    { id:'w1-083', de:'einfach', es:'simple / simplemente', example:'Das ist einfach.', exampleEs:'Eso es simple.' },
+    { id:'w1-084', de:'euch', es:'os / a vosotros', example:'Ich sehe euch.', exampleEs:'Os veo.' },
+    { id:'w1-085', de:'nie', es:'nunca', example:'Ich sage nie nie.', exampleEs:'Nunca digo nunca.' },
+    { id:'w1-086', de:'also', es:'así que / entonces', example:'Also, was nun?', exampleEs:'Entonces, ¿qué ahora?' },
+    { id:'w1-087', de:'wo', es:'dónde', example:'Wo bist du?', exampleEs:'¿Dónde estás?' },
+    { id:'w1-088', de:'los', es:'¡vamos! / suelto', example:'Los, beeil dich!', exampleEs:'¡Vamos, date prisa!' },
+    { id:'w1-089', de:'die Zeit', es:'el tiempo', example:'Die Zeit vergeht schnell.', exampleEs:'El tiempo pasa rápido.' },
+    { id:'w1-090', de:'ihnen', es:'a ellos / a ustedes (dativo)', example:'Ich gebe es ihnen.', exampleEs:'Se lo doy a ellos.' },
+    { id:'w1-091', de:'geben', es:'dar', example:'Gib mir das!', exampleEs:'¡Dame eso!' },
+    { id:'w1-092', de:'wirklich', es:'realmente / de verdad', example:'Wirklich?', exampleEs:'¿De verdad?' },
+    { id:'w1-093', de:'danke', es:'gracias', example:'Danke schön!', exampleEs:'¡Muchas gracias!' },
+    { id:'w1-094', de:'dein', es:'tu (posesivo)', example:'Dein Buch ist hier.', exampleEs:'Tu libro está aquí.' },
+    { id:'w1-095', de:'sollen', es:'deber (consejo/mandato)', example:'Was soll das?', exampleEs:'¿Qué significa eso?' },
+    { id:'w1-096', de:'kommen', es:'venir / llegar', example:'Wann kommst du?', exampleEs:'¿Cuándo vienes?' },
+    { id:'w1-097', de:'lassen', es:'dejar / permitir', example:'Lass mich in Ruhe.', exampleEs:'Déjame en paz.' },
+    { id:'w1-098', de:'bitte', es:'por favor', example:'Bitte schön.', exampleEs:'De nada. / Por favor.' },
+    { id:'w1-099', de:'wer', es:'quién', example:'Wer ist das?', exampleEs:'¿Quién es?' },
+    { id:'w1-100', de:'leben', es:'vivir / la vida', example:'Wir leben nur einmal.', exampleEs:'Solo vivimos una vez.' }
+  ];
+
+  registerModule({
     id: 'vocab-01',
     category: 'top1000',
     track: 'Vocabulario',
-    title: 'Top 1-100 palabras',
-    desc: 'Aprende las primeras 100 palabras más comunes del alemán y cómo usarlas en una pequeña historia.',
-    lessons: [
-      {
-        title: 'Las 100 palabras más usadas',
-        content: '' +
-      '<p>En esta primera lección aprenderás las 100 palabras más comunes del alemán. ¡Con este pequeño grupo de palabras ya puedes formar muchísimas frases!</p>' +
-      '<div class="ref-table-wrap"><table class="ref-table">' +
-      '<caption>Palabras 1 a 20</caption>' +
-      '<tr><th>Alemán</th><th>Español</th></tr>' +
-      '<tr><td>ich</td><td>yo</td></tr>' +
-      '<tr><td>sein</td><td>ser / estar</td></tr>' +
-      '<tr><td>nicht</td><td>no</td></tr>' +
-      '<tr><td>sie</td><td>ella / ellos</td></tr>' +
-      '<tr><td>du</td><td>tú</td></tr>' +
-      '<tr><td>das, die, der</td><td>el, la, lo (artículos)</td></tr>' +
-      '<tr><td>es</td><td>ello (pronombre neutro)</td></tr>' +
-      '<tr><td>und</td><td>y</td></tr>' +
-      '<tr><td>zu</td><td>a / hacia / demasiado</td></tr>' +
-      '<tr><td>ein, eine</td><td>un, una</td></tr>' +
-      '<tr><td>in</td><td>en</td></tr>' +
-      '<tr><td>wir</td><td>nosotros</td></tr>' +
-      '<tr><td>mir, mich</td><td>a mí, me</td></tr>' +
-      '<tr><td>mit</td><td>con</td></tr>' +
-      '<tr><td>was</td><td>qué</td></tr>' +
-      '<tr><td>auf</td><td>en / sobre</td></tr>' +
-      '<tr><td>dass</td><td>que (conjunción)</td></tr>' +
-      '<tr><td>er</td><td>él</td></tr>' +
-      '<tr><td>haben</td><td>tener / haber</td></tr>' +
-      '<tr><td>so</td><td>así / tan</td></tr>' +
-      '</table></div>' +
-      '<div class="ref-table-wrap"><table class="ref-table">' +
-      '<caption>Palabras 21 a 40</caption>' +
-      '<tr><th>Alemán</th><th>Español</th></tr>' +
-      '<tr><td>von</td><td>de</td></tr>' +
-      '<tr><td>dir, dich</td><td>a ti, te</td></tr>' +
-      '<tr><td>für</td><td>para</td></tr>' +
-      '<tr><td>ja</td><td>sí</td></tr>' +
-      '<tr><td>hier</td><td>aquí</td></tr>' +
-      '<tr><td>an</td><td>en / junto a</td></tr>' +
-      '<tr><td>wie</td><td>como / cómo</td></tr>' +
-      '<tr><td>noch</td><td>todavía / aún</td></tr>' +
-      '<tr><td>uns</td><td>nosotros / a nosotros</td></tr>' +
-      '<tr><td>sich</td><td>se (reflexivo)</td></tr>' +
-      '<tr><td>nur</td><td>solo / solamente</td></tr>' +
-      '<tr><td>nein</td><td>no</td></tr>' +
-      '<tr><td>ihn, ihm</td><td>a él, le</td></tr>' +
-      '<tr><td>auch</td><td>también</td></tr>' +
-      '<tr><td>ihr</td><td>vosotros / a ella</td></tr>' +
-      '<tr><td>da</td><td>allí / ya que</td></tr>' +
-      '<tr><td>aus</td><td>de / desde</td></tr>' +
-      '<tr><td>können</td><td>poder</td></tr>' +
-      '<tr><td>aber</td><td>pero</td></tr>' +
-      '<tr><td>schon</td><td>ya</td></tr>' +
-      '</table></div>' +
-      '<div class="ref-table-wrap"><table class="ref-table">' +
-      '<caption>Palabras 41 a 60</caption>' +
-      '<tr><th>Alemán</th><th>Español</th></tr>' +
-      '<tr><td>wenn</td><td>si (condicional) / cuando</td></tr>' +
-      '<tr><td>werden</td><td>llegar a ser / volverse (auxiliar futuro/pasiva)</td></tr>' +
-      '<tr><td>um</td><td>alrededor de / a las (hora)</td></tr>' +
-      '<tr><td>als</td><td>como / cuando (pasado)</td></tr>' +
-      '<tr><td>mal</td><td>vez</td></tr>' +
-      '<tr><td>doch</td><td>sin embargo / sí que (contradecir negación)</td></tr>' +
-      '<tr><td>gut</td><td>bien / bueno</td></tr>' +
-      '<tr><td>mein</td><td>mi</td></tr>' +
-      '<tr><td>jetzt</td><td>ahora</td></tr>' +
-      '<tr><td>wissen</td><td>saber</td></tr>' +
-      '<tr><td>nach</td><td>después de / hacia</td></tr>' +
-      '<tr><td>oh</td><td>oh</td></tr>' +
-      '<tr><td>oder</td><td>o</td></tr>' +
-      '<tr><td>dann</td><td>entonces</td></tr>' +
-      '<tr><td>wollen</td><td>querer</td></tr>' +
-      '<tr><td>mehr</td><td>más</td></tr>' +
-      '<tr><td>kein</td><td>ningún / ninguno</td></tr>' +
-      '<tr><td>etwas</td><td>algo</td></tr>' +
-      '<tr><td>alles</td><td>todo</td></tr>' +
-      '<tr><td>müssen</td><td>tener que / deber</td></tr>' +
-      '</table></div>' +
-      '<div class="ref-table-wrap"><table class="ref-table">' +
-      '<caption>Palabras 61 a 80</caption>' +
-      '<tr><th>Alemán</th><th>Español</th></tr>' +
-      '<tr><td>immer</td><td>siempre</td></tr>' +
-      '<tr><td>nichts</td><td>nada</td></tr>' +
-      '<tr><td>man</td><td>se / uno (impersonal)</td></tr>' +
-      '<tr><td>wieder</td><td>otra vez</td></tr>' +
-      '<tr><td>bei</td><td>en / junto a / cerca de</td></tr>' +
-      '<tr><td>machen</td><td>hacer</td></tr>' +
-      '<tr><td>vor</td><td>delante de / antes de</td></tr>' +
-      '<tr><td>Mann</td><td>hombre</td></tr>' +
-      '<tr><td>tun</td><td>hacer</td></tr>' +
-      '<tr><td>sagen</td><td>decir</td></tr>' +
-      '<tr><td>denn</td><td>pues / porque</td></tr>' +
-      '<tr><td>warum</td><td>por qué</td></tr>' +
-      '<tr><td>gehen</td><td>ir</td></tr>' +
-      '<tr><td>sehen</td><td>ver</td></tr>' +
-      '<tr><td>sehr</td><td>muy</td></tr>' +
-      '<tr><td>alle</td><td>todos</td></tr>' +
-      '<tr><td>über</td><td>sobre / acerca de</td></tr>' +
-      '<tr><td>einfach</td><td>simple / simplemente</td></tr>' +
-      '<tr><td>euch</td><td>a vosotros</td></tr>' +
-      '<tr><td>nie</td><td>nunca</td></tr>' +
-      '</table></div>' +
-      '<div class="ref-table-wrap"><table class="ref-table">' +
-      '<caption>Palabras 81 a 100</caption>' +
-      '<tr><th>Alemán</th><th>Español</th></tr>' +
-      '<tr><td>also</td><td>así que / por lo tanto</td></tr>' +
-      '<tr><td>wo</td><td>dónde</td></tr>' +
-      '<tr><td>los</td><td>¡vamos! / suelto</td></tr>' +
-      '<tr><td>Zeit</td><td>tiempo</td></tr>' +
-      '<tr><td>ihnen</td><td>a ellos</td></tr>' +
-      '<tr><td>geben</td><td>dar</td></tr>' +
-      '<tr><td>wirklich</td><td>realmente</td></tr>' +
-      '<tr><td>hey</td><td>hey</td></tr>' +
-      '<tr><td>danke</td><td>gracias</td></tr>' +
-      '<tr><td>dein</td><td>tu</td></tr>' +
-      '<tr><td>sollen</td><td>deber (consejo/mandato)</td></tr>' +
-      '</table></div>' +
-      '<h3>Lectura: Un día sencillo</h3>' +
-      '<p>A continuación, lee este pequeño texto que utiliza muchas de las palabras que acabas de aprender en contexto.</p>' +
-      '<div class="story-box">' +
-      '<p><strong>Hallo! Ich bin hier.</strong> (¡Hola! Yo estoy aquí.)</p>' +
-      '<p><strong>Wie geht es dir?</strong> (¿Cómo te va? / ¿Qué tal estás?)</p>' +
-      '<p><strong>Mir geht es sehr gut, danke. Und dir?</strong> (A mí me va muy bien, gracias. ¿Y a ti?)</p>' +
-      '<p><strong>Wo bist du jetzt?</strong> (¿Dónde estás tú ahora?)</p>' +
-      '<p><strong>Ich sehe einen Mann. Er ist mein Freund.</strong> (Yo veo a un hombre. Él es mi amigo.)</p>' +
-      '<p><strong>Wir wollen etwas machen. Wir müssen gehen.</strong> (Nosotros queremos hacer algo. Nosotros tenemos que irnos.)</p>' +
-      '<p><strong>Hast du Zeit?</strong> (¿Tienes tú tiempo?)</p>' +
-      '<p><strong>Ja, ich habe Zeit. Aber wir können nicht alles tun.</strong> (Sí, yo tengo tiempo. Pero nosotros no podemos hacerlo todo.)</p>' +
-      '<p><strong>Was sollen wir machen? Ich weiß es nicht.</strong> (¿Qué deberíamos hacer nosotros? Yo no lo sé.)</p>' +
-      '<p><strong>Vielleicht einfach nur reden.</strong> (Tal vez simplemente solo hablar.)</p>' +
-      '<p><strong>Es ist schon spät. Wir werden uns wieder sehen.</strong> (Ya es tarde. Nosotros nos volveremos a ver.)</p>' +
-      '<p><strong>Alles gut, danke.</strong> (Todo bien, gracias.)</p>' +
-      '</div>'
-      }
-    ],
-    exercises: [
-      {
-        id: 'v1-01',
-        type: 'translate',
-        german: 'Ich bin hier.',
-        spanish: ['Yo estoy aquí', 'Estoy aquí']
-      },
-      {
-        id: 'v1-02',
-        type: 'translate',
-        german: 'Wie geht es dir?',
-        spanish: ['¿Cómo estás?', 'Cómo estás', '¿Qué tal?', '¿Cómo te va?', 'Qué tal']
-      },
-      {
-        id: 'v1-03',
-        type: 'translate',
-        german: 'Wir wollen etwas machen.',
-        spanish: ['Queremos hacer algo', 'Nosotros queremos hacer algo']
-      },
-      {
-        id: 'v1-04',
-        type: 'gap',
-        text: 'Wir [müssen] gehen.',
-        translation: 'Tenemos que irnos.'
-      },
-      {
-        id: 'v1-05',
-        type: 'gap',
-        text: 'Ich [weiß] es nicht.',
-        translation: 'No lo sé.'
-      },
-      {
-        id: 'v1-06',
-        type: 'listen',
-        german: 'Es ist schon spät.'
-      },
-      {
-        id: 'v1-07',
-        type: 'listen',
-        german: 'Wir werden uns wieder sehen.'
-      },
-      {
-        id: 'v1-08',
-        type: 'dictation',
-        german: 'Hast du Zeit?',
-        translation: '¿Tienes tiempo?'
-      },
-      {
-        id: 'v1-09',
-        type: 'dictation',
-        german: 'Aber wir können nicht alles tun.',
-        translation: 'Pero no podemos hacerlo todo.'
-      },
-      {
-        id: 'v1-10',
-        type: 'gap',
-        text: 'Er ist [mein] Freund.',
-        translation: 'Él es mi amigo.'
-      }
-    ]
-  };
-
-  if (typeof root.registerModule === 'function') {
-    root.registerModule(module);
-  }
-})(typeof window !== 'undefined' ? window : globalThis);
+    icon: '🃏',
+    title: 'Mazo 1 · Palabras 1–100',
+    desc: 'Las 100 palabras más frecuentes del alemán en tarjetas con repetición espaciada.',
+    // Sin lessons → la app detecta que es un módulo de tarjetas
+    flashcards: cards,
+    // Ejercicios vacíos: el sistema Anki los reemplaza
+    exercises: []
+  });
+})();

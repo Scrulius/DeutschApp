@@ -27,6 +27,7 @@
   --green:      #3c7a45;
   --green-deep: #2c5c33;
   --green-bg:   #e5eede;
+  --teal:       #1a7a6d;
 
   /* ---- Tipografía ---- */
   --display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -985,6 +986,231 @@ kbd {
 }
 
 /* ============================================================
+   ANKI FLASHCARDS
+   ============================================================ */
+
+/* ---- Dashboard ---- */
+.anki-dashboard {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 24px 0;
+}
+.anki-stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.anki-box-stat {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  padding: 12px 16px;
+  min-width: 80px;
+  box-shadow: var(--shadow-hard-sm);
+}
+.anki-box-count {
+  display: block;
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--box-color);
+  line-height: 1.1;
+}
+.anki-box-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-70);
+  margin-top: 4px;
+}
+.anki-due-info {
+  font-size: 15px;
+  color: var(--ink-70);
+  margin-bottom: 24px;
+}
+.anki-due-num {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--red);
+}
+.anki-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.anki-done-msg {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green);
+  margin: 0 0 8px;
+}
+
+/* ---- Session ---- */
+.anki-session {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+.anki-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.anki-progress-bar {
+  flex: 1;
+  height: 6px;
+  border: 1.5px solid var(--ink);
+  background: var(--card);
+  overflow: hidden;
+}
+.anki-progress-fill {
+  display: block;
+  height: 100%;
+  background: var(--green);
+  transition: width .3s ease;
+}
+.anki-progress-text {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-70);
+  white-space: nowrap;
+}
+.anki-box-indicator {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--box-color);
+  border: 1.5px solid var(--box-color);
+  padding: 2px 10px;
+  margin-bottom: 18px;
+}
+
+/* ---- Card ---- */
+.anki-card {
+  perspective: 900px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  user-select: none;
+}
+.anki-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  transition: transform .5s cubic-bezier(.4,.2,.2,1);
+  transform-style: preserve-3d;
+}
+.anki-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+.anki-front, .anki-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  border: 2px solid var(--ink);
+  background: var(--card);
+  box-shadow: var(--shadow-hard);
+  gap: 14px;
+}
+.anki-back {
+  transform: rotateY(180deg);
+  background: var(--paper-2);
+}
+.anki-word {
+  font-family: var(--display);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+  text-align: center;
+}
+.anki-translation {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--red);
+  text-align: center;
+}
+.anki-example {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink-70);
+  text-align: center;
+}
+.anki-example-es {
+  font-size: 13px;
+  color: var(--ink-45);
+  text-align: center;
+}
+.anki-hint {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-45);
+  margin-bottom: 20px;
+}
+
+/* ---- Shake / Success ---- */
+@keyframes anki-shake {
+  0%, 100% { transform: rotateY(180deg) translateX(0); }
+  20%, 60% { transform: rotateY(180deg) translateX(-8px); }
+  40%, 80% { transform: rotateY(180deg) translateX(8px); }
+}
+.anki-card-inner.anki-shake {
+  animation: anki-shake .35s ease;
+}
+.anki-card-inner.anki-success .anki-back {
+  border-color: var(--green);
+  box-shadow: 4px 4px 0 var(--green);
+}
+
+/* ---- Buttons ---- */
+.anki-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+.anki-btn {
+  font-family: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 28px;
+  border: 2px solid var(--ink);
+  cursor: pointer;
+  box-shadow: var(--shadow-hard-sm);
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+.anki-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-hard);
+}
+.anki-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+.anki-btn-fail {
+  background: var(--red-bg);
+  color: var(--red-deep);
+}
+.anki-btn-ok {
+  background: var(--green-bg);
+  color: var(--green-deep);
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 820px) {
@@ -999,4 +1225,10 @@ kbd {
   .ex { padding: 22px 18px; }
   .ex-prompt { font-size: 21px; }
   .colophon { flex-direction: column; text-align: center; }
+  .anki-word { font-size: 28px; }
+  .anki-translation { font-size: 18px; }
+  .anki-btn { padding: 10px 20px; font-size: 14px; }
+  .anki-stats-grid { gap: 8px; }
+  .anki-box-stat { min-width: 60px; padding: 10px 12px; }
+  .anki-box-count { font-size: 22px; }
 }
