@@ -2,8 +2,13 @@
   var module = {
     id: 'vocab-01',
     category: 'top1000',
+    track: 'Vocabulario',
     title: 'Top 1-100 palabras',
-    notes: '' +
+    desc: 'Aprende las primeras 100 palabras más comunes del alemán y cómo usarlas en una pequeña historia.',
+    lessons: [
+      {
+        title: 'Las 100 palabras más usadas',
+        content: '' +
       '<p>En esta primera lección aprenderás las 100 palabras más comunes del alemán. ¡Con este pequeño grupo de palabras ya puedes formar muchísimas frases!</p>' +
       '<div class="ref-table-wrap"><table class="ref-table">' +
       '<caption>Palabras 1 a 20</caption>' +
@@ -131,7 +136,9 @@
       '<p><strong>Vielleicht einfach nur reden.</strong> (Tal vez simplemente solo hablar.)</p>' +
       '<p><strong>Es ist schon spät. Wir werden uns wieder sehen.</strong> (Ya es tarde. Nosotros nos volveremos a ver.)</p>' +
       '<p><strong>Alles gut, danke.</strong> (Todo bien, gracias.)</p>' +
-      '</div>',
+      '</div>'
+      }
+    ],
     exercises: [
       {
         id: 'v1-01',
