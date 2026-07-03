@@ -15,7 +15,8 @@
     { id: 'nivel2', label: 'Nivel 2 · Empiezas a soltarte', color: 'var(--blue)',  kicker: 'A2' },
     { id: 'nivel3', label: 'Nivel 3 · Frases de verdad',    color: 'var(--gold)',  kicker: 'B1' },
     { id: 'nivel4', label: 'Nivel 4 · El salto final',      color: 'var(--red)',   kicker: 'B1–B2' },
-    { id: 'historias', label: 'Historias · Comprensión lectora', color: 'var(--ink)', kicker: '★' }
+    { id: 'historias', label: 'Historias · Comprensión lectora', color: 'var(--ink)', kicker: '★' },
+    { id: 'top1000', label: 'Vocabulario · Las 1000 palabras más usadas', color: 'var(--teal)', kicker: 'Vocab' }
   ];
 
   var main = document.getElementById('main-content');
