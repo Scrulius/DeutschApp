@@ -30,8 +30,11 @@
   }
 
   // Lee un texto en alemán. rate opcional (default 0.92: un pelín lento, mejor para aprender).
-  function say(text, rate) {
-    if (!synth || !text) return false;
+  // onEnd opcional: se llama UNA vez cuando la lectura termina o falla — permite encadenar
+  // lecturas (modo "reproducir historia"). Ojo: cancel() también dispara end/error de la
+  // utterance anterior; quien encadena debe protegerse con su propio token de sesión.
+  function say(text, rate, onEnd) {
+    if (!synth || !text) { if (onEnd) onEnd(); return false; }
     try {
       synth.cancel(); // corta cualquier lectura anterior
       var u = new SpeechSynthesisUtterance(text);
@@ -39,12 +42,24 @@
       if (!voice) pickVoice();
       if (voice) u.voice = voice;
       u.rate = rate || 0.92;
+      if (onEnd) {
+        var fired = false;
+        var fire = function () { if (!fired) { fired = true; onEnd(); } };
+        u.onend = fire;
+        u.onerror = fire;
+      }
       synth.speak(u);
       return true;
     } catch (e) {
+      if (onEnd) onEnd();
       return false;
     }
   }
 
-  root.Speech = { say: say, available: available, hasGermanVoice: hasGermanVoice };
+  // Corta cualquier lectura en curso (y la cola).
+  function stop() {
+    if (synth) { try { synth.cancel(); } catch (e) {} }
+  }
+
+  root.Speech = { say: say, stop: stop, available: available, hasGermanVoice: hasGermanVoice };
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -34,7 +34,15 @@
         { speaker: 'Chef', de: 'Verstehe. Wissen Sie schon, ob Sie nach München umziehen werden?', es: 'Entiendo. ¿Sabe ya si se mudará a Múnich?' },
         { speaker: 'Sara', de: 'Ja. Meine Schwester wohnt hier — am Anfang kann ich bei ihr wohnen.', es: 'Sí. Mi hermana vive aquí — al principio puedo vivir en su casa.' },
         { speaker: 'Chef', de: 'Sehr gut. Wir melden uns nächste Woche bei Ihnen.', es: 'Muy bien. La semana que viene nos ponemos en contacto con usted.' },
-        { speaker: '', de: 'Drei Tage später bekommt Sara eine E-Mail: Sie hat die Stelle!', es: 'Tres días después, Sara recibe un e-mail: ¡el puesto es suyo!' }
+        { speaker: '', de: 'Drei Tage später bekommt Sara eine E-Mail: Sie hat die Stelle!', es: 'Tres días después, Sara recibe un e-mail: ¡el puesto es suyo!' },
+        { speaker: '', de: 'Einen Monat später: Saras erster Arbeitstag.', es: 'Un mes después: primer día de trabajo de Sara.' },
+        { speaker: 'Chef', de: 'Herzlich willkommen! Das Team freut sich schon, dass Sie da sind.', es: '¡Bienvenida! El equipo ya está deseando tenerla aquí.' },
+        { speaker: 'Sara', de: 'Danke! Obwohl ich mich gut vorbereitet habe, bin ich ein bisschen nervös.', es: '¡Gracias! Aunque me he preparado bien, estoy un poco nerviosa.' },
+        { speaker: 'Chef', de: 'Das verstehe ich. Wussten Sie schon, dass Ihr erstes Projekt ein spanischer Kunde ist?', es: 'Lo entiendo. ¿Sabía ya que su primer proyecto es un cliente español?' },
+        { speaker: 'Sara', de: 'Ein spanischer Kunde? Dann bin ich ja froh, dass ich drei Sprachen spreche!', es: '¿Un cliente español? ¡Pues me alegro de hablar tres idiomas!' },
+        { speaker: '', de: 'Als der Kunde anruft, wechselt Sara mitten im Satz vom Deutschen ins Spanische.', es: 'Cuando llama el cliente, Sara cambia en mitad de la frase del alemán al español.' },
+        { speaker: 'Kollege', de: 'Beeindruckend! Jetzt wissen wir, warum der Chef Sie eingestellt hat.', es: '¡Impresionante! Ahora sabemos por qué la contrató el jefe.' },
+        { speaker: 'Sara', de: 'Und ich weiß, dass ich hier richtig bin.', es: 'Y yo sé que este es mi sitio.' }
       ]
     },
     cheatsheet: vocab,
@@ -52,7 +60,10 @@
       { id: 'st3-11', type: 'multiple-choice', prompt: '„Wir melden uns nächste Woche bei Ihnen" significa:', options: ['La semana que viene le contactamos', 'La semana que viene empieza usted', 'Le rechazamos la semana que viene', 'Venga usted la semana que viene'], answer: 'La semana que viene le contactamos', explanation: '„sich bei jemandem melden" = ponerse en contacto con alguien.' },
       { id: 'st3-12', type: 'find-error', prompt: '¿Dónde está el error? (la frase quiere decir "creo que su empresa es innovadora")', words: ['Ich', 'glaube,', 'dass', 'Ihre', 'Firma', 'ist', 'innovativ.'], wrong: 5, fix: 'innovativ ist (el verbo va al final)', explanation: 'Tras „dass", el verbo conjugado se va al FINAL: …, dass Ihre Firma innovativ ist.' },
       { id: 'st3-13', type: 'listen', say: 'Warum möchten Sie bei uns arbeiten?', prompt: 'Escucha: ¿qué pregunta del jefe oyes?', options: ['Warum möchten Sie bei uns arbeiten?', 'Wo haben Sie Deutsch gelernt?', 'Warum haben Sie Ihre alte Stelle verlassen?', 'Wissen Sie schon, ob Sie umziehen werden?'], answer: 'Warum möchten Sie bei uns arbeiten?', explanation: 'La primera pregunta de toda entrevista.' },
-      { id: 'st3-14', type: 'translate', prompt: 'Traduce: Creo que la empresa es innovadora.', answer: 'Ich glaube, dass die Firma innovativ ist.', explanation: 'dass + verbo al final: …dass die Firma innovativ ist.' }
+      { id: 'st3-14', type: 'translate', prompt: 'Traduce: Creo que la empresa es innovadora.', answer: 'Ich glaube, dass die Firma innovativ ist.', explanation: 'dass + verbo al final: …dass die Firma innovativ ist.' },
+      { id: 'st3-15', type: 'multiple-choice', prompt: 'Was ist Saras erstes Projekt?', options: ['ein spanischer Kunde', 'eine neue Webseite', 'ein Umzug nach Berlin', 'ein Deutschkurs'], answer: 'ein spanischer Kunde', explanation: '„Wussten Sie schon, dass Ihr erstes Projekt ein spanischer Kunde ist?"' },
+      { id: 'st3-16', type: 'multiple-choice', prompt: 'Was macht Sara, als der Kunde anruft?', options: ['Sie wechselt mitten im Satz ins Spanische', 'Sie gibt das Telefon dem Chef', 'Sie wird nervös und legt auf', 'Sie spricht nur Deutsch'], answer: 'Sie wechselt mitten im Satz ins Spanische', explanation: '„Als der Kunde anruft, wechselt Sara mitten im Satz vom Deutschen ins Spanische." — als: aquel momento concreto.' },
+      { id: 'st3-17', type: 'fill-blank', prompt: 'Obwohl ich mich gut vorbereitet ___, bin ich ein bisschen nervös. (verbo al final)', answer: 'habe', explanation: 'obwohl manda el verbo conjugado al final: …vorbereitet habe.' }
     ]
   });
 })();

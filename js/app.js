@@ -70,8 +70,14 @@
     });
   }
 
+  // Token de sesión del "▶ Reproducir historia": cambiarlo invalida cualquier cadena
+  // de lectura en curso (parar, rearrancar, o navegar a otra vista).
+  var storyPlayToken = 0;
+
   function go(view, opts) {
     opts = opts || {};
+    storyPlayToken++;
+    if (window.Speech && window.Speech.available()) window.Speech.stop();
     state.view = view;
     state.moduleId = opts.moduleId || null;
     state.tab = opts.tab || 'leccion';
@@ -224,13 +230,16 @@
         '<span class="story-de">' + ln.de + '</span>' +
         '<span class="story-es">' + ln.es + '</span></div>';
     });
+    var canPlay = window.Speech && window.Speech.available();
     html += '<div class="story-actions">' +
+      (canPlay ? '<button class="btn accent" id="story-play">▶ Reproducir historia</button>' : '') +
       '<button class="btn secondary" id="story-toggle-all">Mostrar todas las traducciones</button>' +
       '<button class="btn accent" id="story-to-questions">Ir a las preguntas ›</button>' +
       '</div></div>';
     content.innerHTML = html;
 
-    content.querySelectorAll('.story-line').forEach(function (line) {
+    var lineEls = content.querySelectorAll('.story-line');
+    lineEls.forEach(function (line) {
       line.addEventListener('click', function () { line.classList.toggle('open'); });
     });
     attachSpeakButtons(content, '.story-line .story-de');
@@ -244,6 +253,41 @@
     document.getElementById('story-to-questions').addEventListener('click', function () {
       go('module', { moduleId: m.id, tab: 'ejercicios' });
     });
+
+    // ▶ Reproducir historia: lee las líneas encadenadas con TTS, resaltando la actual.
+    // Speech.say con onEnd encadena; playToken invalida la cadena si el usuario para,
+    // rearranca o navega (cancel() dispararía el onEnd de la línea cortada).
+    if (canPlay) {
+      var playBtn = document.getElementById('story-play');
+      var texts = s.lines.map(function (ln) { return ln.de.replace(/<[^>]*>/g, ''); });
+
+      function clearPlaying() {
+        lineEls.forEach(function (el) { el.classList.remove('playing'); });
+      }
+      function stopPlayback() {
+        storyPlayToken++;
+        window.Speech.stop();
+        clearPlaying();
+        if (document.contains(playBtn)) playBtn.textContent = '▶ Reproducir historia';
+      }
+
+      playBtn.addEventListener('click', function () {
+        if (playBtn.textContent.indexOf('▶') === -1) { stopPlayback(); return; }
+        var token = ++storyPlayToken;
+        playBtn.textContent = '⏹ Detener';
+        (function playLine(i) {
+          if (token !== storyPlayToken || !document.contains(root)) return;
+          if (i >= texts.length) { stopPlayback(); return; }
+          clearPlaying();
+          lineEls[i].classList.add('playing');
+          lineEls[i].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          window.Speech.say(texts[i], 0.92, function () {
+            // pequeña pausa entre líneas: respiración natural del diálogo
+            setTimeout(function () { if (token === storyPlayToken) playLine(i + 1); }, 350);
+          });
+        })(0);
+      });
+    }
   }
 
   function tabBtn(id, label) {

@@ -72,7 +72,10 @@
       ,
       { id: 'ref-26', type: 'multiple-choice', prompt: 'Historia: Was zieht sich Paula an?', options: ['das blaue Kleid', 'das rote Kleid', 'eine Jeans', 'einen Anzug'], answer: 'das blaue Kleid', explanation: '„Ich ziehe mir das blaue Kleid an." — con objeto directo, el reflexivo va en Dativ (mir).' },
       { id: 'ref-27', type: 'multiple-choice', prompt: 'Historia: „Beeil dich!" significa:', options: ['¡Date prisa!', '¡Cálmate!', '¡Siéntate!', '¡Despierta!'], answer: '¡Date prisa!', explanation: 'sich beeilen = darse prisa (reflexivo en Akkusativ: dich).' },
-      { id: 'ref-28', type: 'fill-blank', prompt: 'Historia: Moment! Ich kämme ___ noch die Haare. (reflexivo)', answer: 'mir', explanation: 'Hay objeto directo („die Haare") → el reflexivo pasa a Dativ: mir.' }
+      { id: 'ref-28', type: 'fill-blank', prompt: 'Historia: Moment! Ich kämme ___ noch die Haare. (reflexivo)', answer: 'mir', explanation: 'Hay objeto directo („die Haare") → el reflexivo pasa a Dativ: mir.' },
+      { id: 'ref-29', type: 'multiple-choice', prompt: 'Historia: Was für eine Party ist es wirklich?', options: ['eine Kostümparty', 'eine Geburtstagsparty', 'eine Gartenparty', 'eine Überraschungsparty'], answer: 'eine Kostümparty', explanation: '„Wo sind eure Kostüme?" — una hora arreglándose… para eso.' },
+      { id: 'ref-30', type: 'multiple-choice', prompt: 'Historia: Was leiht Lisa den beiden?', options: ['zwei Hüte und eine alte Sonnenbrille', 'zwei Kostüme', 'ein blaues Kleid', 'nichts'], answer: 'zwei Hüte und eine alte Sonnenbrille', explanation: '„Ich habe noch zwei Hüte und eine alte Sonnenbrille." — y Marco no se las quitará jamás.' },
+      { id: 'ref-31', type: 'fill-blank', prompt: 'Historia: Auf der Party amüsieren ___ alle. (reflexivo)', answer: 'sich', explanation: 'sich amüsieren: con „alle" (3ª persona) el reflexivo es sich.' }
     ],
     story: {
       intro: 'La fiesta empieza a las siete y Paula y Marco se arreglan a contrarreloj. Cada acción de cuidado personal lleva su reflexivo — y cambia entre mich y mir según haya objeto o no.',
@@ -87,7 +90,16 @@
         { speaker: 'Paula', de: 'Du hast dich aber nicht rasiert. Setz dich hin und warte.', es: 'Pero no te has afeitado. Siéntate y espera.' },
         { speaker: '', de: 'Um Viertel nach sieben sind beide endlich fertig.', es: 'A las siete y cuarto, por fin están los dos listos.' },
         { speaker: 'Marco', de: 'Endlich! Freust du dich auf die Party?', es: '¡Por fin! ¿Tienes ganas de la fiesta?' },
-        { speaker: 'Paula', de: 'Sehr! Aber zuerst... wo sind meine Schuhe?', es: '¡Muchas! Pero primero… ¿dónde están mis zapatos?' }
+        { speaker: 'Paula', de: 'Sehr! Aber zuerst... wo sind meine Schuhe?', es: '¡Muchas! Pero primero… ¿dónde están mis zapatos?' },
+        { speaker: '', de: 'Um halb acht klingeln sie an Lisas Tür.', es: 'A las siete y media llaman a la puerta de Lisa.' },
+        { speaker: 'Lisa', de: 'Da seid ihr ja! Kommt rein... Moment. Wo sind eure Kostüme?', es: '¡Por fin estáis aquí! Pasad… Un momento. ¿Y vuestros disfraces?' },
+        { speaker: 'Paula', de: 'Kostüme?!', es: '¡¿Disfraces?!' },
+        { speaker: 'Marco', de: 'Ich habe mich eine Stunde lang fertig gemacht... für eine Kostümparty?!', es: '¿Me he pasado una hora arreglándome… para una fiesta de disfraces?' },
+        { speaker: 'Lisa', de: 'Ärgert euch nicht! Ich habe noch zwei Hüte und eine alte Sonnenbrille.', es: '¡No os enfadéis! Aún tengo dos sombreros y unas gafas de sol viejas.' },
+        { speaker: '', de: 'Paula setzt sich den Hut auf. Marco setzt sich die Sonnenbrille auf.', es: 'Paula se pone el sombrero. Marco se pone las gafas de sol.' },
+        { speaker: '', de: 'Auf der Party amüsieren sich alle. Paula und Marco unterhalten sich bis Mitternacht.', es: 'En la fiesta todos se lo pasan en grande. Paula y Marco charlan hasta medianoche.' },
+        { speaker: 'Paula', de: 'Und morgen? Morgen ruhen wir uns aus. Den ganzen Tag!', es: '¿Y mañana? Mañana descansamos. ¡Todo el día!' },
+        { speaker: 'Marco', de: 'Einverstanden. Aber diese Sonnenbrille setze ich nie wieder ab. Sie gefällt mir.', es: 'De acuerdo. Pero estas gafas de sol no me las quito nunca más. Me gustan.' }
       ]
     }
   });

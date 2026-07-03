@@ -126,7 +126,10 @@
       ,
       { id: 'sep-37', type: 'multiple-choice', prompt: 'Historia: Wann klingelt der Wecker?', options: ['um sieben Uhr', 'um halb acht', 'um acht Uhr', 'um sechs Uhr'], answer: 'um sieben Uhr', explanation: '„Es ist sieben Uhr. Der Wecker klingelt."' },
       { id: 'sep-38', type: 'multiple-choice', prompt: 'Historia: Warum ist das Meeting am Ende kein Problem?', options: ['Der Chef hat es abgesagt', 'Lea kommt pünktlich', 'Es ist erst morgen', 'Die Kollegin macht es allein'], answer: 'Der Chef hat es abgesagt', explanation: '„Der Chef hat das Meeting abgesagt." — absagen, otro separable (en Perfekt: abgesagt).' },
-      { id: 'sep-39', type: 'fill-blank', prompt: 'Historia: Das Meeting fängt um acht ___! (prefijo)', answer: 'an', explanation: 'anfangen: „fängt" en posición 2, „an" al final.' }
+      { id: 'sep-39', type: 'fill-blank', prompt: 'Historia: Das Meeting fängt um acht ___! (prefijo)', answer: 'an', explanation: 'anfangen: „fängt" en posición 2, „an" al final.' },
+      { id: 'sep-40', type: 'multiple-choice', prompt: 'Historia: Wann findet das Meeting am Ende statt?', options: ['um drei', 'um acht', 'gar nicht', 'am nächsten Tag'], answer: 'um drei', explanation: '„Das Meeting findet doch statt — um drei." — stattfinden, otro separable: findet … statt.' },
+      { id: 'sep-41', type: 'multiple-choice', prompt: 'Historia: Was bereitet Lea am Abend vor?', options: ['die Tasche, die Kleidung und das Frühstück', 'nur die Präsentation', 'das Meeting', 'zwei Wecker'], answer: 'die Tasche, die Kleidung und das Frühstück', explanation: 'vorbereiten: „bereitet … vor". La lección de la mañana caótica, aprendida.' },
+      { id: 'sep-42', type: 'fill-blank', prompt: 'Historia: Um drei stellt sie das Projekt ___. (prefijo)', answer: 'vor', explanation: 'vorstellen (presentar): „stellt" en posición 2, „vor" al final.' }
     ],
     story: {
       intro: 'La mañana caótica de Lea está contada casi solo con verbos separables: aufstehen, aufwachen, abfahren, anziehen, zumachen, einsteigen, anrufen, anfangen, ankommen, absagen…',
@@ -142,7 +145,16 @@
         { speaker: 'Lea', de: 'Ich komme gleich an! Fangt schon mal ohne mich an.', es: '¡Estoy a punto de llegar! Empezad sin mí.' },
         { speaker: '', de: 'Um zehn nach acht kommt Lea im Büro an.', es: 'A las ocho y diez, Lea llega a la oficina.' },
         { speaker: 'Kollegin', de: 'Ah, Lea! Der Chef hat das Meeting abgesagt.', es: '¡Ah, Lea! El jefe ha cancelado la reunión.' },
-        { speaker: 'Lea', de: 'Was?! Na super. Dann fange ich den Tag eben mit einem Kaffee an.', es: '¡¿Qué?! Genial. Pues entonces empiezo el día con un café.' }
+        { speaker: 'Lea', de: 'Was?! Na super. Dann fange ich den Tag eben mit einem Kaffee an.', es: '¡¿Qué?! Genial. Pues entonces empiezo el día con un café.' },
+        { speaker: '', de: 'Um zwölf ruft der Chef an.', es: 'A las doce llama el jefe.' },
+        { speaker: 'Chef', de: 'Das Meeting findet doch statt — um drei. Bereiten Sie bitte die Präsentation vor!', es: 'La reunión al final sí se hace — a las tres. ¡Prepare la presentación, por favor!' },
+        { speaker: 'Lea', de: 'Kein Problem, Chef. Ich fange sofort an.', es: 'Ningún problema, jefe. Empiezo ahora mismo.' },
+        { speaker: '', de: 'Lea bereitet alles vor. Um drei stellt sie das Projekt vor — und alle hören aufmerksam zu.', es: 'Lea lo prepara todo. A las tres presenta el proyecto — y todos escuchan con atención.' },
+        { speaker: 'Chef', de: 'Ausgezeichnet, Lea! Machen Sie so weiter.', es: '¡Excelente, Lea! Siga así.' },
+        { speaker: '', de: 'Am Abend bereitet Lea alles für morgen vor: die Tasche, die Kleidung, das Frühstück.', es: 'Por la noche, Lea deja todo preparado para mañana: el bolso, la ropa, el desayuno.' },
+        { speaker: 'Lea', de: 'Und ich stelle ZWEI Wecker. Nie wieder Stress am Morgen!', es: 'Y pongo DOS despertadores. ¡Se acabó el estrés por las mañanas!' },
+        { speaker: '', de: 'Am nächsten Morgen wacht Lea um sechs auf — eine Stunde vor dem Wecker.', es: 'A la mañana siguiente, Lea se despierta a las seis — una hora antes del despertador.' },
+        { speaker: 'Lea', de: 'Na toll.', es: 'Pues genial.' }
       ]
     }
   });

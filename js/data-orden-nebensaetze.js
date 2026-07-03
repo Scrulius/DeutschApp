@@ -89,7 +89,10 @@
       ,
       { id: 'neb-33', type: 'multiple-choice', prompt: 'Historia: Warum lernt Anna Deutsch?', options: ['weil sie in Berlin arbeiten möchte', 'weil ihre Familie deutsch ist', 'weil es leicht ist', 'weil ihr Freund Deutscher ist'], answer: 'weil sie in Berlin arbeiten möchte', explanation: '„Ich lerne Deutsch, weil ich in Berlin arbeiten möchte."' },
       { id: 'neb-34', type: 'multiple-choice', prompt: 'Historia: Was macht Anna, wenn sie einen schlechten Tag hat?', options: ['Sie hört deutsche Musik', 'Sie macht eine Pause', 'Sie ruft ihre Freunde an', 'Sie schläft'], answer: 'Sie hört deutsche Musik', explanation: '„Dann höre ich deutsche Musik, bis ich wieder Lust habe."' },
-      { id: 'neb-35', type: 'fill-blank', prompt: 'Historia: Ich lerne Deutsch, ___ ich in Berlin arbeiten möchte. (porque)', answer: 'weil', explanation: '„weil" introduce la causa y manda el verbo („möchte") al final.' }
+      { id: 'neb-35', type: 'fill-blank', prompt: 'Historia: Ich lerne Deutsch, ___ ich in Berlin arbeiten möchte. (porque)', answer: 'weil', explanation: '„weil" introduce la causa y manda el verbo („möchte") al final.' },
+      { id: 'neb-36', type: 'multiple-choice', prompt: 'Historia: Wie war Anna, als sie ins Gespräch reinkam?', options: ['total nervös', 'ganz ruhig', 'müde', 'sauer'], answer: 'total nervös', explanation: '„Als ich reinkam, war ich total nervös." — als = aquel momento único del pasado.' },
+      { id: 'neb-37', type: 'multiple-choice', prompt: 'Historia: Was hat Anna geantwortet, warum sie Deutsch gelernt hat?', options: ['weil sie genau diesen Job wollte', 'weil es ihr Hobby ist', 'weil ihre Familie es wollte', 'weil es einfach ist'], answer: 'weil sie genau diesen Job wollte', explanation: '„Ich habe gesagt: weil ich genau diesen Job wollte." — la respuesta con weil, como debe ser.' },
+      { id: 'neb-38', type: 'multiple-choice', prompt: 'Historia: Wann fängt Anna in Berlin an?', options: ['am Montag', 'nächsten Monat', 'im Sommer', 'morgen'], answer: 'am Montag', explanation: '„Am Montag fange ich an. In Berlin!" — anfangen, separable: fange … an.' }
     ],
     story: {
       intro: 'Los amigos de Anna no entienden por qué estudia alemán cada noche. Su respuesta está hecha de subordinadas: weil, wenn, dass, als, bis, während — verbo al final en todas.',
@@ -103,7 +106,16 @@
         { speaker: 'Freund', de: 'Ich glaube, dass du das schaffst.', es: 'Creo que lo vas a conseguir.' },
         { speaker: 'Anna', de: 'Danke! Als ich angefangen habe, konnte ich nur „Hallo" sagen.', es: '¡Gracias! Cuando empecé, solo sabía decir "Hallo".' },
         { speaker: 'Freund', de: 'Und jetzt erklärst du mir Grammatik, während wir Kaffee trinken.', es: 'Y ahora me explicas gramática mientras tomamos café.' },
-        { speaker: '', de: 'Nächsten Monat hat Anna ihr erstes Vorstellungsgespräch — auf Deutsch.', es: 'El mes que viene Anna tiene su primera entrevista de trabajo — en alemán.' }
+        { speaker: '', de: 'Nächsten Monat hat Anna ihr erstes Vorstellungsgespräch — auf Deutsch.', es: 'El mes que viene Anna tiene su primera entrevista de trabajo — en alemán.' },
+        { speaker: '', de: 'Vier Wochen später. Anna kommt aus dem Vorstellungsgespräch.', es: 'Cuatro semanas después. Anna sale de la entrevista.' },
+        { speaker: 'Freund', de: 'Und?! Erzähl! Wie war es?', es: '¡¿Y?! ¡Cuenta! ¿Qué tal ha ido?' },
+        { speaker: 'Anna', de: 'Als ich reinkam, war ich total nervös. Aber dann habe ich einfach geredet.', es: 'Cuando entré, estaba de los nervios. Pero luego me puse a hablar sin más.' },
+        { speaker: 'Anna', de: 'Sie haben gefragt, warum ich Deutsch gelernt habe. Ich habe gesagt: weil ich genau diesen Job wollte.', es: 'Me preguntaron por qué había aprendido alemán. Dije: porque quería exactamente este trabajo.' },
+        { speaker: 'Freund', de: 'Perfekte Antwort!', es: '¡Respuesta perfecta!' },
+        { speaker: 'Anna', de: 'Und weißt du, was das Beste ist? Sie haben gelacht, als ich ihnen meinen ersten deutschen Satz erzählt habe.', es: '¿Y sabes qué es lo mejor? Se rieron cuando les conté mi primera frase en alemán.' },
+        { speaker: 'Freund', de: '„Hallo"?', es: '¿"Hallo"?' },
+        { speaker: 'Anna', de: '„Hallo." Am Montag fange ich an. In Berlin!', es: '"Hallo". ¡El lunes empiezo. En Berlín!' },
+        { speaker: '', de: 'Manchmal beginnt ein neues Leben mit einem einzigen Wort.', es: 'A veces una vida nueva empieza con una sola palabra.' }
       ]
     }
   });

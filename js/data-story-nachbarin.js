@@ -35,7 +35,15 @@
         { speaker: 'Nachbarin', de: 'Ich bin Tischlerin und baue gerade meine Möbel. Tagsüber arbeite ich, deshalb bleibt mir nur der Abend.', es: 'Soy carpintera y estoy montando mis muebles. De día trabajo, por eso solo me queda la tarde-noche.' },
         { speaker: 'Frau Klein', de: 'Ach so! Das erklärt alles.', es: '¡Ah, ya! Eso lo explica todo.' },
         { speaker: 'Herr Weber', de: 'Willkommen im Haus! Wenn Sie Hilfe brauchen, sagen Sie einfach Bescheid.', es: '¡Bienvenida al edificio! Si necesita ayuda, avísenos sin más.' },
-        { speaker: '', de: 'Am Ende des Monats sind die Möbel fertig — und die drei sind Freunde geworden.', es: 'A final de mes los muebles están terminados — y los tres se han hecho amigos.' }
+        { speaker: '', de: 'Am Ende des Monats sind die Möbel fertig — und die drei sind Freunde geworden.', es: 'A final de mes los muebles están terminados — y los tres se han hecho amigos.' },
+        { speaker: '', de: 'Ein paar Wochen später klopft es bei Frau Klein an der Tür.', es: 'Unas semanas después, llaman a la puerta de la Sra. Klein.' },
+        { speaker: 'Nachbarin', de: 'Ich habe etwas für Sie. Wegen des Lärms der letzten Wochen — als kleine Entschuldigung.', es: 'Tengo algo para usted. Por el ruido de las últimas semanas — como pequeña disculpa.' },
+        { speaker: '', de: 'Es ist ein kleines Bücherregal aus hellem Holz. Handgemacht.', es: 'Es una pequeña estantería de madera clara. Hecha a mano.' },
+        { speaker: 'Frau Klein', de: 'Das ist ja wunderschön! Das wäre doch nicht nötig gewesen!', es: '¡Pero qué preciosidad! ¡No hacía ninguna falta!' },
+        { speaker: 'Nachbarin', de: 'Doch. Gute Nachbarn sind mehr wert als guter Schlaf.', es: 'Sí que la hacía. Unos buenos vecinos valen más que el buen dormir.' },
+        { speaker: '', de: 'Im Sommer organisieren die drei ein Fest im Hof des Hauses.', es: 'En verano, los tres organizan una fiesta en el patio del edificio.' },
+        { speaker: 'Herr Weber', de: 'Wissen Sie noch? Am Anfang hatten wir fast Angst vor Ihnen!', es: '¿Se acuerda? ¡Al principio casi le teníamos miedo!' },
+        { speaker: 'Nachbarin', de: 'Und jetzt sitzen Sie auf Stühlen, die ich gebaut habe. Das Leben ist schon lustig.', es: 'Y ahora están sentados en sillas que he hecho yo. La vida tiene su gracia.' }
       ]
     },
     cheatsheet: vocab,
@@ -54,7 +62,10 @@
       { id: 'st4-12', type: 'multiple-choice', prompt: '„Bescheid sagen" significa:', options: ['avisar', 'despedirse', 'quejarse', 'agradecer'], answer: 'avisar', explanation: '„Sag mir Bescheid" = avísame. Expresión frecuentísima.' },
       { id: 'st4-13', type: 'listen', say: 'Entschuldigung wegen des Lärms!', prompt: 'Escucha: ¿qué línea del diálogo oyes?', options: ['Entschuldigung wegen des Lärms!', 'Was für Geräusche?', 'Das erklärt alles.', 'Willkommen im Haus!'], answer: 'Entschuldigung wegen des Lärms!', explanation: 'La disculpa de la vecina — con su Genitiv (wegen des Lärms).' },
       { id: 'st4-14', type: 'find-error', prompt: '¿Dónde está el error? (a pesar del ruido…)', words: ['Trotz', 'dem', 'Lärm', 'kann', 'ich', 'schlafen.'], wrong: 1, fix: 'des (…Lärms)', explanation: 'Por escrito, „trotz" pide Genitiv: trotz des Lärms. El Dativ („trotz dem Lärm") se oye en la calle, pero no en el examen.' },
-      { id: 'st4-15', type: 'translate', prompt: 'Traduce: Eso lo explica todo.', answer: 'Das erklärt alles.', explanation: 'La frase de Frau Klein al descubrir el misterio.' }
+      { id: 'st4-15', type: 'translate', prompt: 'Traduce: Eso lo explica todo.', answer: 'Das erklärt alles.', explanation: 'La frase de Frau Klein al descubrir el misterio.' },
+      { id: 'st4-16', type: 'multiple-choice', prompt: 'Was schenkt die Nachbarin Frau Klein?', options: ['ein handgemachtes Bücherregal', 'einen Stuhl', 'einen Tisch', 'Blumen'], answer: 'ein handgemachtes Bücherregal', explanation: '„Es ist ein kleines Bücherregal aus hellem Holz. Handgemacht."' },
+      { id: 'st4-17', type: 'multiple-choice', prompt: 'Was organisieren die drei im Sommer?', options: ['ein Fest im Hof des Hauses', 'einen Flohmarkt', 'eine Reise', 'einen Möbel-Workshop'], answer: 'ein Fest im Hof des Hauses', explanation: '„Im Sommer organisieren die drei ein Fest im Hof des Hauses." — Genitiv: im Hof DES HAUSES.' },
+      { id: 'st4-18', type: 'multiple-choice', prompt: 'Worauf sitzen die Nachbarn beim Fest?', options: ['auf Stühlen, die die Nachbarin gebaut hat', 'auf alten Kisten', 'auf dem Boden', 'auf gekauften Stühlen'], answer: 'auf Stühlen, die die Nachbarin gebaut hat', explanation: '„Und jetzt sitzen Sie auf Stühlen, die ich gebaut habe." — con oración de relativo, verbo al final.' }
     ]
   });
 })();

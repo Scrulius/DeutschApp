@@ -81,7 +81,10 @@
       ,
       { id: 'preg-28', type: 'multiple-choice', prompt: 'Historia: Woher kommt Herr Brandt?', options: ['aus Köln', 'aus Berlin', 'aus München', 'aus Hamburg'], answer: 'aus Köln', explanation: '„Aus Köln. Aber ich wohne jetzt hier."' },
       { id: 'preg-29', type: 'multiple-choice', prompt: 'Historia: Was ist der Lieblingssport des Lehrers?', options: ['Basketball', 'Fußball', 'Tennis', 'Schwimmen'], answer: 'Basketball', explanation: '„Basketball, natürlich!"' },
-      { id: 'preg-30', type: 'reorder', words: ['Woher', 'kommen', 'Sie'], punctuation: '?', hint: '¿De dónde es usted? (pregunta de la historia)', answer: 'Woher kommen Sie?', explanation: 'W-Frage formal: Woher + verbo en 2ª posición + Sie.' }
+      { id: 'preg-30', type: 'reorder', words: ['Woher', 'kommen', 'Sie'], punctuation: '?', hint: '¿De dónde es usted? (pregunta de la historia)', answer: 'Woher kommen Sie?', explanation: 'W-Frage formal: Woher + verbo en 2ª posición + Sie.' },
+      { id: 'preg-31', type: 'multiple-choice', prompt: 'Historia: Wie heißt der Hund des Lehrers?', options: ['Rex', 'Bruno', 'Rocky', 'Max'], answer: 'Rex', explanation: '„Dann bringe ich ihn morgen mit! Er heißt Rex."' },
+      { id: 'preg-32', type: 'multiple-choice', prompt: 'Historia: Warum ist Herr Brandt Lehrer geworden?', options: ['Weil sein Sportlehrer an ihn geglaubt hat', 'Weil er Basketball liebt', 'Weil er Kinder mag', 'Weil der Job sicher ist'], answer: 'Weil sein Sportlehrer an ihn geglaubt hat', explanation: '„Weil mein Sportlehrer damals großartig war. Er hat an mich geglaubt."' },
+      { id: 'preg-33', type: 'multiple-choice', prompt: 'Historia: Was ist das Lieblingsessen des Lehrers?', options: ['Spaghetti', 'Salat', 'Schnitzel', 'Pizza'], answer: 'Spaghetti', explanation: '„Spaghetti. Aber das dürfen die Schüler nicht wissen…" — y acabó en el periódico.' }
     ],
     story: {
       intro: 'Emma escribe para el periódico del instituto y hoy entrevista al nuevo profesor de deporte. Una entrevista = una ristra de W-Fragen y preguntas de sí/no.',
@@ -97,7 +100,16 @@
         { speaker: 'Lehrer', de: 'Um vier. Kommst du auch?', es: 'A las cuatro. ¿Te apuntas?' },
         { speaker: 'Emma', de: 'Vielleicht! Letzte Frage: Haben Sie einen Hund?', es: '¡Quizá! Última pregunta: ¿tiene perro?' },
         { speaker: 'Lehrer', de: 'Ja! Warum fragst du?', es: '¡Sí! ¿Por qué lo preguntas?' },
-        { speaker: 'Emma', de: 'Alle Leser lieben Hundefotos.', es: 'Todos los lectores adoran las fotos de perros.' }
+        { speaker: 'Emma', de: 'Alle Leser lieben Hundefotos.', es: 'Todos los lectores adoran las fotos de perros.' },
+        { speaker: 'Lehrer', de: 'Dann bringe ich ihn morgen mit! Er heißt Rex.', es: '¡Pues mañana me lo traigo! Se llama Rex.' },
+        { speaker: 'Emma', de: 'Super! Noch drei Fragen. Warum sind Sie Lehrer geworden?', es: '¡Genial! Tres preguntas más. ¿Por qué se hizo profesor?' },
+        { speaker: 'Lehrer', de: 'Weil mein Sportlehrer damals großartig war. Er hat an mich geglaubt.', es: 'Porque mi profesor de deporte de entonces era genial. Creyó en mí.' },
+        { speaker: 'Emma', de: 'Schöne Antwort. Was ist Ihr Lieblingsessen?', es: 'Bonita respuesta. ¿Cuál es su comida favorita?' },
+        { speaker: 'Lehrer', de: 'Spaghetti. Aber das dürfen die Schüler nicht wissen — Sportlehrer essen offiziell nur Salat!', es: 'Espaguetis. Pero eso los alumnos no pueden saberlo — ¡oficialmente los profes de deporte solo comen ensalada!' },
+        { speaker: 'Emma', de: 'Zu spät, das kommt in die Zeitung! Letzte Frage: Sind Sie glücklich an unserer Schule?', es: '¡Demasiado tarde, eso va al periódico! Última pregunta: ¿está contento en nuestro insti?' },
+        { speaker: 'Lehrer', de: 'Sehr! Die Schüler stellen die besten Fragen.', es: '¡Mucho! Los alumnos hacen las mejores preguntas.' },
+        { speaker: '', de: 'Am nächsten Tag ist das Interview fertig — mit einem großen Foto von Rex.', es: 'Al día siguiente la entrevista está lista — con una gran foto de Rex.' },
+        { speaker: '', de: 'Es ist der beliebteste Artikel des Jahres.', es: 'Es el artículo más leído del año.' }
       ]
     }
   });

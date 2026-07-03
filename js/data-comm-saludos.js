@@ -86,7 +86,10 @@
       ,
       { id: 'sal-21', type: 'multiple-choice', prompt: 'Historia: Woher kommt Yuki?', options: ['aus Japan', 'aus Spanien', 'aus Deutschland', 'aus Sevilla'], answer: 'aus Japan', explanation: '„Aus Japan. Und du?"' },
       { id: 'sal-22', type: 'multiple-choice', prompt: 'Historia: Wie sprechen die Studenten die Lehrerin an?', options: ['mit „Sie"', 'mit „du"', 'mit „ihr"', 'mit ihrem Vornamen'], answer: 'mit „Sie"', explanation: '„Zu ihr sagen wir »Sie«, oder?" — „Genau." A la profesora, trato formal.' },
-      { id: 'sal-23', type: 'fill-blank', prompt: 'Historia: Ich ___ aus Spanien, aus Sevilla. (venir)', answer: 'komme', explanation: 'kommen → ich komme. „Ich komme aus…" = soy de…' }
+      { id: 'sal-23', type: 'fill-blank', prompt: 'Historia: Ich ___ aus Spanien, aus Sevilla. (venir)', answer: 'komme', explanation: 'kommen → ich komme. „Ich komme aus…" = soy de…' },
+      { id: 'sal-24', type: 'multiple-choice', prompt: 'Historia: Als was arbeitet Yuki?', options: ['als Designerin', 'als Lehrerin', 'als Ärztin', 'als Studentin'], answer: 'als Designerin', explanation: '„Ich arbeite hier als Designerin." — arbeiten als + profesión.' },
+      { id: 'sal-25', type: 'multiple-choice', prompt: 'Historia: Wo wohnt Diego?', options: ['bei seinem Cousin, im Zentrum', 'in der Gartenstraße', 'direkt am Park', 'im Deutschkurs'], answer: 'bei seinem Cousin, im Zentrum', explanation: '„Bei meinem Cousin, im Zentrum." — bei + persona = en casa de.' },
+      { id: 'sal-26', type: 'multiple-choice', prompt: 'Historia: Was sagt Diego am Ende zur Lehrerin?', options: ['Auf Wiedersehen, Frau Weber!', 'Tschüss, Frau Weber!', 'Hallo, Frau Weber!', 'Bis gleich, Weber!'], answer: 'Auf Wiedersehen, Frau Weber!', explanation: 'Despedida FORMAL para la profesora („Tschüss" queda para Yuki). Diego aprende rápido.' }
     ],
     story: {
       intro: 'Primer día del curso de alemán: Diego (de Sevilla) y Yuki (de Japón) se conocen — y descubren en vivo la diferencia entre du y Sie.',
@@ -102,7 +105,20 @@
         { speaker: '', de: 'Die Lehrerin kommt herein.', es: 'Entra la profesora.' },
         { speaker: 'Lehrerin', de: 'Guten Morgen! Ich bin Frau Weber.', es: '¡Buenos días! Soy la señora Weber.' },
         { speaker: 'Diego', de: 'Zu ihr sagen wir „Sie", oder?', es: 'A ella le hablamos de "Sie", ¿no?' },
-        { speaker: 'Yuki', de: 'Genau. Und zu mir sagst du „du".', es: 'Exacto. Y a mí me hablas de "du".' }
+        { speaker: 'Yuki', de: 'Genau. Und zu mir sagst du „du".', es: 'Exacto. Y a mí me hablas de "du".' },
+        { speaker: 'Lehrerin', de: 'Willkommen! Bitte stellen Sie sich kurz vor. Wer möchte anfangen?', es: '¡Bienvenidos! Preséntense brevemente, por favor. ¿Quién quiere empezar?' },
+        { speaker: 'Diego', de: 'Äh... ich! Guten Morgen! Ich heiße Diego und ich wohne seit zwei Monaten hier.', es: 'Eh… ¡yo! ¡Buenos días! Me llamo Diego y vivo aquí desde hace dos meses.' },
+        { speaker: 'Lehrerin', de: 'Sehr gut, Diego! Und Sie?', es: '¡Muy bien, Diego! ¿Y usted?' },
+        { speaker: 'Yuki', de: 'Ich bin Yuki aus Japan. Ich arbeite hier als Designerin.', es: 'Soy Yuki, de Japón. Trabajo aquí de diseñadora.' },
+        { speaker: '', de: 'In der Pause trinken Diego und Yuki einen Kaffee.', es: 'En el descanso, Diego y Yuki se toman un café.' },
+        { speaker: 'Diego', de: 'Wo wohnst du, Yuki?', es: '¿Dónde vives, Yuki?' },
+        { speaker: 'Yuki', de: 'In der Gartenstraße, direkt am Park. Und du?', es: 'En la Gartenstraße, justo al lado del parque. ¿Y tú?' },
+        { speaker: 'Diego', de: 'Bei meinem Cousin, im Zentrum. Gibst du mir deine Handynummer? Für die Hausaufgaben!', es: 'En casa de mi primo, en el centro. ¿Me das tu número? ¡Para los deberes!' },
+        { speaker: 'Yuki', de: '„Für die Hausaufgaben", klar. Null eins sieben zwei...', es: '"Para los deberes", claro. Cero uno siete dos…' },
+        { speaker: '', de: 'Nach dem Kurs verabschieden sich alle.', es: 'Después de la clase, todos se despiden.' },
+        { speaker: 'Diego', de: 'Tschüss, Yuki! Bis morgen!', es: '¡Adiós, Yuki! ¡Hasta mañana!' },
+        { speaker: 'Yuki', de: 'Bis morgen! Und zur Lehrerin sagen wir...?', es: '¡Hasta mañana! Y a la profesora le decimos…' },
+        { speaker: 'Diego', de: '„Auf Wiedersehen, Frau Weber!" Ich lerne schnell.', es: '"¡Auf Wiedersehen, Frau Weber!" Aprendo rápido.' }
       ]
     }
   });

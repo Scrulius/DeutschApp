@@ -96,7 +96,10 @@
       ,
       { id: 'vpr-31', type: 'multiple-choice', prompt: 'Historia: Auf wessen Nachricht wartet Mia?', options: ['auf eine Nachricht von Daniel', 'auf eine Nachricht von Sofia', 'auf einen Anruf ihrer Mutter', 'auf eine E-Mail der Firma'], answer: 'auf eine Nachricht von Daniel', explanation: '„Wartest du auf eine Nachricht?" — „Ja. Von Daniel."' },
       { id: 'vpr-32', type: 'multiple-choice', prompt: 'Historia: Wovon träumt Mia manchmal?', options: ['von Daniel', 'von Playlists', 'von einer Wette', 'vom Essen'], answer: 'von Daniel', explanation: '„Ich träume sogar manchmal von ihm." — träumen VON + Dativ.' },
-      { id: 'vpr-33', type: 'fill-blank', prompt: 'Historia: Wartest du ___ eine Nachricht? (preposición)', answer: 'auf', explanation: 'warten AUF + Akkusativ.' }
+      { id: 'vpr-33', type: 'fill-blank', prompt: 'Historia: Wartest du ___ eine Nachricht? (preposición)', answer: 'auf', explanation: 'warten AUF + Akkusativ.' },
+      { id: 'vpr-34', type: 'multiple-choice', prompt: 'Historia: Wo wartet Mia auf Daniel?', options: ['vor dem Kino', 'im Café', 'am Bahnhof', 'zu Hause'], answer: 'vor dem Kino', explanation: '„Mia wartet vor dem Kino auf Daniel." — vor (lugar) + warten auf (el verbo con preposición).' },
+      { id: 'vpr-35', type: 'multiple-choice', prompt: 'Historia: Worüber sprechen Mia und Daniel nach dem Film?', options: ['über Musik, Reisen und Playlists', 'über den Film', 'über Sofia', 'über die Wette'], answer: 'über Musik, Reisen und Playlists', explanation: 'sprechen ÜBER + Akkusativ — dos horas de „über alles".' },
+      { id: 'vpr-36', type: 'fill-blank', prompt: 'Historia: Ich habe keine Angst ___ einem Kinoabend. (preposición)', answer: 'vor', explanation: 'Angst haben VOR + Dativ — aunque Mia lo repita, la preposición no cambia.' }
     ],
     story: {
       intro: 'Mia mira el móvil cada dos minutos y su amiga Sofia la cala al instante. La historia encadena verbos con preposición: warten auf, denken an, sich interessieren für, sich freuen über/auf, träumen von, sich erinnern an…',
@@ -111,7 +114,16 @@
         { speaker: 'Sofia', de: 'Nein, verliebt! Erinnerst du dich an unsere Wette?', es: '¡No, enamorada! ¿Te acuerdas de nuestra apuesta?' },
         { speaker: 'Mia', de: 'Oh nein. Ich lade dich zum Essen ein...', es: 'Oh no. Te invito a cenar…' },
         { speaker: '', de: 'Das Handy klingelt. Eine Nachricht von Daniel: „Freust du dich auf morgen?"', es: 'Suena el móvil. Un mensaje de Daniel: "¿Tienes ganas de lo de mañana?"' },
-        { speaker: 'Sofia', de: 'Na? Worauf wartest du noch? Antworte!', es: '¿Y bien? ¿A qué esperas? ¡Contesta!' }
+        { speaker: 'Sofia', de: 'Na? Worauf wartest du noch? Antworte!', es: '¿Y bien? ¿A qué esperas? ¡Contesta!' },
+        { speaker: 'Mia', de: 'Okay, ich antworte: „Ja, ich freue mich sehr auf morgen." Zu viel?', es: 'Vale, contesto: "Sí, tengo muchas ganas de lo de mañana". ¿Demasiado?' },
+        { speaker: 'Sofia', de: 'Perfekt. Ehrlich und direkt.', es: 'Perfecto. Sincero y directo.' },
+        { speaker: '', de: 'Am nächsten Tag. Mia wartet vor dem Kino auf Daniel.', es: 'Al día siguiente. Mia espera a Daniel delante del cine.' },
+        { speaker: 'Mia', de: '(zu sich selbst) Ich habe keine Angst vor einem Kinoabend. Ich habe KEINE Angst...', es: '(para sí) No me da miedo una tarde de cine. NO me da miedo…' },
+        { speaker: 'Daniel', de: 'Hallo Mia! Ich habe den ganzen Tag an diesen Film gedacht. Und... na ja, nicht nur an den Film.', es: '¡Hola, Mia! Llevo todo el día pensando en esta película. Y… bueno, no solo en la película.' },
+        { speaker: 'Mia', de: 'Ich auch nicht... äh, ich meine: ich auch!', es: 'Yo tampoco… eh, quiero decir: ¡yo también!' },
+        { speaker: '', de: 'Nach dem Film sprechen sie zwei Stunden über alles — über Musik, über Reisen, über Playlists.', es: 'Después de la película, hablan dos horas de todo — de música, de viajes, de playlists.' },
+        { speaker: 'Sofia', de: '(am Telefon) Und? Erzähl!', es: '(al teléfono) ¿Y? ¡Cuenta!' },
+        { speaker: 'Mia', de: 'Sagen wir so: Ich interessiere mich jetzt offiziell nicht mehr nur für seine Playlists.', es: 'Digámoslo así: oficialmente ya no me intereso solo por sus playlists.' }
       ]
     }
   });

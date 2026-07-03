@@ -82,7 +82,10 @@
       { id: 'hot-12', type: 'multiple-choice', prompt: 'Historia: Was für ein Zimmer hat Familie Ortiz reserviert?', options: ['ein Doppelzimmer mit Frühstück', 'ein Einzelzimmer', 'eine Suite', 'zwei Zimmer'], answer: 'ein Doppelzimmer mit Frühstück', explanation: '„Ja, ein Doppelzimmer mit Frühstück, drei Nächte."' },
       { id: 'hot-13', type: 'multiple-choice', prompt: 'Historia: Was funktioniert im Zimmer nicht?', options: ['die Heizung', 'das WLAN', 'der Aufzug', 'die Dusche'], answer: 'die Heizung', explanation: '„Die Heizung funktioniert nicht. Und es ist kalt!"' },
       { id: 'hot-14', type: 'multiple-choice', prompt: 'Historia: Was bekommt die Familie als Entschuldigung?', options: ['das Frühstück gratis', 'ein größeres Zimmer', 'Geld zurück', 'nichts'], answer: 'das Frühstück gratis', explanation: '„Als Entschuldigung bekommen Sie das Frühstück gratis."' },
-      { id: 'hot-15', type: 'fill-blank', prompt: 'Historia: Könnten wir ein Zimmer mit ___ auf die Stadt haben? (vistas)', answer: 'Blick', explanation: 'mit Blick auf… = con vistas a…' }
+      { id: 'hot-15', type: 'fill-blank', prompt: 'Historia: Könnten wir ein Zimmer mit ___ auf die Stadt haben? (vistas)', answer: 'Blick', explanation: 'mit Blick auf… = con vistas a…' },
+      { id: 'hot-16', type: 'multiple-choice', prompt: 'Historia: Was empfiehlt die Rezeptionistin der Familie?', options: ['das Schloss Schönbrunn und eine Sachertorte', 'das Riesenrad und ein Konzert', 'einen Stadtplan', 'ein anderes Hotel'], answer: 'das Schloss Schönbrunn und eine Sachertorte', explanation: '„Das Schloss Schönbrunn! Und danach müssen Sie unbedingt eine Sachertorte probieren."' },
+      { id: 'hot-17', type: 'multiple-choice', prompt: 'Historia: Was vergisst das Kind im Zimmer?', options: ['seinen Teddy', 'seine Jacke', 'die Schlüsselkarte', 'seinen Koffer'], answer: 'seinen Teddy', explanation: '„Aber... wo ist mein Teddy?" — El peluche seguía en la cama.' },
+      { id: 'hot-18', type: 'multiple-choice', prompt: 'Historia: Was kann man vom Zimmer aus sehen?', options: ['das Riesenrad', 'den Bahnhof', 'das Schloss', 'den Fluss'], answer: 'das Riesenrad', explanation: '„Man kann von hier das Riesenrad sehen!" — la noria gigante del Prater.' }
     ],
     story: {
       intro: 'La familia Ortiz llega a su hotel de Viena tras un viaje largo: check-in, una petición especial, un problema con la calefacción — y una recepcionista que sabe arreglarlo todo.',
@@ -98,7 +101,19 @@
         { speaker: 'Mutter', de: 'Die Heizung funktioniert nicht. Und es ist kalt!', es: 'La calefacción no funciona. ¡Y hace frío!' },
         { speaker: 'Vater', de: 'Entschuldigung, könnten Sie jemanden schicken? Die Heizung ist kaputt.', es: 'Disculpe, ¿podrían mandar a alguien? La calefacción está estropeada.' },
         { speaker: 'Rezeptionistin', de: 'Natürlich, sofort! Und als Entschuldigung bekommen Sie das Frühstück gratis.', es: '¡Por supuesto, ahora mismo! Y como disculpa, el desayuno les sale gratis.' },
-        { speaker: 'Mutter', de: 'Siehst du? Fragen kostet nichts.', es: '¿Ves? Preguntar no cuesta nada.' }
+        { speaker: 'Mutter', de: 'Siehst du? Fragen kostet nichts.', es: '¿Ves? Preguntar no cuesta nada.' },
+        { speaker: '', de: 'Eine halbe Stunde später ist die Heizung repariert. Das Zimmer wird warm.', es: 'Media hora después, la calefacción está arreglada. La habitación se caldea.' },
+        { speaker: 'Kind', de: 'Papa, schau mal! Man kann von hier das Riesenrad sehen!', es: '¡Papá, mira! ¡Desde aquí se ve la noria!' },
+        { speaker: '', de: 'Am nächsten Morgen, beim Frühstück.', es: 'A la mañana siguiente, en el desayuno.' },
+        { speaker: 'Mutter', de: 'Entschuldigung, was können Sie uns in Wien empfehlen?', es: 'Disculpe, ¿qué nos puede recomendar en Viena?' },
+        { speaker: 'Rezeptionistin', de: 'Das Schloss Schönbrunn! Und danach müssen Sie unbedingt eine Sachertorte probieren.', es: '¡El palacio de Schönbrunn! Y después tienen que probar sí o sí una Sachertorte.' },
+        { speaker: 'Kind', de: 'Torte! Der Plan gefällt mir.', es: '¡Tarta! El plan me gusta.' },
+        { speaker: '', de: 'Drei Tage später, beim Check-out.', es: 'Tres días después, en el check-out.' },
+        { speaker: 'Vater', de: 'Wir reisen heute ab. Können wir bitte bezahlen? Es war wunderbar!', es: 'Hoy nos marchamos. ¿Podemos pagar, por favor? ¡Ha sido maravilloso!' },
+        { speaker: 'Rezeptionistin', de: 'Das freut mich! Hat Ihnen der Aufenthalt gefallen?', es: '¡Cuánto me alegro! ¿Les ha gustado la estancia?' },
+        { speaker: 'Kind', de: 'Ja! Aber... wo ist mein Teddy?', es: '¡Sí! Pero… ¿dónde está mi peluche?' },
+        { speaker: '', de: 'Die Rezeptionistin ruft im Zimmer an. Der Teddy sitzt noch auf dem Bett.', es: 'La recepcionista llama a la habitación. El peluche sigue sentado en la cama.' },
+        { speaker: 'Rezeptionistin', de: 'Keine Sorge, wir holen ihn sofort. Bei uns geht kein Gast verloren — und kein Teddy!', es: 'No se preocupen, lo traemos ahora mismo. ¡Aquí no se nos pierde ningún huésped — ni ningún peluche!' }
       ]
     }
   });

@@ -101,7 +101,10 @@
       ,
       { id: 'dat-46', type: 'multiple-choice', prompt: 'Historia: Was schenkt Lisa ihrem Vater?', options: ['ein Buch', 'einen Schal', 'ein Computerspiel', 'eine Stoffmaus'], answer: 'ein Buch', explanation: '„Meinem Vater schenke ich ein Buch. Er liest so gern."' },
       { id: 'dat-47', type: 'multiple-choice', prompt: 'Historia: Wem schenkt Lisa die Stoffmaus?', options: ['ihrer Katze', 'ihrem Bruder', 'ihrer Mutter', 'dem Verkäufer'], answer: 'ihrer Katze', explanation: '„Und dir, Mimi? Dir schenke ich eine Maus aus Stoff!"' },
-      { id: 'dat-48', type: 'fill-blank', prompt: 'Historia: Computerspiele gefallen ___ sehr. (a él)', answer: 'ihm', explanation: 'gefallen + Dativ: al hermano le gustan → ihm.' }
+      { id: 'dat-48', type: 'fill-blank', prompt: 'Historia: Computerspiele gefallen ___ sehr. (a él)', answer: 'ihm', explanation: 'gefallen + Dativ: al hermano le gustan → ihm.' },
+      { id: 'dat-49', type: 'multiple-choice', prompt: 'Historia: Was kauft Lisa ihrer Oma?', options: ['einen warmen Pullover', 'Blumen', 'einen Schal', 'ein Buch'], answer: 'einen warmen Pullover', explanation: '„Ich kaufe ihr einen warmen Pullover." — ihr = a ella (Dativ).' },
+      { id: 'dat-50', type: 'fill-blank', prompt: 'Historia: Soll ich ___ die Geschenke einpacken? (a usted)', answer: 'Ihnen', explanation: 'El Dativ de cortesía: Sie → Ihnen. „¿Le envuelvo los regalos (a usted)?"' },
+      { id: 'dat-51', type: 'multiple-choice', prompt: 'Historia: Was bekommt Lisa von ihrer Familie?', options: ['ein Konzertticket', 'einen Pullover', 'eine Maus aus Stoff', 'nichts'], answer: 'ein Konzertticket', explanation: '„Für mich? Ein Konzertticket!" — la que regala también recibe.' }
     ],
     story: {
       intro: 'Es diciembre y Lisa compra regalos para toda la familia. Cada persona que RECIBE algo va en Dativ — meinem Vater, meiner Mutter, ihm, dir…',
@@ -109,15 +112,26 @@
         { speaker: '', de: 'Es ist Dezember. Lisa kauft Geschenke für ihre Familie.', es: 'Es diciembre. Lisa compra regalos para su familia.' },
         { speaker: 'Lisa', de: 'Meinem Vater schenke ich ein Buch. Er liest so gern.', es: 'A mi padre le regalo un libro. Le encanta leer.' },
         { speaker: 'Lisa', de: 'Und meiner Mutter? Vielleicht einen Schal.', es: '¿Y a mi madre? Quizá una bufanda.' },
+        { speaker: '', de: 'Im Kaufhaus ist viel los. Lisa schaut auf ihre Liste.', es: 'En los grandes almacenes hay mucho jaleo. Lisa mira su lista.' },
+        { speaker: 'Lisa', de: 'Und was schenke ich meiner Oma? Ihr gefallen Blumen — aber Blumen sind kein Weihnachtsgeschenk.', es: '¿Y qué le regalo a mi abuela? Le gustan las flores — pero unas flores no son regalo de Navidad.' },
+        { speaker: 'Lisa', de: 'Ich weiß! Ich kaufe ihr einen warmen Pullover.', es: '¡Ya lo sé! Le compro un jersey calentito.' },
         { speaker: 'Verkäufer', de: 'Kann ich Ihnen helfen?', es: '¿Puedo ayudarle?' },
         { speaker: 'Lisa', de: 'Ja, ich suche ein Geschenk für meinen Bruder.', es: 'Sí, busco un regalo para mi hermano.' },
         { speaker: 'Verkäufer', de: 'Wie alt ist er denn?', es: '¿Y cuántos años tiene?' },
         { speaker: 'Lisa', de: 'Sechzehn. Computerspiele gefallen ihm sehr.', es: 'Dieciséis. Le gustan mucho los videojuegos.' },
         { speaker: 'Verkäufer', de: 'Dann empfehle ich Ihnen dieses Spiel hier.', es: 'Entonces le recomiendo este juego de aquí.' },
         { speaker: 'Lisa', de: 'Perfekt! Das gehört ab morgen meinem Bruder.', es: '¡Perfecto! Desde mañana esto es de mi hermano.' },
+        { speaker: 'Verkäufer', de: 'Soll ich Ihnen die Geschenke einpacken?', es: '¿Le envuelvo los regalos?' },
+        { speaker: 'Lisa', de: 'Oh ja, bitte! Das hilft mir sehr.', es: '¡Uy, sí, por favor! Eso me ayuda mucho.' },
         { speaker: '', de: 'Zu Hause zeigt Lisa ihrer Katze Mimi die Geschenke.', es: 'En casa, Lisa le enseña los regalos a su gata Mimi.' },
         { speaker: 'Lisa', de: 'Und dir, Mimi? Dir schenke ich eine Maus aus Stoff!', es: '¿Y a ti, Mimi? ¡A ti te regalo un ratón de tela!' },
-        { speaker: '', de: 'Der Katze gefällt die Maus — ein bisschen.', es: 'A la gata el ratón le gusta — un poco.' }
+        { speaker: '', de: 'Der Katze gefällt die Maus — ein bisschen.', es: 'A la gata el ratón le gusta — un poco.' },
+        { speaker: '', de: 'Am Weihnachtsabend gibt Lisa allen ihre Geschenke.', es: 'En Nochebuena, Lisa les da a todos sus regalos.' },
+        { speaker: 'Vater', de: 'Ein Buch über Vulkane! Das wollte ich schon lange. Danke, Lisa!', es: '¡Un libro sobre volcanes! Hacía tiempo que lo quería. ¡Gracias, Lisa!' },
+        { speaker: '', de: 'Der Mutter gefällt der Schal, und der Bruder spielt sofort das neue Spiel.', es: 'A la madre le encanta la bufanda, y el hermano se pone enseguida a jugar al juego nuevo.' },
+        { speaker: 'Mutter', de: 'Und das hier ist für dich, Lisa. Von uns allen.', es: 'Y esto de aquí es para ti, Lisa. De parte de todos.' },
+        { speaker: 'Lisa', de: 'Für mich? Ein Konzertticket! Ihr seid die Besten!', es: '¿Para mí? ¡Una entrada de concierto! ¡Sois los mejores!' },
+        { speaker: '', de: 'Und Mimi? Mimi schläft — auf dem neuen Schal der Mutter.', es: '¿Y Mimi? Mimi duerme — encima de la bufanda nueva de la madre.' }
       ]
     }
   });

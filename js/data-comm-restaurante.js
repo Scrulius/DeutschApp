@@ -84,7 +84,10 @@
       { id: 'res-21', type: 'multiple-choice', prompt: 'Ich bin allergisch ___ Nüsse.', options: ['gegen', 'auf', 'für', 'mit'], answer: 'gegen', explanation: 'allergisch GEGEN + Akkusativ. Frase vital si tienes alergias.' },
       { id: 'res-22', type: 'translate', prompt: 'Traduce: ¿Qué me recomienda? (formal)', answer: 'Was empfehlen Sie mir?', explanation: 'empfehlen + Dativ (mir): la pregunta que todo camarero espera.' },
       { id: 'res-23', type: 'multiple-choice', prompt: 'Al pagar dices „Stimmt so!" — significa:', options: ['Quédese con el cambio', 'La cuenta está mal', 'Cóbreme aparte', 'Todo correcto, deme el cambio'], answer: 'Quédese con el cambio', explanation: 'La fórmula estándar para dejar propina redondeando.' },
-      { id: 'res-24', type: 'fill-blank', prompt: '___ es Ihnen? (pregunta del camarero: ¿le gusta / sabe bien?)', answer: 'Schmeckt', explanation: '„Schmeckt es Ihnen?" — schmecken + Dativ, el clásico a mitad de comida.' }
+      { id: 'res-24', type: 'fill-blank', prompt: '___ es Ihnen? (pregunta del camarero: ¿le gusta / sabe bien?)', answer: 'Schmeckt', explanation: '„Schmeckt es Ihnen?" — schmecken + Dativ, el clásico a mitad de comida.' },
+      { id: 'res-25', type: 'multiple-choice', prompt: 'Historia: Was bestellt die Tochter?', options: ['die Gemüselasagne und ein stilles Wasser', 'das Schnitzel', 'Pommes mit Ketchup', 'den Fisch'], answer: 'die Gemüselasagne und ein stilles Wasser', explanation: '„Gibt es auch etwas Vegetarisches?" → la lasaña de verduras. „still" = sin gas.' },
+      { id: 'res-26', type: 'multiple-choice', prompt: 'Historia: Was ist das Problem mit dem Essen?', options: ['Der Vater bekommt den Fisch statt des Schnitzels', 'Das Essen ist kalt', 'Die Lasagne ist aus', 'Die Rechnung ist falsch'], answer: 'Der Vater bekommt den Fisch statt des Schnitzels', explanation: '„Ich hatte das Schnitzel bestellt, nicht den Fisch." — así se reclama con educación.' },
+      { id: 'res-27', type: 'multiple-choice', prompt: 'Historia: Wer isst am Ende den Fisch?', options: ['die Oma', 'der Vater', 'die Kellnerin', 'niemand'], answer: 'die Oma', explanation: '„Gib mir den Fisch, Junge. Ich esse beides — es ist mein Geburtstag!"' }
     ],
     story: {
       intro: 'La familia Ruiz celebra el cumpleaños de la abuela en un restaurante: reservar, pedir con „Ich hätte gern", el postre recomendado y una sorpresa con la cuenta.',
@@ -95,12 +98,23 @@
         { speaker: 'Kellnerin', de: 'Hier entlang, bitte. Die Speisekarte kommt sofort.', es: 'Por aquí, por favor. Ahora mismo traigo la carta.' },
         { speaker: 'Oma', de: 'Ich hätte gern das Hähnchen mit Kartoffeln.', es: 'Yo quisiera el pollo con patatas.' },
         { speaker: 'Vater', de: 'Für mich das Schnitzel, bitte. Und eine große Apfelschorle.', es: 'Para mí el escalope, por favor. Y una Apfelschorle grande.' },
+        { speaker: 'Tochter', de: 'Gibt es auch etwas Vegetarisches?', es: '¿Hay también algo vegetariano?' },
+        { speaker: 'Kellnerin', de: 'Natürlich! Die Gemüselasagne ist heute besonders gut.', es: '¡Claro! La lasaña de verduras hoy está especialmente buena.' },
+        { speaker: 'Tochter', de: 'Dann nehme ich die, bitte. Und ein stilles Wasser.', es: 'Pues esa, por favor. Y un agua sin gas.' },
+        { speaker: 'Sohn', de: 'Und für mich Pommes! Nur Pommes. Mit viel Ketchup.', es: '¡Y para mí patatas fritas! Solo patatas. Con mucho kétchup.' },
+        { speaker: 'Mutter', de: 'Ein halbes Hähnchen für ihn, bitte. UND die Pommes.', es: 'Medio pollo para él, por favor. Y las patatas también.' },
         { speaker: 'Kellnerin', de: 'Gern! Als Nachtisch empfehle ich unseren Schokoladenkuchen.', es: '¡Con gusto! De postre les recomiendo nuestra tarta de chocolate.' },
         { speaker: 'Oma', de: 'Schokolade? Dann bitte zwei Stück. Es ist mein Geburtstag!', es: '¿Chocolate? Entonces dos trozos. ¡Que es mi cumpleaños!' },
+        { speaker: '', de: 'Das Essen kommt. Aber es gibt ein kleines Problem.', es: 'Llega la comida. Pero hay un pequeño problema.' },
+        { speaker: 'Vater', de: 'Entschuldigung, ich hatte das Schnitzel bestellt, nicht den Fisch.', es: 'Disculpe, yo había pedido el escalope, no el pescado.' },
+        { speaker: 'Kellnerin', de: 'Oh, das tut mir leid! Ich bringe Ihnen sofort das richtige Gericht.', es: '¡Ay, lo siento mucho! Ahora mismo le traigo el plato correcto.' },
+        { speaker: 'Oma', de: 'Gib mir den Fisch, Junge. Ich esse beides — es ist mein Geburtstag!', es: 'Dame a mí el pescado, hijo. Yo como de los dos — ¡que es mi cumpleaños!' },
         { speaker: '', de: 'Nach dem Essen bringt die Kellnerin den Kuchen — mit einer Kerze.', es: 'Después de la comida, la camarera trae la tarta — con una vela.' },
         { speaker: 'Alle', de: 'Alles Gute zum Geburtstag!', es: '¡Feliz cumpleaños!' },
         { speaker: 'Vater', de: 'Die Rechnung, bitte. Zusammen.', es: 'La cuenta, por favor. Todo junto.' },
-        { speaker: 'Kellnerin', de: 'Gern. Und der Kuchen... geht aufs Haus!', es: 'Con gusto. Y la tarta… ¡invita la casa!' }
+        { speaker: 'Kellnerin', de: 'Gern. Und der Kuchen... geht aufs Haus!', es: 'Con gusto. Y la tarta… ¡invita la casa!' },
+        { speaker: 'Vater', de: 'Das macht siebenundachtzig Euro... Hier sind fünfundneunzig. Stimmt so!', es: 'Son ochenta y siete euros… Aquí tiene noventa y cinco. ¡Quédese con el cambio!' },
+        { speaker: 'Oma', de: 'Nächstes Jahr feiern wir wieder hier. Das ist ein Befehl!', es: 'El año que viene celebramos aquí otra vez. ¡Es una orden!' }
       ]
     }
   });

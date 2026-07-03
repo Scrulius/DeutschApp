@@ -81,7 +81,10 @@
       { id: 'mv-15', type: 'dictation', say: 'Ich möchte einen Kaffee.', prompt: 'Dictado: escribe lo que oyes.', answer: 'Ich möchte einen Kaffee.', explanation: 'La frase de cortesía número uno.' },
       { id: 'mv-16', type: 'multiple-choice', prompt: 'Historia: Was will Leo heute machen?', options: ['Fußball spielen', 'sein Zimmer aufräumen', 'Oma anrufen', 'Pfannkuchen essen'], answer: 'Fußball spielen', explanation: '„Mama, ich will heute Fußball spielen!"' },
       { id: 'mv-17', type: 'multiple-choice', prompt: 'Historia: Was muss Leo zuerst machen?', options: ['sein Zimmer aufräumen', 'zu Max gehen', 'Fußball spielen', 'Pfannkuchen machen'], answer: 'sein Zimmer aufräumen', explanation: '„…aber zuerst musst du dein Zimmer aufräumen."' },
-      { id: 'mv-18', type: 'fill-blank', prompt: 'Historia: ___ ich danach zu Max gehen? (pedir permiso)', answer: 'Darf', explanation: 'Pedir permiso → dürfen: „Darf ich…?"' }
+      { id: 'mv-18', type: 'fill-blank', prompt: 'Historia: ___ ich danach zu Max gehen? (pedir permiso)', answer: 'Darf', explanation: 'Pedir permiso → dürfen: „Darf ich…?"' },
+      { id: 'mv-19', type: 'multiple-choice', prompt: 'Historia: Bis wann dürfen Leo und Max auf dem Platz bleiben?', options: ['bis sechs', 'bis fünf', 'bis vier', 'bis zum Abendessen'], answer: 'bis sechs', explanation: '„Wir dürfen bis sechs auf dem Platz bleiben." — dürfen = permiso.' },
+      { id: 'mv-20', type: 'multiple-choice', prompt: 'Historia: Wie viele Tore will Leo schießen — und wie viele schießt er?', options: ['Er will drei schießen und schießt zwei', 'Er will zwei schießen und schießt drei', 'Er will drei schießen und schießt drei', 'Er schießt keins'], answer: 'Er will drei schießen und schießt zwei', explanation: '„Heute will ich drei Tore schießen!" … „Er schießt zwei." — wollen = intención, no garantía.' },
+      { id: 'mv-21', type: 'fill-blank', prompt: 'Historia: Am Sonntag ___ du mir alles über das Spiel erzählen! (obligación)', answer: 'musst', explanation: 'müssen: la abuela lo convierte en obligación — musst … erzählen (infinitivo al final).' }
     ],
     story: {
       intro: 'Sábado por la mañana en casa de los Vega: Leo quiere jugar, mamá tiene otros planes. Una negociación entera a base de modales — will, musst, darfst, soll, möchte.',
@@ -96,7 +99,17 @@
         { speaker: 'Leo', de: 'Das war nur einmal!', es: '¡Eso fue solo una vez!' },
         { speaker: 'Papa', de: 'Ich möchte auch etwas sagen: Wer will Pfannkuchen?', es: 'Yo también querría decir algo: ¿quién quiere tortitas?' },
         { speaker: 'Leo', de: 'Ich! Ich kann sofort das Zimmer aufräumen!', es: '¡Yo! ¡Puedo ordenar la habitación ahora mismo!' },
-        { speaker: '', de: 'Plötzlich kann Leo sehr schnell arbeiten.', es: 'De repente, Leo puede trabajar rapidísimo.' }
+        { speaker: '', de: 'Plötzlich kann Leo sehr schnell arbeiten.', es: 'De repente, Leo puede trabajar rapidísimo.' },
+        { speaker: '', de: 'Nach dem Frühstück räumt Leo sein Zimmer auf. In Rekordzeit.', es: 'Después del desayuno, Leo ordena su habitación. En tiempo récord.' },
+        { speaker: 'Leo', de: 'Fertig! Jetzt muss ich nur noch Oma anrufen.', es: '¡Listo! Ahora solo me queda llamar a la abuela.' },
+        { speaker: '', de: 'Er ruft Oma an. Sie erzählt. Und erzählt. Und erzählt.', es: 'Llama a la abuela. Ella habla. Y habla. Y habla.' },
+        { speaker: 'Oma', de: 'Und deine Tante will im August kommen, und der Nachbar soll ein neues Auto haben...', es: 'Y tu tía quiere venir en agosto, y el vecino dicen que tiene coche nuevo…' },
+        { speaker: 'Leo', de: 'Oma, ich muss jetzt leider los! Ich soll... äh... ich will Fußball spielen!', es: '¡Abuela, por desgracia me tengo que ir ya! Tengo que… eh… ¡quiero jugar al fútbol!' },
+        { speaker: 'Oma', de: 'Dann lauf, mein Junge. Aber am Sonntag musst du mir alles über das Spiel erzählen!', es: 'Pues corre, hijo. ¡Pero el domingo me lo tienes que contar todo sobre el partido!' },
+        { speaker: '', de: 'Um drei Uhr steht Leo endlich auf dem Fußballplatz.', es: 'A las tres, Leo por fin está en el campo de fútbol.' },
+        { speaker: 'Max', de: 'Da bist du ja! Wir dürfen bis sechs auf dem Platz bleiben.', es: '¡Por fin llegas! Podemos quedarnos en el campo hasta las seis.' },
+        { speaker: 'Leo', de: 'Perfekt. Heute will ich drei Tore schießen!', es: 'Perfecto. ¡Hoy quiero marcar tres goles!' },
+        { speaker: '', de: 'Er schießt zwei. Aber das erzählt er Oma am Sonntag ein bisschen anders.', es: 'Marca dos. Pero eso el domingo se lo cuenta a la abuela un poco diferente.' }
       ]
     }
   });

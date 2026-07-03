@@ -97,7 +97,10 @@
       ,
       { id: 'adj-32', type: 'multiple-choice', prompt: 'Historia: Was möchte Nora auf dem Flohmarkt kaufen?', options: ['eine alte Lampe', 'einen neuen Spiegel', 'ein rustikales Sofa', 'ein kleines Bild'], answer: 'eine alte Lampe', explanation: '„Schau, eine alte Lampe! Die passt perfekt in mein neues Zimmer."' },
       { id: 'adj-33', type: 'multiple-choice', prompt: 'Historia: Was bekommen Nora und Tim am Ende für 25 Euro?', options: ['die Lampe und den Spiegel', 'nur die Lampe', 'nur den Spiegel', 'nichts'], answer: 'die Lampe und den Spiegel', explanation: '„Fünfundzwanzig — und wir nehmen den hässlichen Spiegel auch." — „Einverstanden!"' },
-      { id: 'adj-34', type: 'fill-blank', prompt: 'Historia: Die passt perfekt in mein ___ Zimmer. (neu)', answer: 'neues', explanation: 'mein + neutro (das Zimmer) en Akkusativ → declinación mixta: -es.' }
+      { id: 'adj-34', type: 'fill-blank', prompt: 'Historia: Die passt perfekt in mein ___ Zimmer. (neu)', answer: 'neues', explanation: 'mein + neutro (das Zimmer) en Akkusativ → declinación mixta: -es.' },
+      { id: 'adj-35', type: 'multiple-choice', prompt: 'Historia: Was probiert Tim auf dem Flohmarkt an?', options: ['einen alten Ledermantel', 'einen neuen Hut', 'eine alte Jacke', 'einen kleinen Spiegel'], answer: 'einen alten Ledermantel', explanation: '„der alte Ledermantel! Den probiere ich an." — en Akkusativ: einen alten Ledermantel.' },
+      { id: 'adj-36', type: 'multiple-choice', prompt: 'Historia: Was ist das Problem mit der Lampe zu Hause?', options: ['Das alte Kabel funktioniert nicht', 'Sie ist zu groß', 'Sie hat die falsche Farbe', 'Der Spiegel ist kaputt'], answer: 'Das alte Kabel funktioniert nicht', explanation: '„Das alte Kabel funktioniert wirklich nicht." — Nora tenía razón al regatear.' },
+      { id: 'adj-37', type: 'fill-blank', prompt: 'Historia: Ein ___ Kabel kostet fünf Euro. (neu)', answer: 'neues', explanation: 'ein + neutro (das Kabel) en Nominativ → mixta: ein neues Kabel.' }
     ],
     story: {
       intro: 'Nora y Tim regatean en el mercadillo. Cada objeto lleva su adjetivo declinado: eine alte Lampe, mein neues Zimmer, den hässlichen Spiegel, rustikaler Charme…',
@@ -105,6 +108,10 @@
         { speaker: '', de: 'Sonntagmorgen. Nora und Tim gehen über den großen Flohmarkt.', es: 'Domingo por la mañana. Nora y Tim recorren el gran mercadillo.' },
         { speaker: 'Nora', de: 'Schau, eine alte Lampe! Die passt perfekt in mein neues Zimmer.', es: '¡Mira, una lámpara antigua! Queda perfecta en mi habitación nueva.' },
         { speaker: 'Verkäufer', de: 'Gutes Auge! Das ist eine echte Lampe aus den Sechzigern.', es: '¡Buen ojo! Es una lámpara auténtica de los sesenta.' },
+        { speaker: 'Tim', de: 'Schau mal da drüben — der alte Ledermantel! Den probiere ich an.', es: 'Mira ahí enfrente — ¡el abrigo de cuero viejo! Me lo pruebo.' },
+        { speaker: '', de: 'Tim zieht den braunen Mantel an. Er ist zwei Nummern zu groß.', es: 'Tim se pone el abrigo marrón. Le queda dos tallas grande.' },
+        { speaker: 'Nora', de: 'Du siehst aus wie ein müder Detektiv aus einem alten Film.', es: 'Pareces un detective cansado de una película antigua.' },
+        { speaker: 'Tim', de: 'Danke! Genau dieser Look gefällt mir.', es: '¡Gracias! Justo ese look es el que me gusta.' },
         { speaker: 'Tim', de: 'Und was kostet die schöne Lampe?', es: '¿Y cuánto cuesta la lámpara tan bonita?' },
         { speaker: 'Verkäufer', de: 'Für euch? Vierzig Euro.', es: '¿Para vosotros? Cuarenta euros.' },
         { speaker: 'Nora', de: 'Vierzig?! Für eine kaputte Lampe mit einem alten Kabel?', es: '¡¿Cuarenta?! ¿Por una lámpara rota con un cable viejo?' },
@@ -113,6 +120,10 @@
         { speaker: 'Verkäufer', de: 'Dreißig, und ich lege den kleinen Spiegel dazu.', es: 'Treinta, y les añado el espejito.' },
         { speaker: 'Nora', de: 'Fünfundzwanzig — und wir nehmen den hässlichen Spiegel auch.', es: 'Veinticinco — y nos llevamos también el espejo feo.' },
         { speaker: 'Verkäufer', de: '„Hässlich"! Ihr verhandelt aber hart. Einverstanden!', es: '¡"Feo", dice! Pues sí que regateáis duro. ¡Trato hecho!' },
+        { speaker: '', de: 'Auf dem Heimweg trägt Tim den großen Mantel und Nora die schwere Lampe.', es: 'De camino a casa, Tim lleva el abrigo enorme y Nora la lámpara, que pesa lo suyo.' },
+        { speaker: 'Nora', de: 'Zu Hause der erste Test... Das alte Kabel funktioniert wirklich nicht.', es: 'En casa, la primera prueba… El cable viejo efectivamente no funciona.' },
+        { speaker: 'Tim', de: 'Kein Problem. Ein neues Kabel kostet fünf Euro. Der müde Detektiv repariert das.', es: 'No pasa nada. Un cable nuevo cuesta cinco euros. El detective cansado lo arregla.' },
+        { speaker: '', de: 'Eine Stunde später leuchtet die alte Lampe zum ersten Mal seit Jahren.', es: 'Una hora después, la vieja lámpara luce por primera vez en años.' },
         { speaker: '', de: 'Zu Hause merkt Nora: Der hässliche Spiegel ist das schönste Stück.', es: 'En casa, Nora se da cuenta: el espejo feo es la pieza más bonita.' }
       ]
     }

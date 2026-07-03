@@ -77,7 +77,10 @@
       ,
       { id: 'opi-20', type: 'multiple-choice', prompt: 'Historia: Welches Haustier möchte Leo?', options: ['einen Hund', 'eine Katze', 'ein Meerschweinchen', 'einen Vogel'], answer: 'einen Hund', explanation: '„Ich finde, dass ein Hund perfekt für uns ist."' },
       { id: 'opi-21', type: 'multiple-choice', prompt: 'Historia: Warum findet Carla eine Katze praktischer?', options: ['Sie ist gern allein', 'Sie ist billiger', 'Sie ist leiser', 'Sie braucht kein Futter'], answer: 'Sie ist gern allein', explanation: '„Meiner Meinung nach ist eine Katze praktischer. Sie ist gern allein."' },
-      { id: 'opi-22', type: 'multiple-choice', prompt: 'Historia: Welches Haustier haben sie am Ende?', options: ['zwei Meerschweinchen', 'einen Hund', 'eine Katze', 'gar keins'], answer: 'zwei Meerschweinchen', explanation: 'El compromiso: „Eine Woche später wohnen im WG-Zimmer zwei Meerschweinchen."' }
+      { id: 'opi-22', type: 'multiple-choice', prompt: 'Historia: Welches Haustier haben sie am Ende?', options: ['zwei Meerschweinchen', 'einen Hund', 'eine Katze', 'gar keins'], answer: 'zwei Meerschweinchen', explanation: 'El compromiso: „Eine Woche später wohnen im WG-Zimmer zwei Meerschweinchen."' },
+      { id: 'opi-23', type: 'multiple-choice', prompt: 'Historia: Was fragt der Mitarbeiter im Tierheim?', options: ['wie viel Zeit sie haben und wie groß die Wohnung ist', 'wie viel Geld sie haben', 'ob sie Kinder haben', 'welche Farbe ihnen gefällt'], answer: 'wie viel Zeit sie haben und wie groß die Wohnung ist', explanation: 'Las dos preguntas correctas antes de recomendar mascota — y la respuesta señala a las cobayas.' },
+      { id: 'opi-24', type: 'multiple-choice', prompt: 'Historia: Wie heißen die Meerschweinchen am Ende?', options: ['Kaffee und Kuchen', 'Leo und Carla', 'Max und Moritz', 'Salz und Pfeffer'], answer: 'Kaffee und Kuchen', explanation: '„Was hältst du von „Kaffee" und „Kuchen"?" — was halten von = pedir opinión.' },
+      { id: 'opi-25', type: 'fill-blank', prompt: 'Historia: Was hältst du ___ einem Kompromiss? (preposición)', answer: 'von', explanation: 'was halten VON + Dativ = qué te parece…' }
     ],
     story: {
       intro: 'Leo y Carla comparten piso y quieren una mascota — pero no la misma. Un debate de manual: opinar, dar la razón, discrepar con tacto y llegar a un compromiso.',
@@ -91,8 +94,17 @@
         { speaker: 'Carla', de: 'Es kommt darauf an, wie viel Zeit wir wirklich haben.', es: 'Depende de cuánto tiempo tengamos de verdad.' },
         { speaker: 'Leo', de: 'Okay... und was hältst du von einem Kompromiss?', es: 'Vale… ¿y qué te parece un compromiso?' },
         { speaker: 'Carla', de: 'Ich bin ganz deiner Meinung. Aber welcher Kompromiss?', es: 'Estoy totalmente de acuerdo. Pero ¿qué compromiso?' },
+        { speaker: '', de: 'Am Samstag besuchen die beiden das Tierheim.', es: 'El sábado, los dos visitan la protectora.' },
+        { speaker: 'Mitarbeiter', de: 'Na, wen suchen Sie denn? Einen Hund? Eine Katze?', es: 'A ver, ¿a quién buscan? ¿Un perro? ¿Un gato?' },
+        { speaker: 'Leo', de: 'Das ist genau die Frage. Was würden Sie uns empfehlen?', es: 'Esa es exactamente la cuestión. ¿Qué nos recomendaría usted?' },
+        { speaker: 'Mitarbeiter', de: 'Wie viel Zeit haben Sie? Und wie groß ist die Wohnung?', es: '¿Cuánto tiempo tienen? ¿Y cómo de grande es el piso?' },
+        { speaker: 'Carla', de: 'Wenig Zeit, kleine Wohnung. Ich sehe schon, wohin das führt...', es: 'Poco tiempo, piso pequeño. Ya veo por dónde va esto…' },
+        { speaker: 'Mitarbeiter', de: 'Dann habe ich da zwei Kandidaten. Kommen Sie mal mit!', es: 'Entonces tengo dos candidatas. ¡Vengan conmigo!' },
         { speaker: '', de: 'Eine Woche später wohnen in der WG zwei Meerschweinchen.', es: 'Una semana después, en el piso compartido viven dos cobayas.' },
-        { speaker: 'Leo', de: 'Sie sind perfekt. Und sie brauchen wenig Zeit!', es: 'Son perfectas. ¡Y necesitan poco tiempo!' }
+        { speaker: 'Leo', de: 'Sie sind perfekt. Und sie brauchen wenig Zeit!', es: 'Son perfectas. ¡Y necesitan poco tiempo!' },
+        { speaker: 'Carla', de: 'Ich finde, sie brauchen Namen. Was hältst du von „Kaffee" und „Kuchen"?', es: 'Creo que necesitan nombres. ¿Qué te parecen "Café" y "Tarta"?' },
+        { speaker: 'Leo', de: 'Ehrlich gesagt finde ich das albern. ... Okay, es ist perfekt.', es: 'Sinceramente, me parece una tontería. … Vale, es perfecto.' },
+        { speaker: '', de: 'Kaffee und Kuchen sind jetzt die Chefs der WG. Da sind sich alle einig.', es: 'Café y Tarta son ahora los jefes del piso. En eso todos están de acuerdo.' }
       ]
     }
   });

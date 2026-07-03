@@ -84,7 +84,10 @@
       ,
       { id: 'ind-33', type: 'multiple-choice', prompt: 'Historia: Was weiß Marc über den neuen Kollegen?', options: ['dass er aus Wien kommt', 'wie er heißt', 'wo er vorher gearbeitet hat', 'ob er Kaffee trinkt'], answer: 'dass er aus Wien kommt', explanation: '„Ich weiß nur, dass er aus Wien kommt."' },
       { id: 'ind-34', type: 'multiple-choice', prompt: 'Historia: Was möchte der neue Kollege wissen?', options: ['wo die Tassen sind', 'wie Julia heißt', 'ob es Kaffee gibt', 'wann das Meeting beginnt'], answer: 'wo die Tassen sind', explanation: '„Könnt ihr mir sagen, wo die Tassen sind?" — pregunta indirecta con „wo" y el verbo al final.' },
-      { id: 'ind-35', type: 'fill-blank', prompt: 'Historia: Ich frage mich, ___ er nett ist. (si)', answer: 'ob', explanation: 'Pregunta indirecta de sí/no → ob (nunca „wenn").' }
+      { id: 'ind-35', type: 'fill-blank', prompt: 'Historia: Ich frage mich, ___ er nett ist. (si)', answer: 'ob', explanation: 'Pregunta indirecta de sí/no → ob (nunca „wenn").' },
+      { id: 'ind-36', type: 'multiple-choice', prompt: 'Historia: Was möchte Julia über das Meeting wissen?', options: ['worum es geht', 'wann es endet', 'wo es stattfindet', 'wer kommt'], answer: 'worum es geht', explanation: '„Ich habe keine Ahnung, worum es geht." — worum = wo(r) + um: de qué va.' },
+      { id: 'ind-37', type: 'multiple-choice', prompt: 'Historia: Was ist die „wichtige Nachricht" des Chefs?', options: ['Die Firma bekommt eine richtige Kaffeemaschine', 'Es gibt neue Kollegen', 'Das Büro zieht um', 'Alle bekommen mehr Gehalt'], answer: 'Die Firma bekommt eine richtige Kaffeemaschine', explanation: '„Die Firma bekommt eine Kaffeemaschine. Eine richtige." — prioridades claras.' },
+      { id: 'ind-38', type: 'fill-blank', prompt: 'Historia: Weißt du, ___ das Meeting heute beginnt? (cuándo)', answer: 'wann', explanation: 'La pregunta directa lleva „wann" → se conserva en la indirecta, con el verbo al final: wann das Meeting beginnt.' }
     ],
     story: {
       intro: 'En la cocina de la oficina, Julia y Marc cotillean sobre el compañero nuevo — sin saber que está a punto de entrar. Cotillear = hablar en preguntas indirectas.',
@@ -99,7 +102,15 @@
         { speaker: 'David', de: 'Hallo! Könnt ihr mir sagen, wo die Tassen sind?', es: '¡Hola! ¿Me podéis decir dónde están las tazas?' },
         { speaker: 'Julia', de: 'Klar, hier! Ähm... wir wollten wissen, wie du heißt.', es: '¡Claro, aquí! Ehm… queríamos saber cómo te llamas.' },
         { speaker: 'David', de: 'David. Und ja — ich trinke sehr viel Kaffee.', es: 'David. Y sí — tomo muchísimo café.' },
-        { speaker: 'Marc', de: 'Woher weißt du, dass wir... egal. Willkommen, David!', es: '¿Cómo sabes que…? Da igual. ¡Bienvenido, David!' }
+        { speaker: 'Marc', de: 'Woher weißt du, dass wir... egal. Willkommen, David!', es: '¿Cómo sabes que…? Da igual. ¡Bienvenido, David!' },
+        { speaker: '', de: 'Eine Woche später wissen die drei schon viel mehr übereinander.', es: 'Una semana después, los tres ya saben mucho más unos de otros.' },
+        { speaker: 'David', de: 'Julia, weißt du, wann das Meeting heute beginnt?', es: 'Julia, ¿sabes cuándo empieza hoy la reunión?' },
+        { speaker: 'Julia', de: 'Um zehn. Aber ich habe keine Ahnung, worum es geht.', es: 'A las diez. Pero no tengo ni idea de qué va.' },
+        { speaker: 'Marc', de: 'Ich habe gehört, dass der Chef etwas Wichtiges sagen will.', es: 'He oído que el jefe quiere decir algo importante.' },
+        { speaker: 'Julia', de: 'Ich frage mich, ob es gute oder schlechte Nachrichten sind.', es: 'Me pregunto si serán buenas o malas noticias.' },
+        { speaker: '', de: 'Im Meeting lächelt der Chef geheimnisvoll.', es: 'En la reunión, el jefe sonríe con aire misterioso.' },
+        { speaker: 'Chef', de: 'Sie fragen sich sicher alle, warum wir hier sind. Nun: Die Firma bekommt eine Kaffeemaschine. Eine richtige.', es: 'Seguro que todos se preguntan por qué estamos aquí. Pues bien: la empresa va a tener una cafetera. Una de verdad.' },
+        { speaker: 'David', de: 'JETZT verstehe ich, warum alle so viel über Kaffee reden.', es: 'AHORA entiendo por qué aquí todo el mundo habla tanto de café.' }
       ]
     }
   });

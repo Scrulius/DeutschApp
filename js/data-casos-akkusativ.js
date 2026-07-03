@@ -79,23 +79,38 @@
       ,
       { id: 'akk-35', type: 'multiple-choice', prompt: 'Historia: Was braucht Ben für die Party?', options: ['einen Kuchen, eine Pizza und einen Saft', 'nur einen Kuchen', 'Käse und Brot', 'nichts'], answer: 'einen Kuchen, eine Pizza und einen Saft', explanation: '„Ich brauche einen Kuchen, eine Pizza und einen Saft." — fíjate: einen (masculino, Akkusativ).' },
       { id: 'akk-36', type: 'multiple-choice', prompt: 'Historia: Was vergisst Ben fast?', options: ['den Käse', 'den Saft', 'die Pizza', 'den Kuchen'], answer: 'den Käse', explanation: '„Moment... ich habe keinen Käse!"' },
-      { id: 'akk-37', type: 'fill-blank', prompt: 'Historia: Moment... ich habe ___ Käse! (negación, masculino)', answer: 'keinen', explanation: 'der Käse como objeto directo → keinen (Akkusativ masculino).' }
+      { id: 'akk-37', type: 'fill-blank', prompt: 'Historia: Moment... ich habe ___ Käse! (negación, masculino)', answer: 'keinen', explanation: 'der Käse como objeto directo → keinen (Akkusativ masculino).' },
+      { id: 'akk-38', type: 'multiple-choice', prompt: 'Historia: Wen trifft Ben im Supermarkt?', options: ['seinen Freund Ali', 'seine Schwester', 'seinen Bruder', 'seine Lehrerin'], answer: 'seinen Freund Ali', explanation: '„Ben trifft seinen Freund Ali" — treffen lleva Akkusativ: seinen Freund.' },
+      { id: 'akk-39', type: 'multiple-choice', prompt: 'Historia: Warum kann Ben den Gutschein nicht benutzen?', options: ['Er ist zu alt und gilt nicht mehr', 'Er hat ihn zu Hause vergessen', 'Er gilt nur für Getränke', 'Er gehört Ali'], answer: 'Er ist zu alt und gilt nicht mehr', explanation: '„Dieser Gutschein ist leider zu alt. Er gilt nicht mehr."' },
+      { id: 'akk-40', type: 'fill-blank', prompt: 'Historia: Typisch. ___ Käse esse ich dann morgen selbst. (artículo al frente, Akkusativ)', answer: 'Den', explanation: 'El objeto directo puede ir al principio de la frase — pero sigue en Akkusativ: Den Käse esse ich…' }
     ],
     story: {
       intro: 'Ben da una fiesta y va al súper con su lista. Cada cosa que necesita, busca o compra va en Akkusativ — cuenta los „einen/den/keinen".',
       lines: [
         { speaker: '', de: 'Ben macht heute eine Party. Er schreibt einen Einkaufszettel.', es: 'Ben da hoy una fiesta. Escribe una lista de la compra.' },
         { speaker: 'Ben', de: 'Ich brauche einen Kuchen, eine Pizza und einen Saft.', es: 'Necesito una tarta, una pizza y un zumo.' },
+        { speaker: '', de: 'Er nimmt eine Tasche und sucht seinen Geldbeutel. Wo ist er?', es: 'Coge una bolsa y busca su cartera. ¿Dónde está?' },
+        { speaker: 'Ben', de: 'Ah, hier! Ich habe ihn. Und den Einkaufszettel habe ich auch.', es: '¡Ah, aquí! La tengo. Y la lista también la tengo.' },
         { speaker: '', de: 'Im Supermarkt sucht Ben den Kuchen.', es: 'En el súper, Ben busca la tarta.' },
         { speaker: 'Ben', de: 'Entschuldigung, ich finde den Apfelkuchen nicht.', es: 'Perdone, no encuentro la tarta de manzana.' },
         { speaker: 'Verkäuferin', de: 'Kein Problem! Sehen Sie das Regal dort?', es: '¡No hay problema! ¿Ve aquella estantería?' },
         { speaker: 'Ben', de: 'Ah ja, ich sehe es. Danke!', es: 'Ah sí, la veo. ¡Gracias!' },
+        { speaker: '', de: 'Ben trifft seinen Freund Ali im Supermarkt.', es: 'Ben se encuentra a su amigo Ali en el súper.' },
+        { speaker: 'Ali', de: 'Hey Ben! Machst du heute eine Party?', es: '¡Eh, Ben! ¿Das hoy una fiesta?' },
+        { speaker: 'Ben', de: 'Ja! Bringst du deine Schwester mit? Und deinen berühmten Nudelsalat!', es: '¡Sí! ¿Te traes a tu hermana? ¡Y tu famosa ensalada de pasta!' },
+        { speaker: 'Ali', de: 'Klar. Aber dann brauchst du noch mehr Getränke!', es: 'Claro. ¡Pero entonces necesitas más bebida!' },
+        { speaker: 'Ben', de: 'Stimmt. Ich nehme noch eine Cola und ein Wasser.', es: 'Cierto. Cojo también una cola y un agua.' },
         { speaker: '', de: 'Ben kauft den Kuchen, die Pizza und den Saft.', es: 'Ben compra la tarta, la pizza y el zumo.' },
         { speaker: 'Ben', de: 'Habe ich alles? Moment... ich habe keinen Käse!', es: '¿Lo tengo todo? Un momento… ¡no tengo queso!' },
         { speaker: '', de: 'Er holt noch einen Käse und geht zur Kasse.', es: 'Coge también un queso y va a la caja.' },
         { speaker: 'Verkäuferin', de: 'Haben Sie eine Kundenkarte?', es: '¿Tiene tarjeta de cliente?' },
         { speaker: 'Ben', de: 'Nein, aber ich habe einen Gutschein!', es: 'No, ¡pero tengo un vale de descuento!' },
-        { speaker: '', de: 'Am Abend kommen die Gäste — und essen alles auf.', es: 'Por la noche llegan los invitados — y se lo comen todo.' }
+        { speaker: 'Verkäuferin', de: 'Hmm... dieser Gutschein ist leider zu alt. Er gilt nicht mehr.', es: 'Mmm… este vale por desgracia es demasiado antiguo. Ya no vale.' },
+        { speaker: 'Ben', de: 'Ach nein! Na gut, dann zahle ich den normalen Preis.', es: '¡Ay, no! Bueno, pues pago el precio normal.' },
+        { speaker: '', de: 'Am Abend kommen die Gäste — und essen fast alles auf.', es: 'Por la noche llegan los invitados — y se lo comen casi todo.' },
+        { speaker: 'Ali', de: 'Tolle Party, Ben! Der Kuchen war super.', es: '¡Fiesta genial, Ben! La tarta estaba buenísima.' },
+        { speaker: '', de: 'Nur eine Sache isst niemand: den Käse.', es: 'Solo una cosa no se la come nadie: el queso.' },
+        { speaker: 'Ben', de: 'Typisch. Den Käse esse ich dann morgen selbst.', es: 'Típico. Pues el queso me lo como yo mañana.' }
       ]
     }
   });

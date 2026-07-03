@@ -74,7 +74,10 @@
       ,
       { id: 'gen-30', type: 'multiple-choice', prompt: 'Historia: Wessen Haus besucht Clara?', options: ['das Haus ihrer Großmutter', 'das Haus ihrer Mutter', 'das Haus ihres Bruders', 'ihr eigenes Haus'], answer: 'das Haus ihrer Großmutter', explanation: '„…besucht Clara das Haus ihrer Großmutter" — Genitiv femenino: ihrer.' },
       { id: 'gen-31', type: 'multiple-choice', prompt: 'Historia: Warum war Clara so lange nicht da?', options: ['wegen der Arbeit', 'wegen einer Krankheit', 'wegen des Wetters', 'wegen ihrer Tochter'], answer: 'wegen der Arbeit', explanation: '„Wegen der Arbeit war ich so lange nicht hier." — wegen + Genitiv.' },
-      { id: 'gen-32', type: 'fill-blank', prompt: 'Historia: Der Garten ___ Hauses ist noch genauso schön. (artículo Genitiv)', answer: 'des', explanation: 'das Haus → des Hauses: Genitiv neutro con -es en el sustantivo.' }
+      { id: 'gen-32', type: 'fill-blank', prompt: 'Historia: Der Garten ___ Hauses ist noch genauso schön. (artículo Genitiv)', answer: 'des', explanation: 'das Haus → des Hauses: Genitiv neutro con -es en el sustantivo.' },
+      { id: 'gen-33', type: 'multiple-choice', prompt: 'Historia: Was finden Clara und Oma auf dem Dachboden?', options: ['alte Fotos des Großvaters', 'die Bücher der Mutter', 'einen alten Schal', 'Briefe der Nachbarn'], answer: 'alte Fotos des Großvaters', explanation: '„Darin: alte Fotos des Großvaters." — Genitiv: las fotos DEL abuelo.' },
+      { id: 'gen-34', type: 'multiple-choice', prompt: 'Historia: Was war Clara als Kind, laut Oma?', options: ['die beste Kirschendiebin des Dorfes', 'die beste Schülerin der Schule', 'die schnellste Läuferin des Dorfes', 'die Chefin des Gartens'], answer: 'die beste Kirschendiebin des Dorfes', explanation: '„Du warst die beste Kirschendiebin des ganzen Dorfes!" — Genitiv neutro: des Dorfes.' },
+      { id: 'gen-35', type: 'fill-blank', prompt: 'Historia: Nimm das Lieblingsbuch ___ Großvaters mit. (tu, Genitiv)', answer: 'deines', explanation: 'dein → deines (Genitiv masculino): el libro favorito DE TU abuelo.' }
     ],
     story: {
       intro: 'Después de muchos años, Clara vuelve a la casa de su abuela. La historia está llena de Genitiv: el jardín DE la casa, los libros DEL abuelo, el regalo DEL año…',
@@ -86,9 +89,17 @@
         { speaker: 'Oma', de: 'Clara! Was für eine Überraschung!', es: '¡Clara! ¡Qué sorpresa!' },
         { speaker: 'Clara', de: 'Oma! Wegen der Arbeit war ich so lange nicht hier. Entschuldige!', es: '¡Abuela! Por el trabajo llevaba tanto tiempo sin venir. ¡Perdona!' },
         { speaker: 'Oma', de: 'Trotz der langen Zeit hat sich hier nichts geändert.', es: 'A pesar de tanto tiempo, aquí no ha cambiado nada.' },
+        { speaker: 'Clara', de: 'Erinnerst du dich an den Sommer meines letzten Besuchs?', es: '¿Te acuerdas del verano de mi última visita?' },
+        { speaker: 'Oma', de: 'Natürlich. Du warst die beste Kirschendiebin des ganzen Dorfes!', es: 'Claro. ¡Eras la mejor ladrona de cerezas de todo el pueblo!' },
+        { speaker: '', de: 'Auf dem Dachboden finden sie eine Kiste. Darin: alte Fotos des Großvaters.', es: 'En el desván encuentran una caja. Dentro: fotos antiguas del abuelo.' },
+        { speaker: 'Clara', de: 'Wer ist die Frau an der Seite des jungen Mannes? ... Oma! Das bist du!', es: '¿Quién es la mujer al lado del joven? … ¡Abuela! ¡Eres tú!' },
+        { speaker: 'Oma', de: 'Das war der Abend unseres ersten Tanzes. Anfang der sechziger Jahre.', es: 'Esa fue la noche de nuestro primer baile. A principios de los sesenta.' },
         { speaker: 'Clara', de: 'Am Ende des Sommers möchte ich wiederkommen. Mit meiner Tochter.', es: 'Al final del verano quiero volver. Con mi hija.' },
         { speaker: 'Oma', de: 'Die Tochter meiner Enkelin — hier? Das wäre das schönste Geschenk des Jahres!', es: '¿La hija de mi nieta — aquí? ¡Sería el regalo más bonito del año!' },
-        { speaker: '', de: 'Während des Nachmittags trinken die beiden Tee und erzählen Geschichten.', es: 'Durante la tarde, las dos toman té y se cuentan historias.' }
+        { speaker: '', de: 'Während des Nachmittags trinken die beiden Tee und erzählen Geschichten.', es: 'Durante la tarde, las dos toman té y se cuentan historias.' },
+        { speaker: 'Oma', de: 'Nimm das Lieblingsbuch deines Großvaters mit. Er hätte sich darüber gefreut.', es: 'Llévate el libro favorito de tu abuelo. Él se habría alegrado.' },
+        { speaker: 'Clara', de: 'Ich lese es meiner Tochter vor. Versprochen.', es: 'Se lo leeré a mi hija. Prometido.' },
+        { speaker: '', de: 'Am Ende des Tages winkt die Großmutter am Gartentor — wie früher.', es: 'Al final del día, la abuela dice adiós desde la puerta del jardín — como antaño.' }
       ]
     }
   });

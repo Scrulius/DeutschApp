@@ -83,7 +83,10 @@
       ,
       { id: 'prf-20', type: 'multiple-choice', prompt: 'Historia: Wohin ist Anna am Samstag gefahren?', options: ['nach Hamburg', 'nach Berlin', 'an den See', 'zu Tom'], answer: 'nach Hamburg', explanation: '„Am Samstag bin ich nach Hamburg gefahren."' },
       { id: 'prf-21', type: 'multiple-choice', prompt: 'Historia: Was hat Tom am Wochenende gemacht?', options: ['Er ist zu Hause geblieben', 'Er ist nach Hamburg gefahren', 'Er hat gearbeitet', 'Er hat Fisch gekocht'], answer: 'Er ist zu Hause geblieben', explanation: '„Ich bin zu Hause geblieben. Ich habe ferngesehen und Pizza bestellt."' },
-      { id: 'prf-22', type: 'fill-blank', prompt: 'Historia: Ich ___ zu Hause geblieben. (auxiliar)', answer: 'bin', explanation: 'bleiben forma el Perfekt con „sein": ich bin geblieben.' }
+      { id: 'prf-22', type: 'fill-blank', prompt: 'Historia: Ich ___ zu Hause geblieben. (auxiliar)', answer: 'bin', explanation: 'bleiben forma el Perfekt con „sein": ich bin geblieben.' },
+      { id: 'prf-23', type: 'multiple-choice', prompt: 'Historia: Was hat Tom eine Woche später gemacht?', options: ['Er ist mit Anna nach Hamburg gefahren', 'Er ist wieder zu Hause geblieben', 'Er hat nur ferngesehen', 'Er hat gearbeitet'], answer: 'Er ist mit Anna nach Hamburg gefahren', explanation: '„Ich bin mit Anna nach Hamburg gefahren!" — fahren con sein.' },
+      { id: 'prf-24', type: 'multiple-choice', prompt: 'Historia: Wie viele Fotos hat Tom gemacht?', options: ['zweihundert', 'zwanzig', 'zweihundertzwanzig', 'zwölf'], answer: 'zweihundert', explanation: '„Ich habe zweihundert Fotos gemacht." — machen con haben.' },
+      { id: 'prf-25', type: 'fill-blank', prompt: 'Historia: Wir sind um sieben ___. (aufstehen, participio)', answer: 'aufgestanden', explanation: 'Separable + irregular: auf-ge-standen, con sein: wir sind aufgestanden.' }
     ],
     story: {
       intro: 'Lunes en la oficina: Anna cuenta su fin de semana y Tom el suyo. Todo en Perfekt — fíjate en quién lleva haben y quién lleva sein.',
@@ -98,7 +101,15 @@
         { speaker: 'Anna', de: 'Das ganze Wochenende?!', es: '¡¿Todo el fin de semana?!' },
         { speaker: 'Tom', de: 'Na ja... am Sonntag habe ich auch viel geschlafen.', es: 'Bueno… el domingo también dormí mucho.' },
         { speaker: 'Anna', de: 'Typisch! Nächstes Mal kommst du einfach mit.', es: '¡Típico! La próxima vez te vienes conmigo y punto.' },
-        { speaker: '', de: 'Tom sagt Ja — aber nur, wenn sie wieder Fisch essen.', es: 'Tom dice que sí — pero solo si vuelven a comer pescado.' }
+        { speaker: '', de: 'Tom sagt Ja — aber nur, wenn sie wieder Fisch essen.', es: 'Tom dice que sí — pero solo si vuelven a comer pescado.' },
+        { speaker: '', de: 'Eine Woche später, wieder Montag. Diesmal erzählt Tom.', es: 'Una semana después, lunes otra vez. Esta vez es Tom el que cuenta.' },
+        { speaker: 'Kollegin', de: 'Na, Tom? Was hast du am Wochenende gemacht?', es: '¿Qué, Tom? ¿Qué hiciste el fin de semana?' },
+        { speaker: 'Tom', de: 'Ich bin mit Anna nach Hamburg gefahren!', es: '¡Fui con Anna a Hamburgo!' },
+        { speaker: 'Kollegin', de: 'DU? Du bist am Wochenende rausgegangen?', es: '¿TÚ? ¿Tú saliste de casa un fin de semana?' },
+        { speaker: 'Tom', de: 'Ja! Wir sind um sieben aufgestanden, haben den Zug genommen und sind den ganzen Tag am Hafen spazieren gegangen.', es: '¡Sí! Nos levantamos a las siete, cogimos el tren y estuvimos todo el día paseando por el puerto.' },
+        { speaker: 'Tom', de: 'Ich habe zweihundert Fotos gemacht. Und wir haben natürlich Fisch gegessen.', es: 'Hice doscientas fotos. Y comimos pescado, claro.' },
+        { speaker: 'Kollegin', de: 'Und hat es dir gefallen?', es: '¿Y te gustó?' },
+        { speaker: 'Tom', de: 'Sehr! Aber am Sonntag... am Sonntag habe ich wieder den ganzen Tag geschlafen. Man ändert sich ja nicht komplett.', es: '¡Mucho! Pero el domingo… el domingo volví a dormir todo el día. Uno no cambia del todo.' }
       ]
     }
   });

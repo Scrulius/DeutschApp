@@ -75,7 +75,10 @@
       { id: 'kmp-12', type: 'multiple-choice', prompt: '„größer wie ich" es…', options: ['incorrecto (debe ser „größer als ich")', 'correcto siempre', 'más formal', 'un regionalismo aceptado en examen'], answer: 'incorrecto (debe ser „größer als ich")', explanation: 'Se oye coloquialmente, pero comparativo + als es la norma.' },
       { id: 'kmp-13', type: 'multiple-choice', prompt: 'Historia: Warum hat Mia ihr Handy gekauft?', options: ['Es war billiger als Bens Handy', 'Es hat die beste Kamera', 'Es ist am größten', 'Es war ein Geschenk'], answer: 'Es war billiger als Bens Handy', explanation: '„Es war billiger als deins."' },
       { id: 'kmp-14', type: 'multiple-choice', prompt: 'Historia: Was ist an Bens Handy besser?', options: ['die Kamera und der Bildschirm', 'der Akku', 'der Preis', 'nichts'], answer: 'die Kamera und der Bildschirm', explanation: '„Aber meins hat die bessere Kamera. Und einen größeren Bildschirm."' },
-      { id: 'kmp-15', type: 'fill-blank', prompt: 'Historia: Meins ist leichter und der Akku hält ___. (lang, comparativo)', answer: 'länger', explanation: 'lang → länger (umlaut): el argumento ganador de Mia.' }
+      { id: 'kmp-15', type: 'fill-blank', prompt: 'Historia: Meins ist leichter und der Akku hält ___. (lang, comparativo)', answer: 'länger', explanation: 'lang → länger (umlaut): el argumento ganador de Mia.' },
+      { id: 'kmp-16', type: 'multiple-choice', prompt: 'Historia: Was testen die drei mit Pauls Hund?', options: ['welches Handy das bessere Foto macht', 'welches Handy schneller ist', 'welcher Hund fotogener ist', 'welches Handy lauter ist'], answer: 'welches Handy das bessere Foto macht', explanation: '„Welches Handy macht das bessere Foto?" — comparativo con sustantivo: das bessere Foto.' },
+      { id: 'kmp-17', type: 'multiple-choice', prompt: 'Historia: Wie ist das Ergebnis des Foto-Tests?', options: ['Bens Foto ist schärfer, aber Mias Farben sind natürlicher', 'Bens Foto ist in allem besser', 'Mias Foto ist in allem besser', 'Beide Fotos sind gleich schlecht'], answer: 'Bens Foto ist schärfer, aber Mias Farben sind natürlicher', explanation: 'Empate técnico: schärfer (scharf→schärfer, umlaut) vs. natürlicher.' },
+      { id: 'kmp-18', type: 'fill-blank', prompt: 'Historia: Dein Hund ist einfach ___ als andere Hunde. (fotogen, comparativo)', answer: 'fotogener', explanation: 'fotogen → fotogener + als: la excusa de Ben, en comparativo de manual.' }
     ],
     story: {
       intro: 'Mia estrena móvil y Ben defiende el suyo. Una batalla entera de comparativos: billiger, besser, größer, leichter, am wichtigsten…',
@@ -85,6 +88,13 @@
         { speaker: 'Mia', de: 'Größer ist nicht immer besser. Meins ist leichter und der Akku hält länger.', es: 'Más grande no siempre es mejor. El mío es más ligero y la batería dura más.' },
         { speaker: 'Ben', de: 'Hm. Welches Handy ist denn am beliebtesten?', es: 'Mmm. ¿Y cuál es el móvil más popular?' },
         { speaker: 'Mia', de: 'Keine Ahnung. Aber meins war am billigsten!', es: 'Ni idea. ¡Pero el mío fue el más barato!' },
+        { speaker: '', de: 'Da kommt ihr Freund Paul — der größte Technik-Fan der Schule.', es: 'En eso llega su amigo Paul — el mayor fan de la tecnología del instituto.' },
+        { speaker: 'Paul', de: 'Streitet ihr schon wieder über Handys? Macht doch einen Test!', es: '¿Ya estáis otra vez discutiendo de móviles? ¡Haced una prueba!' },
+        { speaker: 'Ben', de: 'Gute Idee! Welches Handy macht das bessere Foto?', es: '¡Buena idea! ¿Qué móvil hace la mejor foto?' },
+        { speaker: '', de: 'Sie fotografieren Pauls Hund. Dreimal.', es: 'Fotografían al perro de Paul. Tres veces.' },
+        { speaker: 'Paul', de: 'Hm. Bens Foto ist schärfer... aber Mias Farben sind natürlicher.', es: 'Mmm. La foto de Ben es más nítida… pero los colores de Mia son más naturales.' },
+        { speaker: 'Mia', de: 'Also ist meins mindestens genauso gut wie seins — für die Hälfte des Preises!', es: '¡O sea que el mío es como mínimo igual de bueno que el suyo — por la mitad de precio!' },
+        { speaker: 'Ben', de: 'Der Test war unfair. Dein Hund ist einfach fotogener als andere Hunde.', es: 'La prueba no ha sido justa. Tu perro simplemente es más fotogénico que otros perros.' },
         { speaker: 'Ben', de: 'Du bist genauso sparsam wie dein Vater.', es: 'Eres igual de ahorradora que tu padre.' },
         { speaker: 'Mia', de: 'Lieber sparsam als pleite! Am wichtigsten ist: Es funktioniert.', es: '¡Mejor ahorradora que arruinada! Lo más importante es que funciona.' },
         { speaker: '', de: 'Am Ende spielen beide auf Mias Handy — weil Bens Akku leer ist.', es: 'Al final los dos juegan en el móvil de Mia — porque a Ben se le ha acabado la batería.' }

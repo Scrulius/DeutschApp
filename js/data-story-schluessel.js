@@ -35,7 +35,17 @@
         { speaker: '', de: 'Paul ruft im Restaurant an. Der Kellner antwortet sofort.', es: 'Paul llama al restaurante. El camarero responde enseguida.' },
         { speaker: 'Kellner', de: 'Ein Schlüssel? Ja! Wir haben ihn gestern Abend unter Ihrem Tisch gefunden.', es: '¿Una llave? ¡Sí! La encontramos ayer por la noche debajo de su mesa.' },
         { speaker: 'Paul', de: 'Gott sei Dank! Ich komme sofort vorbei. Vielen Dank!', es: '¡Menos mal! Ahora mismo me paso. ¡Muchas gracias!' },
-        { speaker: '', de: 'Eine Stunde später hat Paul seinen Schlüssel wieder — und ein Stück Kuchen vom Kellner.', es: 'Una hora después Paul tiene de nuevo su llave — y un trozo de tarta de parte del camarero.' }
+        { speaker: '', de: 'Paul fährt mit dem Fahrrad zum Restaurant.', es: 'Paul va en bici al restaurante.' },
+        { speaker: 'Kellner', de: 'Da sind Sie ja! Wir haben Sie gestern noch gesucht, aber Sie waren schon weg.', es: '¡Aquí está! Ayer aún le buscamos, pero ya se había ido.' },
+        { speaker: 'Paul', de: 'Wie haben Sie den Schlüssel denn gefunden?', es: '¿Y cómo encontraron la llave?' },
+        { speaker: 'Kellner', de: 'Eine Kollegin hat den Tisch sauber gemacht und ihn gesehen. Er ist unter die Serviette gerutscht.', es: 'Una compañera limpió la mesa y la vio. Se había deslizado debajo de la servilleta.' },
+        { speaker: 'Paul', de: 'Ich bin so froh! Gestern war wirklich kein guter Tag.', es: '¡Qué alivio! Ayer de verdad que no fue un buen día.' },
+        { speaker: 'Kellner', de: 'Warten Sie — Sie haben auch Ihren Regenschirm vergessen!', es: 'Espere — ¡también se olvidó el paraguas!' },
+        { speaker: 'Paul', de: 'Meinen Regenschirm?! Oh nein. Was habe ich gestern nur gemacht?', es: '¡¿Mi paraguas?! Ay, no. ¿Pero qué hice yo ayer?' },
+        { speaker: '', de: 'Eine Stunde später hat Paul seinen Schlüssel wieder — und ein Stück Kuchen vom Kellner.', es: 'Una hora después Paul tiene de nuevo su llave — y un trozo de tarta de parte del camarero.' },
+        { speaker: 'Frau Schmidt', de: 'Na, hast du alles wiederbekommen?', es: '¿Qué, lo has recuperado todo?' },
+        { speaker: 'Paul', de: 'Alles! Und ich habe etwas gelernt: Ich lasse ab jetzt einen zweiten Schlüssel bei Ihnen — wenn das okay ist.', es: '¡Todo! Y he aprendido algo: a partir de ahora dejo una segunda llave en su casa — si le parece bien.' },
+        { speaker: 'Frau Schmidt', de: 'Natürlich! Dafür sind Nachbarn da.', es: '¡Claro! Para eso están los vecinos.' }
       ]
     },
     cheatsheet: vocab,
@@ -53,7 +63,11 @@
       { id: 'st2-11', type: 'multiple-choice', prompt: '„Gott sei Dank!" significa:', options: ['¡Menos mal!', '¡Dios mío, qué horror!', '¡De nada!', '¡Buena suerte!'], answer: '¡Menos mal!', explanation: 'Expresión de alivio: ¡gracias a Dios! / ¡menos mal!' },
       { id: 'st2-12', type: 'listen', say: 'Ich habe meinen Schlüssel verloren!', prompt: 'Escucha: ¿qué línea del diálogo oyes?', options: ['Ich habe meinen Schlüssel verloren!', 'Wo ist mein Schlüssel?', 'Wir haben ihn gestern gefunden.', 'Ich komme sofort vorbei.'], answer: 'Ich habe meinen Schlüssel verloren!', explanation: 'La frase clave de la historia — Perfekt con „haben" + „verloren" al final.' },
       { id: 'st2-13', type: 'translate', prompt: 'Traduce: He perdido mi llave.', answer: 'Ich habe meinen Schlüssel verloren.', explanation: 'Perfekt: habe (posición 2) + verloren (al final); der Schlüssel → meinen (Akkusativ).' },
-      { id: 'st2-14', type: 'find-error', prompt: '¿Dónde está el error?', words: ['Ich', 'habe', 'ins', 'Restaurant', 'gegangen.'], wrong: 1, fix: 'bin', explanation: 'gehen = movimiento → el Perfekt se forma con „sein": Ich bin ins Restaurant gegangen.' }
+      { id: 'st2-14', type: 'find-error', prompt: '¿Dónde está el error?', words: ['Ich', 'habe', 'ins', 'Restaurant', 'gegangen.'], wrong: 1, fix: 'bin', explanation: 'gehen = movimiento → el Perfekt se forma con „sein": Ich bin ins Restaurant gegangen.' },
+      { id: 'st2-15', type: 'multiple-choice', prompt: 'Wie ist Paul zum Restaurant gefahren?', options: ['mit dem Fahrrad', 'mit dem Bus', 'mit dem Auto', 'zu Fuß'], answer: 'mit dem Fahrrad', explanation: '„Paul fährt mit dem Fahrrad zum Restaurant." — ayer bus, hoy bici.' },
+      { id: 'st2-16', type: 'multiple-choice', prompt: 'Wie hat die Kollegin den Schlüssel gefunden?', options: ['Sie hat den Tisch sauber gemacht und ihn gesehen', 'Sie hat ihn auf dem Boden gehört', 'Ein Gast hat ihn gebracht', 'Paul hat angerufen und es erklärt'], answer: 'Sie hat den Tisch sauber gemacht und ihn gesehen', explanation: '„Er ist unter die Serviette gerutscht." — el gran misterio, resuelto.' },
+      { id: 'st2-17', type: 'multiple-choice', prompt: 'Was hat Paul außer dem Schlüssel noch vergessen?', options: ['seinen Regenschirm', 'seine Jacke', 'sein Handy', 'seine Tasche'], answer: 'seinen Regenschirm', explanation: '„Sie haben auch Ihren Regenschirm vergessen!" — vergessen, inseparable: sin ge-.' },
+      { id: 'st2-18', type: 'multiple-choice', prompt: 'Was macht Paul am Ende, um das Problem nie wieder zu haben?', options: ['Er lässt einen zweiten Schlüssel bei Frau Schmidt', 'Er kauft eine neue Tasche', 'Er geht nie wieder ins Restaurant', 'Er trägt den Schlüssel am Hals'], answer: 'Er lässt einen zweiten Schlüssel bei Frau Schmidt', explanation: '„Ich lasse ab jetzt einen zweiten Schlüssel bei Ihnen." — Dafür sind Nachbarn da.' }
     ]
   });
 })();

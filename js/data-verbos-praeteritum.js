@@ -77,7 +77,10 @@
       { id: 'prt-14', type: 'dictation', say: 'Wir hatten keine Zeit.', prompt: 'Dictado: escribe lo que oyes.', answer: 'Wir hatten keine Zeit.', explanation: 'hatten + keine Zeit.' },
       { id: 'prt-15', type: 'multiple-choice', prompt: 'Historia: Was hatten Oma und ihre Freunde nicht?', options: ['Handy und Computer', 'Bücher', 'Freunde', 'Zeit'], answer: 'Handy und Computer', explanation: '„Wir hatten kein Handy und keinen Computer."' },
       { id: 'prt-16', type: 'multiple-choice', prompt: 'Historia: Wann musste Oma zu Hause sein?', options: ['um zehn', 'um elf', 'um neun', 'um zwölf'], answer: 'um zehn', explanation: '„…aber ich musste um zehn zu Hause sein."' },
-      { id: 'prt-17', type: 'fill-blank', prompt: 'Historia: Dann ___ ich zwei Wochen nicht ausgehen. (dürfen, pasado)', answer: 'durfte', explanation: 'El castigo: no tener permiso → durfte … nicht.' }
+      { id: 'prt-17', type: 'fill-blank', prompt: 'Historia: Dann ___ ich zwei Wochen nicht ausgehen. (dürfen, pasado)', answer: 'durfte', explanation: 'El castigo: no tener permiso → durfte … nicht.' },
+      { id: 'prt-18', type: 'multiple-choice', prompt: 'Historia: Wo arbeitete Oma mit sechzehn?', options: ['in einer Bäckerei', 'in einem Laden für Kleidung', 'in einer Schule', 'in einem Café'], answer: 'in einer Bäckerei', explanation: '„Mit sechzehn war ich Verkäuferin in einer Bäckerei."' },
+      { id: 'prt-19', type: 'multiple-choice', prompt: 'Historia: Warum kaufte Opa jeden Morgen nur ein Brötchen?', options: ['Er wollte nur mit Oma sprechen', 'Er hatte wenig Geld', 'Er hatte keinen Hunger auf mehr', 'Die Bäckerei hatte nur eins'], answer: 'Er wollte nur mit Oma sprechen', explanation: '„Er hatte nie Hunger — er wollte nur mit mir sprechen." — wollte, el Präteritum de la intención.' },
+      { id: 'prt-20', type: 'fill-blank', prompt: 'Historia: Ich ___ um fünf Uhr aufstehen! (müssen, Präteritum)', answer: 'musste', explanation: 'müssen → musste (sin umlaut: „müsste" sería condicional).' }
     ],
     story: {
       intro: 'El nieto le pregunta a la abuela cómo era su vida a los quince. Toda la conversación va en war / hatte / musste / durfte / wollte — el Präteritum que sí se habla.',
@@ -92,6 +95,15 @@
         { speaker: 'Oma', de: 'Wir wollten natürlich länger bleiben... Einmal war ich erst um elf zu Hause.', es: 'Claro que queríamos quedarnos más… Una vez no llegué a casa hasta las once.' },
         { speaker: 'Enkel', de: 'Und dann?', es: '¿Y entonces?' },
         { speaker: 'Oma', de: 'Dann durfte ich zwei Wochen nicht ausgehen. Aber es hat sich gelohnt!', es: 'Entonces me quedé dos semanas sin salir. ¡Pero mereció la pena!' },
+        { speaker: 'Enkel', de: 'Und wie war deine erste Arbeit?', es: '¿Y cómo fue tu primer trabajo?' },
+        { speaker: 'Oma', de: 'Mit sechzehn war ich Verkäuferin in einer Bäckerei. Ich musste um fünf Uhr aufstehen!', es: 'A los dieciséis era dependienta en una panadería. ¡Tenía que levantarme a las cinco!' },
+        { speaker: 'Enkel', de: 'Um FÜNF? Das könnte ich nie.', es: '¿A las CINCO? Yo no podría jamás.' },
+        { speaker: 'Oma', de: 'Doch, könntest du. Man kann fast alles, wenn man muss.', es: 'Sí que podrías. Se puede casi todo cuando no queda otra.' },
+        { speaker: 'Enkel', de: 'Und Opa? Wie war das mit euch?', es: '¿Y el abuelo? ¿Cómo fue lo vuestro?' },
+        { speaker: 'Oma', de: 'Er kam jeden Morgen in die Bäckerei und kaufte ein Brötchen. Nur eins!', es: 'Venía cada mañana a la panadería y compraba un panecillo. ¡Solo uno!' },
+        { speaker: 'Oma', de: 'Er hatte nie Hunger — er wollte nur mit mir sprechen. Das wusste ich damals schon.', es: 'Nunca tenía hambre — solo quería hablar conmigo. Eso yo ya lo sabía entonces.' },
+        { speaker: 'Enkel', de: 'Oma! Das ist ja wie in einem Film!', es: '¡Abuela! ¡Eso es como de película!' },
+        { speaker: 'Oma', de: 'Nein, mein Schatz. Damals gab es noch kein WLAN — wir mussten romantisch sein.', es: 'No, cariño. Entonces todavía no había wifi — no nos quedaba otra que ser románticos.' },
         { speaker: '', de: 'Oma lacht. Manche Dinge ändern sich nie.', es: 'La abuela se ríe. Hay cosas que no cambian nunca.' }
       ]
     }

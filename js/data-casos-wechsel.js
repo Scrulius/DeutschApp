@@ -97,7 +97,10 @@
       ,
       { id: 'wex-37', type: 'multiple-choice', prompt: 'Historia: Wohin stellen Nina und Jonas das Sofa?', options: ['ins Wohnzimmer, an die Wand', 'in die Küche', 'unter das Fenster', 'auf den Balkon'], answer: 'ins Wohnzimmer, an die Wand', explanation: '„Stell es ins Wohnzimmer, an die Wand." — movimiento → Akkusativ.' },
       { id: 'wex-38', type: 'multiple-choice', prompt: 'Historia: Wo schläft die Katze?', options: ['unter dem Sofa', 'auf dem Tisch', 'im Karton', 'an der Wand'], answer: 'unter dem Sofa', explanation: '„Sie liegt unter dem Sofa und schläft." — ubicación → Dativ.' },
-      { id: 'wex-39', type: 'fill-blank', prompt: 'Historia: Am Abend hängen sie ein Bild an ___ Wand. (movimiento)', answer: 'die', explanation: 'Colgar HACIA la pared = movimiento → Akkusativ: an die Wand.' }
+      { id: 'wex-39', type: 'fill-blank', prompt: 'Historia: Am Abend hängen sie ein Bild an ___ Wand. (movimiento)', answer: 'die', explanation: 'Colgar HACIA la pared = movimiento → Akkusativ: an die Wand.' },
+      { id: 'wex-40', type: 'multiple-choice', prompt: 'Historia: Wohin legt Jonas den Teppich?', options: ['vor das Sofa', 'vor dem Sofa', 'unter den Tisch', 'neben das Regal'], answer: 'vor das Sofa', explanation: '„Leg ihn vor das Sofa." — legen = movimiento → Akkusativ (vor das). „vor dem Sofa" sería dónde ESTÁ.' },
+      { id: 'wex-41', type: 'multiple-choice', prompt: 'Historia: Warum hängen sie das große Bild nicht über das Sofa?', options: ['Über dem Sofa hängt schon die Uhr', 'Das Sofa ist zu klein', 'Nina mag das Bild nicht', 'Die Wand ist kaputt'], answer: 'Über dem Sofa hängt schon die Uhr', explanation: 'Fíjate en el par: „häng es über DEN Tisch" (movimiento) vs. „über DEM Sofa hängt schon die Uhr" (ubicación).' },
+      { id: 'wex-42', type: 'fill-blank', prompt: 'Historia: Morgen stellen wir die Kisten in ___ Keller. (movimiento)', answer: 'den', explanation: 'stellen = movimiento → Akkusativ: in den Keller (der Keller).' }
     ],
     story: {
       intro: 'Nina y Jonas se mudan. Cada mueble primero SE COLOCA en un sitio (Akkusativ) y luego ESTÁ en ese sitio (Dativ) — la historia entera es el juego wohin/wo.',
@@ -107,12 +110,23 @@
         { speaker: 'Nina', de: 'Stell es ins Wohnzimmer, an die Wand.', es: 'Ponlo en el salón, contra la pared.' },
         { speaker: 'Jonas', de: 'Und die Lampe?', es: '¿Y la lámpara?' },
         { speaker: 'Nina', de: 'Die stellen wir auf den kleinen Tisch.', es: 'Esa la ponemos en la mesita.' },
+        { speaker: 'Jonas', de: 'Und die Bücherkisten? Sie sind so schwer!', es: '¿Y las cajas de libros? ¡Pesan un montón!' },
+        { speaker: 'Nina', de: 'Stell sie erst mal neben das Regal. Die Bücher räume ich später ins Regal.', es: 'De momento déjalas junto a la estantería. Los libros ya los coloco yo luego en la estantería.' },
+        { speaker: 'Jonas', de: 'Und wohin lege ich den Teppich?', es: '¿Y dónde pongo la alfombra?' },
+        { speaker: 'Nina', de: 'Leg ihn vor das Sofa. Da sieht er gut aus.', es: 'Ponla delante del sofá. Ahí queda bien.' },
         { speaker: '', de: 'Eine Stunde später steht das Sofa im Wohnzimmer und die Lampe steht auf dem Tisch.', es: 'Una hora después, el sofá está en el salón y la lámpara está en la mesa.' },
+        { speaker: '', de: 'Der Teppich liegt vor dem Sofa, und die Kisten stehen immer noch neben dem Regal.', es: 'La alfombra está delante del sofá, y las cajas siguen junto a la estantería.' },
         { speaker: 'Jonas', de: 'Wo ist eigentlich die Katze? Ich sehe sie nicht.', es: 'Por cierto, ¿dónde está la gata? No la veo.' },
         { speaker: 'Nina', de: 'Schau mal unter das Sofa...', es: 'Mira debajo del sofá…' },
         { speaker: 'Jonas', de: 'Da ist sie! Sie liegt unter dem Sofa und schläft.', es: '¡Ahí está! Está tumbada debajo del sofá, durmiendo.' },
         { speaker: 'Nina', de: 'Natürlich. Wir arbeiten, und sie legt sich unter das Sofa.', es: 'Claro. Nosotros trabajando, y ella va y se tumba debajo del sofá.' },
-        { speaker: '', de: 'Am Abend hängen sie noch ein Bild an die Wand — fertig!', es: 'Por la noche cuelgan además un cuadro en la pared — ¡listo!' }
+        { speaker: 'Jonas', de: 'Wohin hängen wir das große Bild? Über das Sofa?', es: '¿Dónde colgamos el cuadro grande? ¿Encima del sofá?' },
+        { speaker: 'Nina', de: 'Nein, häng es über den Tisch. Über dem Sofa hängt schon die Uhr.', es: 'No, cuélgalo encima de la mesa. Encima del sofá ya está el reloj.' },
+        { speaker: 'Jonas', de: 'Du hast an alles gedacht, oder?', es: 'Lo tienes todo pensado, ¿eh?' },
+        { speaker: '', de: 'Am Abend hängen sie noch ein Bild an die Wand — fertig!', es: 'Por la noche cuelgan además un cuadro en la pared — ¡listo!' },
+        { speaker: '', de: 'Um Mitternacht sitzen beide auf dem Boden und essen Pizza — zwischen den leeren Kisten.', es: 'A medianoche, los dos están sentados en el suelo comiendo pizza — entre las cajas vacías.' },
+        { speaker: 'Nina', de: 'Morgen stellen wir die Kisten in den Keller.', es: 'Mañana llevamos las cajas al sótano.' },
+        { speaker: 'Jonas', de: 'Morgen. Heute liege ich nur noch im Bett.', es: 'Mañana. Hoy ya solo pienso estar tumbado en la cama.' }
       ]
     }
   });

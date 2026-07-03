@@ -96,7 +96,10 @@
       ,
       { id: 'num-27', type: 'multiple-choice', prompt: 'Historia: Wann fährt der Zug nach München?', options: ['um Viertel nach drei (3:15)', 'um halb drei (2:30)', 'um drei Uhr (3:00)', 'um Viertel vor drei (2:45)'], answer: 'um Viertel nach drei (3:15)', explanation: '„Um Viertel nach drei, von Gleis sieben."' },
       { id: 'num-28', type: 'multiple-choice', prompt: 'Historia: Wie spät ist es, als Laura fragt?', options: ['halb drei (2:30)', 'halb vier (3:30)', 'drei Uhr (3:00)', 'Viertel nach zwei (2:15)'], answer: 'halb drei (2:30)', explanation: '„Es ist halb drei. Sie haben noch Zeit." — media para las tres = 2:30.' },
-      { id: 'num-29', type: 'fill-blank', prompt: 'Historia: Der Zug fährt von Gleis ___. (7, en palabra)', answer: 'sieben', explanation: 'das Gleis sieben = la vía siete.' }
+      { id: 'num-29', type: 'fill-blank', prompt: 'Historia: Der Zug fährt von Gleis ___. (7, en palabra)', answer: 'sieben', explanation: 'das Gleis sieben = la vía siete.' },
+      { id: 'num-30', type: 'multiple-choice', prompt: 'Historia: Warum muss Laura den Platz wechseln?', options: ['Sie sitzt in Wagen elf, ihr Platz ist in Wagen zwölf', 'Ihr Ticket ist nicht gültig', 'Der Zug ist voll', 'Sie hat Platz zwölf statt achtundzwanzig'], answer: 'Sie sitzt in Wagen elf, ihr Platz ist in Wagen zwölf', explanation: '„Nein, das ist Wagen elf. Wagen zwölf ist der nächste."' },
+      { id: 'num-31', type: 'multiple-choice', prompt: 'Historia: Wann kommt der Zug in München an?', options: ['um siebzehn Uhr dreißig (halb sechs)', 'um sechzehn Uhr dreißig (halb fünf)', 'um siebzehn Uhr fünfzehn', 'um achtzehn Uhr'], answer: 'um siebzehn Uhr dreißig (halb sechs)', explanation: '17:30 oficial = „halb sechs" coloquial. Las dos formas nombran la misma hora.' },
+      { id: 'num-32', type: 'fill-blank', prompt: 'Historia: Wir kommen um siebzehn Uhr ___ in München an. (30, en palabra)', answer: 'dreißig', explanation: '17:30 = siebzehn Uhr dreißig (hora oficial de tren y radio).' }
     ],
     story: {
       intro: 'Laura viaja sola a Múnich por primera vez. En la estación todo son números y horas: el andén, el precio del billete, el reloj… y la trampa de „halb drei".',
@@ -110,7 +113,16 @@
         { speaker: 'Schalterfrau', de: 'Einundvierzig Euro.', es: 'Cuarenta y un euros.' },
         { speaker: 'Laura', de: 'Einundvierzig?! Puh. Und mit der Bahncard?', es: '¡¿Cuarenta y uno?! Uf. ¿Y con la Bahncard?' },
         { speaker: 'Schalterfrau', de: 'Dreißig Euro fünfzig.', es: 'Treinta euros con cincuenta.' },
+        { speaker: 'Laura', de: 'Gut, dann mit Bahncard, bitte. Hier sind vierzig Euro.', es: 'Vale, pues con Bahncard, por favor. Aquí tiene cuarenta euros.' },
+        { speaker: 'Schalterfrau', de: 'Und neun Euro fünfzig zurück. Gleis sieben, Abfahrt fünfzehn Uhr fünfzehn.', es: 'Y nueve euros con cincuenta de vuelta. Vía siete, salida a las quince quince.' },
         { speaker: '', de: 'Um Viertel nach drei sitzt Laura im Zug — Wagen zwölf, Platz achtundzwanzig.', es: 'A las tres y cuarto, Laura está sentada en el tren — vagón doce, asiento veintiocho.' },
+        { speaker: 'Fahrgast', de: 'Entschuldigung, das ist mein Platz. Platz achtundzwanzig.', es: 'Perdone, ese es mi asiento. El asiento veintiocho.' },
+        { speaker: 'Laura', de: 'Oh! Moment... auf meinem Ticket steht Wagen zwölf. Ist das hier Wagen zwölf?', es: '¡Ay! Un momento… en mi billete pone vagón doce. ¿Esto es el vagón doce?' },
+        { speaker: 'Fahrgast', de: 'Nein, das ist Wagen elf. Wagen zwölf ist der nächste.', es: 'No, este es el vagón once. El doce es el siguiente.' },
+        { speaker: 'Laura', de: 'Ups! Entschuldigung!', es: '¡Uy! ¡Perdón!' },
+        { speaker: '', de: 'Im richtigen Wagen kommt der Schaffner.', es: 'Ya en el vagón correcto, llega el revisor.' },
+        { speaker: 'Schaffner', de: 'Die Fahrkarten, bitte! ... Danke. Wir kommen um siebzehn Uhr dreißig in München an.', es: '¡Billetes, por favor! … Gracias. Llegamos a Múnich a las diecisiete treinta.' },
+        { speaker: 'Laura', de: 'Um halb sechs! Perfekt, dann habe ich noch den ganzen Abend.', es: '¡A las cinco y media! Perfecto, así aún me queda toda la tarde.' },
         { speaker: 'Laura', de: 'München, ich komme! In zwei Stunden und fünfzehn Minuten.', es: '¡Múnich, allá voy! En dos horas y quince minutos.' }
       ]
     }

@@ -86,7 +86,10 @@
       { id: 'smt-22', type: 'find-error', prompt: '¿Dónde está el error? (quiero decir: "tengo frío")', words: ['Ich', 'bin', 'kalt.'], wrong: 1, fix: 'Mir ist', explanation: '„Ich bin kalt" = soy frío (de carácter). La sensación se dice con Dativ: Mir ist kalt.' },
       { id: 'smt-23', type: 'translate', prompt: 'Traduce: Tengo calor.', answer: 'Mir ist warm.', acceptable: ['Mir ist heiß.'], explanation: 'Igual que el frío: sensación → Mir ist warm/heiß (nunca „Ich bin heiß", que significa otra cosa…).' },
       { id: 'smt-24', type: 'multiple-choice', prompt: '„Wie läuft’s?" significa aproximadamente:', options: ['¿Cómo va todo?', '¿A dónde corres?', '¿Qué haces?', '¿Cómo te llamas?'], answer: '¿Cómo va todo?', explanation: 'laufen = correr/marchar → „Wie läuft’s?" = ¿qué tal va la cosa? (coloquial).' },
-      { id: 'smt-25', type: 'fill-blank', prompt: 'Es ___ heute. (nevar)', answer: 'schneit', explanation: 'schneien → es schneit. Con „es": es regnet, es schneit, es ist kalt.' }
+      { id: 'smt-25', type: 'fill-blank', prompt: 'Es ___ heute. (nevar)', answer: 'schneit', explanation: 'schneien → es schneit. Con „es": es regnet, es schneit, es ist kalt.' },
+      { id: 'smt-26', type: 'multiple-choice', prompt: 'Historia: Wie war Herrn Meyers Paella wirklich?', options: ['Der Reis war etwas zu weich', 'Sie war perfekt', 'Sie war zu salzig', 'Er hat sie nie gemacht'], answer: 'Der Reis war etwas zu weich', explanation: '„Ehrlich gesagt war der Reis etwas zu weich." — ehrlich gesagt = sinceramente.' },
+      { id: 'smt-27', type: 'multiple-choice', prompt: 'Historia: Was machen die beiden am Sonntag?', options: ['Sie kochen zusammen Paella', 'Sie fahren an den See', 'Sie gehen wandern', 'Sie essen im Restaurant'], answer: 'Sie kochen zusammen Paella', explanation: '„Ich zeige Ihnen am Sonntag, wie meine Großmutter sie macht." — del small talk a la amistad.' },
+      { id: 'smt-28', type: 'multiple-choice', prompt: 'Historia: Was bringt Herr Meyer am Sonntag mit?', options: ['den Nachtisch', 'den Reis', 'den Safran', 'nichts'], answer: 'den Nachtisch', explanation: '„Ich bringe den Nachtisch mit." — mitbringen, separable.' }
     ],
     story: {
       intro: 'Lunes por la mañana, dos vecinos coinciden en el ascensor: el pequeño ritual del small talk alemán en su hábitat natural — tiempo, finde y hobbies.',
@@ -101,7 +104,15 @@
         { speaker: 'Herr Meyer', de: 'Ich koche gern. Am Samstag habe ich Paella gemacht!', es: 'Me gusta cocinar. ¡El sábado hice paella!' },
         { speaker: 'Frau López', de: 'Paella? Wirklich? Da müssen wir mal reden...', es: '¿Paella? ¿En serio? Eso lo tenemos que hablar…' },
         { speaker: '', de: 'Der Aufzug hält. Beide lachen.', es: 'El ascensor se detiene. Los dos ríen.' },
-        { speaker: 'Herr Meyer', de: 'Bis später, Frau López! Schönen Tag noch!', es: '¡Hasta luego, Sra. López! ¡Que tenga buen día!' }
+        { speaker: 'Herr Meyer', de: 'Bis später, Frau López! Schönen Tag noch!', es: '¡Hasta luego, Sra. López! ¡Que tenga buen día!' },
+        { speaker: '', de: 'Am Freitag treffen sie sich wieder — diesmal am Briefkasten.', es: 'El viernes se vuelven a encontrar — esta vez en los buzones.' },
+        { speaker: 'Frau López', de: 'Na, Herr Meyer! Was für ein Wetter, dieser Regen!', es: '¡Vaya, Sr. Meyer! ¡Menudo tiempo, qué manera de llover!' },
+        { speaker: 'Herr Meyer', de: 'Furchtbar! Und am Wochenende soll es noch schlimmer werden.', es: '¡Horrible! Y el fin de semana dicen que irá a peor.' },
+        { speaker: 'Frau López', de: 'Perfektes Wetter zum Kochen, oder? Wie war noch mal Ihre Paella?', es: 'Tiempo perfecto para cocinar, ¿no? ¿Cómo era eso de su paella?' },
+        { speaker: 'Herr Meyer', de: 'Na ja... ehrlich gesagt war der Reis etwas zu weich.', es: 'Bueno… sinceramente, el arroz quedó algo pasado.' },
+        { speaker: 'Frau López', de: 'Das dachte ich mir! Wissen Sie was? Ich zeige Ihnen am Sonntag, wie meine Großmutter sie macht.', es: '¡Me lo imaginaba! ¿Sabe qué? El domingo le enseño cómo la hace mi abuela.' },
+        { speaker: 'Herr Meyer', de: 'Wirklich? Das wäre wunderbar! Ich bringe den Nachtisch mit.', es: '¿En serio? ¡Sería estupendo! Yo llevo el postre.' },
+        { speaker: '', de: 'Am Sonntag riecht das ganze Haus nach Safran. Und zwei Nachbarn sind jetzt Freunde.', es: 'El domingo, todo el edificio huele a azafrán. Y dos vecinos ahora son amigos.' }
       ]
     }
   });

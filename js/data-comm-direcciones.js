@@ -77,7 +77,10 @@
       { id: 'dir-22', type: 'match', prompt: 'Empareja los lugares de la ciudad:', pairs: [['die Brücke', 'el puente'], ['die Kreuzung', 'el cruce'], ['der Platz', 'la plaza'], ['der Weg', 'el camino']], explanation: 'Los puntos de referencia que salen en cualquier indicación.' },
       { id: 'dir-23', type: 'fill-blank', prompt: 'Gehen Sie über ___ Brücke. (cruzar el puente: movimiento)', answer: 'die', explanation: '„über" con movimiento → Akkusativ; die Brücke (femenino) no cambia de forma.' },
       { id: 'dir-24', type: 'translate', prompt: 'Traduce: La primera calle a la derecha.', answer: 'Die erste Straße rechts.', explanation: 'Ordinal + Straße + dirección: die erste/zweite Straße rechts/links.' },
-      { id: 'dir-25', type: 'multiple-choice', prompt: '„Sie können es nicht verfehlen" significa:', options: ['No tiene pérdida', 'Está prohibido pasar', 'No lo encontrará', 'Debe dar la vuelta'], answer: 'No tiene pérdida', explanation: 'verfehlen = no dar con algo → la coletilla optimista de toda indicación.' }
+      { id: 'dir-25', type: 'multiple-choice', prompt: '„Sie können es nicht verfehlen" significa:', options: ['No tiene pérdida', 'Está prohibido pasar', 'No lo encontrará', 'Debe dar la vuelta'], answer: 'No tiene pérdida', explanation: 'verfehlen = no dar con algo → la coletilla optimista de toda indicación.' },
+      { id: 'dir-26', type: 'multiple-choice', prompt: 'Historia: Warum kann der Junge nicht helfen?', options: ['Er ist nicht von hier', 'Er hat keine Zeit', 'Er spricht kein Deutsch', 'Er kennt kein Museum'], answer: 'Er ist nicht von hier', explanation: '„Keine Ahnung, ich bin nicht von hier." — la respuesta más honesta que existe.' },
+      { id: 'dir-27', type: 'multiple-choice', prompt: 'Historia: Was sagt die Touristeninformation?', options: ['die Hauptstraße entlang, am Rathaus vorbei, erste Straße links', 'geradeaus bis zur Brücke, dann rechts', 'mit der U-Bahn, zwei Stationen', 'das Museum ist heute geschlossen'], answer: 'die Hauptstraße entlang, am Rathaus vorbei, erste Straße links', explanation: '„entlang" (a lo largo de) y „vorbei" (pasar por delante) — las dos piezas nuevas de la indicación.' },
+      { id: 'dir-28', type: 'fill-blank', prompt: 'Historia: Gehen Sie am Rathaus ___. (pasar por delante)', answer: 'vorbei', explanation: 'an + Dativ + vorbei = pasar por delante de: am Rathaus vorbei.' }
     ],
     story: {
       intro: 'Dos turistas con plano buscan el museo de la ciudad: preguntan el camino, siguen las indicaciones (geradeaus, links, rechts)… y el final es el de siempre.',
@@ -90,9 +93,19 @@
         { speaker: 'Tourist', de: 'Ist es weit?', es: '¿Está lejos?' },
         { speaker: 'Frau', de: 'Nein, zu Fuß nur zehn Minuten. Oder eine Station mit der U-Bahn.', es: 'No, a pie solo diez minutos. O una parada en metro.' },
         { speaker: 'Tourist', de: 'Wir gehen zu Fuß. Vielen Dank!', es: 'Vamos andando. ¡Muchas gracias!' },
+        { speaker: '', de: 'Die Touristen gehen geradeaus... und dann?', es: 'Los turistas siguen recto… ¿y luego?' },
+        { speaker: 'Tourist', de: 'War es links an der Ampel oder rechts?', es: '¿Era a la izquierda en el semáforo o a la derecha?' },
+        { speaker: 'Touristin', de: 'Links! Glaube ich. Frag noch mal jemanden.', es: '¡A la izquierda! Creo. Pregunta otra vez a alguien.' },
+        { speaker: 'Tourist', de: 'Entschuldigung, ist das Stadtmuseum hier in der Nähe?', es: 'Perdone, ¿está por aquí cerca el museo de la ciudad?' },
+        { speaker: 'Junge', de: 'Keine Ahnung, ich bin nicht von hier. Aber da vorne ist eine Touristeninformation.', es: 'Ni idea, no soy de aquí. Pero ahí delante hay una oficina de turismo.' },
+        { speaker: '', de: 'In der Touristeninformation bekommen sie einen neuen Plan.', es: 'En la oficina de turismo les dan un plano nuevo.' },
+        { speaker: 'Mitarbeiterin', de: 'Gehen Sie die Hauptstraße entlang, am Rathaus vorbei, und dann die erste Straße links.', es: 'Sigan por la calle principal, pasen por delante del ayuntamiento y luego la primera calle a la izquierda.' },
+        { speaker: 'Touristin', de: 'Am Rathaus vorbei, erste links. Das schaffen wir!', es: 'Por delante del ayuntamiento, primera a la izquierda. ¡Eso lo conseguimos!' },
         { speaker: '', de: 'Zwanzig Minuten später...', es: 'Veinte minutos después…' },
         { speaker: 'Tourist', de: 'Entschuldigung... wo ist das Stadtmuseum?', es: 'Perdone… ¿dónde está el museo de la ciudad?' },
-        { speaker: 'Mann', de: 'Da! Direkt hinter Ihnen.', es: '¡Ahí! Justo detrás de ustedes.' }
+        { speaker: 'Mann', de: 'Da! Direkt hinter Ihnen.', es: '¡Ahí! Justo detrás de ustedes.' },
+        { speaker: 'Touristin', de: 'Hinter uns?! Wir sind zweimal daran vorbeigelaufen!', es: '¡¿Detrás de nosotros?! ¡Hemos pasado dos veces por delante!' },
+        { speaker: '', de: 'Im Museum kaufen beide sofort ein Souvenir: einen besseren Stadtplan.', es: 'En el museo, los dos se compran enseguida un recuerdo: un plano mejor.' }
       ]
     }
   });

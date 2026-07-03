@@ -83,7 +83,10 @@
       { id: 'med-22', type: 'match', prompt: 'Empareja las partes del cuerpo:', pairs: [['das Auge', 'el ojo'], ['das Ohr', 'el oído / la oreja'], ['die Hand', 'la mano'], ['der Fuß', 'el pie']], explanation: 'Para poder decir dónde te duele.' },
       { id: 'med-23', type: 'dictation', say: 'Ich habe Kopfschmerzen.', prompt: 'Dictado: escribe lo que oyes.', answer: 'Ich habe Kopfschmerzen.', explanation: 'La frase de síntoma más frecuente.' },
       { id: 'med-24', type: 'multiple-choice', prompt: '„Ich bin gegen Pollen allergisch." — ¿qué le pasa?', options: ['Tiene alergia al polen', 'Le duele el polen', 'Tiene miedo al polen', 'Tiene fiebre por el polen'], answer: 'Tiene alergia al polen', explanation: 'allergisch gegen + Akkusativ.' },
-      { id: 'med-25', type: 'fill-blank', prompt: 'Der Arzt verschreibt mir ein ___. (medicamento)', answer: 'Medikament', explanation: 'das Medikament = el medicamento; das Rezept sería la receta.' }
+      { id: 'med-25', type: 'fill-blank', prompt: 'Der Arzt verschreibt mir ein ___. (medicamento)', answer: 'Medikament', explanation: 'das Medikament = el medicamento; das Rezept sería la receta.' },
+      { id: 'med-26', type: 'multiple-choice', prompt: 'Historia: Was bekommt Herr Ortega in der Apotheke gratis?', options: ['Hustenbonbons', 'die Tabletten', 'einen Tee', 'ein zweites Rezept'], answer: 'Hustenbonbons', explanation: '„Und hier, Hustenbonbons. Die sind gratis."' },
+      { id: 'med-27', type: 'multiple-choice', prompt: 'Historia: Wann muss Herr Ortega die Tabletten nehmen?', options: ['morgens, mittags und abends, immer nach dem Essen', 'nur am Abend, vor dem Schlafen', 'jede Stunde', 'nur wenn er Fieber hat'], answer: 'morgens, mittags und abends, immer nach dem Essen', explanation: '„Einmal am Morgen, einmal am Mittag, einmal am Abend. Immer nach dem Essen."' },
+      { id: 'med-28', type: 'fill-blank', prompt: 'Historia: Der Hals tut auch nicht mehr ___.', answer: 'weh', explanation: 'wehtun: „tut (nicht mehr) weh" = (ya no) duele.' }
     ],
     story: {
       intro: 'El Sr. Ortega lleva días encontrándose mal y por fin tiene cita. La visita entera: síntomas, diagnóstico, receta e instrucciones — tal cual pasa en la consulta.',
@@ -99,7 +102,16 @@
         { speaker: 'Ortega', de: 'Und darf ich arbeiten?', es: '¿Y puedo trabajar?' },
         { speaker: 'Ärztin', de: 'Besser nicht. Bleiben Sie drei Tage zu Hause und trinken Sie viel Tee.', es: 'Mejor no. Quédese tres días en casa y beba mucho té.' },
         { speaker: 'Ortega', de: 'Drei Tage Serien... äh, Tee. Verstanden.', es: 'Tres días de series… eh, de té. Entendido.' },
-        { speaker: 'Ärztin', de: 'Gute Besserung, Herr Ortega!', es: '¡Que se mejore, Sr. Ortega!' }
+        { speaker: 'Ärztin', de: 'Gute Besserung, Herr Ortega!', es: '¡Que se mejore, Sr. Ortega!' },
+        { speaker: '', de: 'In der Apotheke gibt Herr Ortega das Rezept ab.', es: 'En la farmacia, el Sr. Ortega entrega la receta.' },
+        { speaker: 'Apothekerin', de: 'Einmal am Morgen, einmal am Mittag, einmal am Abend. Immer nach dem Essen.', es: 'Una por la mañana, una al mediodía y una por la noche. Siempre después de comer.' },
+        { speaker: 'Ortega', de: 'Nach dem Essen. Kein Problem — essen kann ich noch sehr gut.', es: 'Después de comer. Ningún problema — comer todavía se me da muy bien.' },
+        { speaker: 'Apothekerin', de: 'Und hier, Hustenbonbons. Die sind gratis. Gute Besserung!', es: 'Y tome, caramelos para la tos. Van gratis. ¡Que se mejore!' },
+        { speaker: '', de: 'Drei Tage später fühlt sich Herr Ortega viel besser.', es: 'Tres días después, el Sr. Ortega se encuentra mucho mejor.' },
+        { speaker: 'Ortega', de: 'Kein Husten mehr, kein Fieber. Der Hals tut auch nicht mehr weh.', es: 'Ya no hay tos, ni fiebre. La garganta tampoco duele ya.' },
+        { speaker: '', de: 'Am Montag ruft seine Chefin an.', es: 'El lunes llama su jefa.' },
+        { speaker: 'Chefin', de: 'Herr Ortega! Geht es Ihnen besser? Kommen Sie morgen wieder?', es: '¡Sr. Ortega! ¿Se encuentra mejor? ¿Vuelve mañana?' },
+        { speaker: 'Ortega', de: 'Ja, morgen bin ich wieder da. Der Tee hat geholfen... und die Serien auch ein bisschen.', es: 'Sí, mañana estoy de vuelta. El té ha ayudado… y las series también un poco.' }
       ]
     }
   });

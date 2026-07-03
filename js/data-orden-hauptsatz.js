@@ -78,7 +78,10 @@
       ,
       { id: 'hs-30', type: 'multiple-choice', prompt: 'Historia: Womit fährt Ben zur Arbeit?', options: ['mit dem Bus', 'mit dem Auto', 'mit dem Fahrrad', 'zu Fuß'], answer: 'mit dem Bus', explanation: '„Um acht fahre ich mit dem Bus zur Arbeit."' },
       { id: 'hs-31', type: 'multiple-choice', prompt: 'Historia: Richtig oder falsch — Ben geht nie ins Fitnessstudio.', options: ['Falsch', 'Richtig'], answer: 'Falsch', explanation: '„Nach der Arbeit gehe ich ins Fitnessstudio... Dann gehe ich trotzdem."' },
-      { id: 'hs-32', type: 'reorder', words: ['Dann', 'trinke', 'ich', 'einen', 'Kaffee'], hint: 'Luego me tomo un café. (frase de la historia)', answer: 'Dann trinke ich einen Kaffee.', explanation: '„Dann" ocupa la posición 1 → verbo „trinke" en la 2ª, sujeto „ich" en la 3ª.' }
+      { id: 'hs-32', type: 'reorder', words: ['Dann', 'trinke', 'ich', 'einen', 'Kaffee'], hint: 'Luego me tomo un café. (frase de la historia)', answer: 'Dann trinke ich einen Kaffee.', explanation: '„Dann" ocupa la posición 1 → verbo „trinke" en la 2ª, sujeto „ich" en la 3ª.' },
+      { id: 'hs-33', type: 'multiple-choice', prompt: 'Historia: Was will Rocky am Samstag um sechs Uhr?', options: ['in den Park gehen', 'schlafen', 'fressen', 'fernsehen'], answer: 'in den Park gehen', explanation: 'La correa en la boca lo dice todo. Los planes de Ben no cuentan.' },
+      { id: 'hs-34', type: 'multiple-choice', prompt: 'Historia: Wie oft wirft Ben den Ball im Park?', options: ['vierzigmal', 'viermal', 'vierzehnmal', 'zweimal'], answer: 'vierzigmal', explanation: '„Im Park wirft Ben den Ball. Vierzigmal." — fíjate: „Im Park" en posición 1, „wirft" en la 2.' },
+      { id: 'hs-35', type: 'reorder', words: ['Zuerst', 'gehen', 'wir', 'in', 'den', 'Park'], hint: 'Primero vamos al parque. (frase de la historia)', answer: 'Zuerst gehen wir in den Park.', explanation: '„Zuerst" en posición 1 → verbo „gehen" en la 2ª, sujeto „wir" en la 3ª.' }
     ],
     story: {
       intro: 'Ben cuenta su día. Fíjate en cómo casi ninguna frase empieza por el sujeto — Um sieben Uhr…, Dann…, Mittags…, Nach der Arbeit… — y el verbo aguanta SIEMPRE en la posición 2.',
@@ -93,6 +96,13 @@
         { speaker: 'Ben', de: 'Manchmal habe ich keine Lust. Dann gehe ich trotzdem.', es: 'A veces no tengo ganas. Entonces voy igualmente.' },
         { speaker: 'Ben', de: 'Abends koche ich und sehe eine Serie.', es: 'Por la noche cocino y veo una serie.' },
         { speaker: 'Ben', de: 'Am Wochenende schlafe ich lange. Das ist der Plan.', es: 'El fin de semana duermo hasta tarde. Ese es el plan.' },
+        { speaker: '', de: 'Samstagmorgen, sechs Uhr.', es: 'Sábado por la mañana, seis en punto.' },
+        { speaker: '', de: 'Der Hund steht neben dem Bett. Im Maul: die Leine.', es: 'El perro está junto a la cama. En la boca: la correa.' },
+        { speaker: 'Ben', de: 'Rocky, es ist sechs Uhr! Am Samstag schlafen wir lange!', es: '¡Rocky, son las seis! ¡Los sábados dormimos hasta tarde!' },
+        { speaker: '', de: 'Rocky bellt. Einmal. Zweimal.', es: 'Rocky ladra. Una vez. Dos veces.' },
+        { speaker: 'Ben', de: 'Na gut. Zuerst gehen wir in den Park, dann trinke ich einen doppelten Kaffee.', es: 'Está bien. Primero vamos al parque, luego me tomo un café doble.' },
+        { speaker: '', de: 'Im Park wirft Ben den Ball. Vierzigmal.', es: 'En el parque, Ben lanza la pelota. Cuarenta veces.' },
+        { speaker: 'Ben', de: 'Danach schlafe ich weiter. Vielleicht.', es: 'Después sigo durmiendo. Quizá.' },
         { speaker: '', de: 'Sein Hund hat jeden Morgen einen anderen Plan.', es: 'Su perro tiene cada mañana otro plan.' }
       ]
     }

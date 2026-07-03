@@ -34,7 +34,17 @@
         { speaker: 'Tom', de: 'Der Kuchen sieht aber lecker aus!', es: '¡Pues la tarta tiene buena pinta!' },
         { speaker: 'Lena', de: 'Möchtest du ein Stück probieren?', es: '¿Quieres probar un trozo?' },
         { speaker: 'Tom', de: 'Na gut… vielleicht ein kleines Stück.', es: 'Bueno, vale… quizá un trocito.' },
-        { speaker: 'Lena', de: 'Typisch Tom! — Zahlen, bitte!', es: '¡Típico de Tom! — ¡La cuenta, por favor!' }
+        { speaker: '', de: 'Da kommt Lenas Freundin Marie ins Café.', es: 'En eso entra en el café Marie, la amiga de Lena.' },
+        { speaker: 'Lena', de: 'Marie! Setz dich zu uns! Möchtest du etwas trinken?', es: '¡Marie! ¡Siéntate con nosotros! ¿Quieres beber algo?' },
+        { speaker: 'Marie', de: 'Gern! Ich nehme eine heiße Schokolade. Draußen ist es so kalt!', es: '¡Claro! Yo tomo un chocolate caliente. ¡Fuera hace mucho frío!' },
+        { speaker: 'Tom', de: 'Und noch ein Stück Apfelkuchen, bitte!', es: '¡Y otro trozo de tarta de manzana, por favor!' },
+        { speaker: 'Lena', de: 'Tom! Du hattest doch keinen Hunger!', es: '¡Tom! ¿No decías que no tenías hambre?' },
+        { speaker: 'Tom', de: 'Das war vor dreißig Minuten. Jetzt habe ich Hunger.', es: 'Eso era hace treinta minutos. Ahora sí tengo hambre.' },
+        { speaker: '', de: 'Eine Stunde später ruft Lena den Kellner.', es: 'Una hora después, Lena llama al camarero.' },
+        { speaker: 'Lena', de: 'Typisch Tom! — Zahlen, bitte!', es: '¡Típico de Tom! — ¡La cuenta, por favor!' },
+        { speaker: 'Kellner', de: 'Zusammen oder getrennt?', es: '¿Junto o por separado?' },
+        { speaker: 'Lena', de: 'Getrennt, bitte. Tom zahlt seinen Kuchen selbst!', es: 'Por separado, por favor. ¡Tom se paga su tarta él solito!' },
+        { speaker: 'Tom', de: 'Das ist fair. Aber nächstes Mal lade ich euch ein. Versprochen!', es: 'Es justo. Pero la próxima vez invito yo. ¡Prometido!' }
       ]
     },
     cheatsheet: vocab,
@@ -51,7 +61,11 @@
       { id: 'st1-10', type: 'match', prompt: 'Empareja el vocabulario de la historia:', pairs: [['der Kellner', 'el camarero'], ['der Kuchen', 'la tarta'], ['die Zitrone', 'el limón'], ['zahlen', 'pagar']], explanation: 'Vocabulario clave de la escena del café.' },
       { id: 'st1-11', type: 'multiple-choice', prompt: '„Zahlen, bitte!" significa:', options: ['¡La cuenta, por favor!', '¡Otra ronda, por favor!', '¡Buen provecho!', '¡Hasta luego!'], answer: '¡La cuenta, por favor!', explanation: 'zahlen = pagar; „Zahlen, bitte!" es la forma corta de pedir la cuenta.' },
       { id: 'st1-12', type: 'listen', say: 'Möchten Sie auch etwas essen?', prompt: 'Escucha: ¿qué línea del diálogo oyes?', options: ['Möchten Sie auch etwas essen?', 'Was möchten Sie trinken?', 'Möchtest du ein Stück probieren?', 'Der Kuchen sieht aber lecker aus!'], answer: 'Möchten Sie auch etwas essen?', explanation: 'La pregunta del camarero tras tomar nota de las bebidas.' },
-      { id: 'st1-13', type: 'translate', prompt: 'Traduce: No tengo hambre.', answer: 'Ich habe keinen Hunger.', explanation: 'der Hunger → keinen (Akkusativ masculino).' }
+      { id: 'st1-13', type: 'translate', prompt: 'Traduce: No tengo hambre.', answer: 'Ich habe keinen Hunger.', explanation: 'der Hunger → keinen (Akkusativ masculino).' },
+      { id: 'st1-14', type: 'multiple-choice', prompt: 'Was trinkt Marie?', options: ['eine heiße Schokolade', 'einen Kaffee', 'einen Tee', 'nichts'], answer: 'eine heiße Schokolade', explanation: '„Ich nehme eine heiße Schokolade. Draußen ist es so kalt!"' },
+      { id: 'st1-15', type: 'multiple-choice', prompt: '¿Por qué Tom pide tarta al final, si "no tenía hambre"?', options: ['Eso era hace 30 minutos; ahora sí tiene', 'Marie le invita', 'La tarta es gratis', 'Lena le obliga'], answer: 'Eso era hace 30 minutos; ahora sí tiene', explanation: '„Das war vor dreißig Minuten. Jetzt habe ich Hunger." — la lógica irrefutable de Tom.' },
+      { id: 'st1-16', type: 'multiple-choice', prompt: '„Zusammen oder getrennt?" — ¿qué pregunta el camarero?', options: ['Si pagan todo junto o cada uno lo suyo', 'Si quieren sentarse juntos', 'Si quieren la tarta en dos platos', 'Si se van ya'], answer: 'Si pagan todo junto o cada uno lo suyo', explanation: 'La pregunta fija al pedir la cuenta en grupo. Lena elige „getrennt".' },
+      { id: 'st1-17', type: 'fill-blank', prompt: 'Nächstes Mal ___ ich euch ein. (invitar, verbo separable: parte conjugada)', answer: 'lade', explanation: 'einladen: „lade" en posición 2 y „ein" al final — Nächstes Mal lade ich euch ein.' }
     ]
   });
 })();

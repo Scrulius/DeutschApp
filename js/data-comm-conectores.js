@@ -79,7 +79,10 @@
       ,
       { id: 'con-19', type: 'multiple-choice', prompt: 'Historia: Warum will Diana eigentlich Ja sagen?', options: ['Das Gehalt ist super', 'Hamburg ist billig', 'Ihre Freunde wohnen dort', 'Ihr Bruder wohnt dort'], answer: 'Das Gehalt ist super', explanation: '„Das Gehalt ist super, deshalb will ich eigentlich Ja sagen."' },
       { id: 'con-20', type: 'multiple-choice', prompt: 'Historia: Was soll Diana zuerst machen?', options: ['die Stadt besuchen', 'sofort Ja sagen', 'eine Wohnung suchen', 'mit ihren Freunden sprechen'], answer: 'die Stadt besuchen', explanation: '„Zuerst solltest du die Stadt besuchen. Dann kannst du besser entscheiden."' },
-      { id: 'con-21', type: 'fill-blank', prompt: 'Historia: Das Gehalt ist super, ___ will ich eigentlich Ja sagen. (por eso)', answer: 'deshalb', explanation: '„deshalb" + inversión: deshalb will ich…' }
+      { id: 'con-21', type: 'fill-blank', prompt: 'Historia: Das Gehalt ist super, ___ will ich eigentlich Ja sagen. (por eso)', answer: 'deshalb', explanation: '„deshalb" + inversión: deshalb will ich…' },
+      { id: 'con-22', type: 'multiple-choice', prompt: 'Historia: Was besichtigt Diana zuerst?', options: ['den Hafen', 'die Elbphilharmonie', 'die Speicherstadt', 'das Rathaus'], answer: 'den Hafen', explanation: '„Sie besichtigt zuerst den Hafen, danach die Speicherstadt und zum Schluss die Elbphilharmonie." — zuerst/danach/zum Schluss ordenan el relato.' },
+      { id: 'con-23', type: 'multiple-choice', prompt: 'Historia: Wie ist das Wetter in Hamburg — und was denkt Diana trotzdem?', options: ['Es regnet, trotzdem findet sie die Stadt wunderschön', 'Es ist sonnig, deshalb bleibt sie', 'Es schneit, deshalb fährt sie zurück', 'Es ist warm, trotzdem gefällt ihr nichts'], answer: 'Es regnet, trotzdem findet sie die Stadt wunderschön', explanation: '„Es regnet zwar die ganze Zeit, trotzdem ist diese Stadt wunderschön." — zwar…trotzdem = concesión.' },
+      { id: 'con-24', type: 'fill-blank', prompt: 'Historia: Es regnet zwar die ganze Zeit, ___ ist diese Stadt wunderschön. (aun así)', answer: 'trotzdem', explanation: '„zwar … trotzdem": admito X, aun así Y. Con inversión: trotzdem IST diese Stadt…' }
     ],
     story: {
       intro: 'A Diana le ofrecen un trabajo en Hamburgo y lo habla con su hermano. La deliberación entera va hilada con conectores: deshalb, allerdings, außerdem, einerseits/andererseits, zuerst, trotzdem, schließlich.',
@@ -93,8 +96,16 @@
         { speaker: 'Bruder', de: 'Zuerst solltest du die Stadt besuchen. Dann kannst du besser entscheiden.', es: 'Primero deberías visitar la ciudad. Luego podrás decidir mejor.' },
         { speaker: 'Diana', de: 'Gute Idee. Trotzdem habe ich Angst vor der Entscheidung.', es: 'Buena idea. Aun así, me da miedo la decisión.' },
         { speaker: 'Bruder', de: 'Das ist normal. Schließlich geht es um dein Leben.', es: 'Es normal. Al fin y al cabo, se trata de tu vida.' },
+        { speaker: '', de: 'Am nächsten Tag macht Diana eine Liste. Links die Vorteile, rechts die Nachteile.', es: 'Al día siguiente, Diana hace una lista. A la izquierda las ventajas, a la derecha los inconvenientes.' },
+        { speaker: 'Diana', de: 'Erstens: das Gehalt. Zweitens: die neue Erfahrung. Drittens... das Meer!', es: 'Primero: el sueldo. Segundo: la experiencia nueva. Tercero… ¡el mar!' },
+        { speaker: 'Bruder', de: 'Und die Nachteile?', es: '¿Y los inconvenientes?' },
+        { speaker: 'Diana', de: 'Die Miete, das Wetter... und ich würde dich vermissen. Obwohl — vielleicht ist das ein Vorteil.', es: 'El alquiler, el tiempo… y te echaría de menos. Aunque — igual eso es una ventaja.' },
+        { speaker: 'Bruder', de: 'Sehr witzig!', es: '¡Muy graciosa!' },
         { speaker: '', de: 'Am Wochenende fährt Diana nach Hamburg — und verliebt sich in die Stadt.', es: 'El fin de semana Diana va a Hamburgo — y se enamora de la ciudad.' },
-        { speaker: 'Diana', de: 'Ich habe eine Entscheidung getroffen. Hamburg, ich komme!', es: 'He tomado una decisión. ¡Hamburgo, allá voy!' }
+        { speaker: '', de: 'Sie besichtigt zuerst den Hafen, danach die Speicherstadt und zum Schluss die Elbphilharmonie.', es: 'Primero visita el puerto, después la Speicherstadt y por último la Elbphilharmonie.' },
+        { speaker: 'Diana', de: 'Es regnet zwar die ganze Zeit, trotzdem ist diese Stadt wunderschön.', es: 'Llueve todo el rato, sí, pero aun así esta ciudad es preciosa.' },
+        { speaker: 'Diana', de: 'Ich habe eine Entscheidung getroffen. Hamburg, ich komme!', es: 'He tomado una decisión. ¡Hamburgo, allá voy!' },
+        { speaker: 'Bruder', de: 'Dann besuche ich dich im Sommer. Denn im Winter ist es mir dort zu nass.', es: 'Entonces te visito en verano. Porque en invierno aquello está demasiado mojado para mi gusto.' }
       ]
     }
   });

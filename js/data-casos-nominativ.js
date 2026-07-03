@@ -75,7 +75,10 @@
       ,
       { id: 'nom-31', type: 'multiple-choice', prompt: 'Historia: Was ist Emmas Vater von Beruf?', options: ['Koch', 'Lehrer', 'Arzt', 'Polizist'], answer: 'Koch', explanation: '„Das ist mein Vater. Er ist Koch."' },
       { id: 'nom-32', type: 'multiple-choice', prompt: 'Historia: Wer ist „der Chef im Haus"?', options: ['der Hund Bruno', 'der Vater', 'die Oma', 'Max'], answer: 'der Hund Bruno', explanation: '„Der Hund ist der Chef im Haus!" — Bruno manda.' },
-      { id: 'nom-33', type: 'fill-blank', prompt: 'Historia: Das ist ___ Mutter. Sie ist Ärztin. (mi)', answer: 'meine', explanation: 'die Mutter (femenino) en Nominativ → meine Mutter.' }
+      { id: 'nom-33', type: 'fill-blank', prompt: 'Historia: Das ist ___ Mutter. Sie ist Ärztin. (mi)', answer: 'meine', explanation: 'die Mutter (femenino) en Nominativ → meine Mutter.' },
+      { id: 'nom-34', type: 'multiple-choice', prompt: 'Historia: Was ist Onkel Karl von Beruf?', options: ['Musiker', 'Koch', 'Fotograf', 'Lehrer'], answer: 'Musiker', explanation: '„Das ist mein Onkel Karl. Er ist Musiker." — profesión tras sein: sin artículo, Nominativ.' },
+      { id: 'nom-35', type: 'multiple-choice', prompt: 'Historia: Warum lachen alle auf dem Foto?', options: ['Der Hund hat die Wurst gestohlen', 'Onkel Karl hat Musik gemacht', 'Das Baby hat geweint', 'Der Fotograf ist gefallen'], answer: 'Der Hund hat die Wurst gestohlen', explanation: '„Der Hund war schneller als der Fotograf. Die Wurst war weg!"' },
+      { id: 'nom-36', type: 'fill-blank', prompt: 'Historia: Meine Mutter ist ___ Einzige mit Geduld. (artículo)', answer: 'die', explanation: 'Predicado con sein → Nominativ: die Einzige (femenino).' }
     ],
     story: {
       intro: 'Emma le enseña a su amiga Julia una foto de familia. Fíjate: todos los que se presentan van en Nominativ — la forma de diccionario.',
@@ -91,6 +94,15 @@
         { speaker: 'Emma', de: 'Das ist Bruno. Der Hund ist der Chef im Haus!', es: 'Es Bruno. ¡El perro es el jefe de la casa!' },
         { speaker: 'Julia', de: 'Und wer ist die Frau mit dem Hut?', es: '¿Y quién es la mujer del sombrero?' },
         { speaker: 'Emma', de: 'Meine Oma. Sie ist achtzig und sehr lustig.', es: 'Mi abuela. Tiene ochenta años y es muy divertida.' },
+        { speaker: 'Julia', de: 'Und der Mann mit der Gitarre?', es: '¿Y el hombre de la guitarra?' },
+        { speaker: 'Emma', de: 'Das ist mein Onkel Karl. Er ist Musiker. Seine Band ist... na ja, laut.', es: 'Es mi tío Karl. Es músico. Su grupo es… bueno, ruidoso.' },
+        { speaker: 'Julia', de: 'Und wer ist das Baby da auf dem Arm?', es: '¿Y quién es el bebé ese en brazos?' },
+        { speaker: 'Emma', de: 'Das ist meine Cousine Ana. Sie ist jetzt schon zehn.', es: 'Es mi prima Ana. Ya tiene diez años.' },
+        { speaker: 'Julia', de: 'Warum lachen denn alle so?', es: '¿Y por qué se ríen todos así?' },
+        { speaker: 'Emma', de: 'Eine Sekunde vor dem Foto war der Tisch noch voll. Dann kam Bruno...', es: 'Un segundo antes de la foto, la mesa aún estaba llena. Entonces llegó Bruno…' },
+        { speaker: 'Emma', de: 'Der Hund war schneller als der Fotograf. Die Wurst war weg!', es: 'El perro fue más rápido que el fotógrafo. ¡La salchicha desapareció!' },
+        { speaker: 'Julia', de: 'Deine Familie ist wirklich lustig! Wer macht das Foto dieses Jahr?', es: '¡Tu familia es divertidísima! ¿Quién hace la foto este año?' },
+        { speaker: 'Emma', de: 'Meine Mutter. Sie ist die Einzige mit Geduld.', es: 'Mi madre. Es la única con paciencia.' },
         { speaker: '', de: 'Die ganze Familie ist auf dem Foto — und alle lachen.', es: 'Toda la familia está en la foto — y todos ríen.' }
       ]
     }

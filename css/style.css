@@ -834,6 +834,15 @@ table.ref-table em { font-style: normal; color: var(--red-deep); font-size: 11px
   border-top: 1px dashed var(--line-2);
 }
 .story-line.open .story-es, .story.all-open .story-es { display: block; }
+/* línea que está leyendo el modo "▶ Reproducir historia" */
+.story-line.playing {
+  border-left-color: var(--gold);
+  background: var(--gold-bg, #f7efd8);
+}
+.story-line.narr.playing {
+  border-left-color: var(--gold);
+  background: var(--gold-bg, #f7efd8);
+}
 .story-actions { display: flex; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
 
 /* --- caza el error (find-error) --- */

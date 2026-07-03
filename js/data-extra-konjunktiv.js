@@ -77,7 +77,10 @@
       { id: 'kj2-13', type: 'dictation', say: 'Das wäre schön.', prompt: 'Dictado: escribe lo que oyes.', answer: 'Das wäre schön.', explanation: 'La reacción comodín a cualquier plan bonito.' },
       { id: 'kj2-14', type: 'multiple-choice', prompt: 'Historia: Was würde Nina machen, wenn sie gewinnen würde?', options: ['kündigen und ein Jahr reisen', 'ein Haus am Meer kaufen', 'weiterarbeiten', 'nichts'], answer: 'kündigen und ein Jahr reisen', explanation: '„Ich würde sofort kündigen und ein Jahr reisen."' },
       { id: 'kj2-15', type: 'multiple-choice', prompt: 'Historia: Was hätte Omar gern?', options: ['ein Haus am Meer', 'ein neues Auto', 'mehr Urlaub', 'einen Lottoschein'], answer: 'ein Haus am Meer', explanation: '„Ich hätte gern ein Haus am Meer."' },
-      { id: 'kj2-16', type: 'multiple-choice', prompt: 'Historia: Warum können die drei eigentlich gar nicht gewinnen?', options: ['Sie spielen gar kein Lotto', 'Sie haben kein Glück', 'Der Jackpot ist zu klein', 'Sie sind zu jung'], answer: 'Sie spielen gar kein Lotto', explanation: '„Wir sollten erst mal einen Lottoschein kaufen. Wir spielen ja gar nicht."' }
+      { id: 'kj2-16', type: 'multiple-choice', prompt: 'Historia: Warum können die drei eigentlich gar nicht gewinnen?', options: ['Sie spielen gar kein Lotto', 'Sie haben kein Glück', 'Der Jackpot ist zu klein', 'Sie sind zu jung'], answer: 'Sie spielen gar kein Lotto', explanation: '„Wir sollten erst mal einen Lottoschein kaufen. Wir spielen ja gar nicht."' },
+      { id: 'kj2-17', type: 'multiple-choice', prompt: 'Historia: Wohin würde Jule als Erstes reisen?', options: ['nach Japan', 'ans Meer', 'nach Hamburg', 'nirgendwohin'], answer: 'nach Japan', explanation: '„Nach Japan. Ich würde dort ein ganzes Jahr bleiben, wenn ich könnte."' },
+      { id: 'kj2-18', type: 'multiple-choice', prompt: 'Historia: Wie viel gewinnen die drei am Ende wirklich?', options: ['zwölf Euro fünfzig', 'zwanzig Millionen', 'tausend Euro', 'gar nichts'], answer: 'zwölf Euro fünfzig', explanation: '„Zwölf Euro fünfzig. Wir sind reich!" — la realidad frente al Konjunktiv.' },
+      { id: 'kj2-19', type: 'fill-blank', prompt: 'Historia: Damit ___ wir drei Eiskugeln pro Person kaufen. (poder, Konjunktiv II)', answer: 'könnten', explanation: 'können → könnten: lo que PODRÍAN comprar con su fortuna de 12,50 €.' }
     ],
     story: {
       intro: 'Viernes por la noche: en la radio anuncian un bote de veinte millones y tres amigos se ponen a fantasear. Puro Konjunktiv II — würde, hätte, könnte, sollte.',
@@ -89,7 +92,19 @@
         { speaker: 'Omar', de: 'Ich hätte gern ein Haus am Meer. Und ihr könntet mich jeden Sommer besuchen.', es: 'A mí me gustaría tener una casa junto al mar. Y vosotras podríais visitarme cada verano.' },
         { speaker: 'Nina', de: 'Wie großzügig! Und wenn du nur tausend Euro gewinnen würdest?', es: '¡Qué generoso! ¿Y si solo ganaras mil euros?' },
         { speaker: 'Omar', de: 'Dann würde ich euch zum Essen einladen.', es: 'Entonces os invitaría a cenar.' },
+        { speaker: 'Jule', de: 'Und wenn du gar nichts gewinnen würdest?', es: '¿Y si no ganaras nada de nada?' },
+        { speaker: 'Omar', de: 'Dann wäre ich trotzdem glücklich. Balkon, Freunde, Sommerabend — was will man mehr?', es: 'Aun así sería feliz. Balcón, amigos, una noche de verano — ¿qué más se puede pedir?' },
+        { speaker: 'Nina', de: 'Wie tief! Aber mal ehrlich: Wohin würdet ihr als Erstes reisen?', es: '¡Qué profundo! Pero en serio: ¿adónde viajaríais primero?' },
+        { speaker: 'Jule', de: 'Nach Japan. Ich würde dort ein ganzes Jahr bleiben, wenn ich könnte.', es: 'A Japón. Me quedaría allí un año entero si pudiera.' },
+        { speaker: 'Omar', de: 'Siehst du! Du würdest also DOCH kündigen.', es: '¡Lo ves! O sea que SÍ dimitirías.' },
+        { speaker: 'Jule', de: 'Niemals! Ich hätte einfach sehr, sehr langen Urlaub.', es: '¡Jamás! Simplemente tendría unas vacaciones muy, muy largas.' },
         { speaker: 'Jule', de: 'Wir sollten erst mal einen Lottoschein kaufen. Wir spielen ja gar nicht.', es: 'Primero deberíamos comprar un boleto. Si es que ni jugamos.' },
+        { speaker: '', de: 'Fünf Minuten später stehen die drei am Kiosk und kaufen einen Schein.', es: 'Cinco minutos después, los tres están en el quiosco comprando un boleto.' },
+        { speaker: 'Omar', de: 'Wenn wir gewinnen, teilen wir durch drei. Versprochen?', es: 'Si ganamos, dividimos entre tres. ¿Prometido?' },
+        { speaker: '', de: 'Am Samstag sitzen sie wieder auf dem Balkon. Die Ziehung beginnt.', es: 'El sábado están otra vez en el balcón. Empieza el sorteo.' },
+        { speaker: 'Nina', de: 'Die Sieben! Wir haben die Sieben! Und... das war es.', es: '¡El siete! ¡Tenemos el siete! Y… hasta ahí.' },
+        { speaker: 'Jule', de: 'Zwölf Euro fünfzig. Wir sind reich!', es: 'Doce euros con cincuenta. ¡Somos ricos!' },
+        { speaker: 'Omar', de: 'Damit könnten wir... drei Eiskugeln pro Person kaufen.', es: 'Con eso podríamos comprar… tres bolas de helado por cabeza.' },
         { speaker: '', de: 'Alle lachen. Träumen kostet nichts.', es: 'Todos se ríen. Soñar es gratis.' }
       ]
     }
